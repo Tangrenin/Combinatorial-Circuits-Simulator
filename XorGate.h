@@ -1,0 +1,19 @@
+//
+// Created by user on 20/12/2021.
+//
+
+#ifndef UNTITLED7_XORGATE_H
+#define UNTITLED7_XORGATE_H
+
+#include "BinaryGate.h"
+
+class XorGate : public BinaryGate {
+private:
+public:
+    XorGate(Gate* left, Gate* right);
+    void afficher() override;
+    int calculer() override;
+};
+
+
+#endif //UNTITLED7_XORGATE_H
