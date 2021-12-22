@@ -18,3 +18,13 @@ int OutputGate::calculer() {
 
 OutputGate::OutputGate(Gate* main): g_main(main) {}
 
+OutputGate::OutputGate(std::string mainText): g_main_text(mainText) {}
+
+std::string OutputGate::getMainText() {
+    return g_main_text;
+}
+
+Gate *OutputGate::getMainGate() {
+    return g_main;
+}
+

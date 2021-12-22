@@ -6,12 +6,17 @@
 #define UNTITLED7_OUTPUTGATE_H
 
 #include "Gate.h"
+#include <string>
 
 class OutputGate {
 private:
     Gate* g_main;
+    std::string const g_main_text;
 public:
     OutputGate(Gate* main);
+    OutputGate(std::string mainText);
+    Gate* getMainGate();
+    std::string getMainText();
     void afficher();
     int calculer();
 };

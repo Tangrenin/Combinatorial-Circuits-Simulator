@@ -8,7 +8,7 @@
 #include "Gate.h"
 
 class UnaryGate : public Gate {
-private:
+protected:
     Gate* g_main;
 public:
     UnaryGate(Gate* main);

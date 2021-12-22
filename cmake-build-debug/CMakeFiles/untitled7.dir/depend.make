@@ -18,6 +18,21 @@ CMakeFiles/untitled7.dir/InputGate.cpp.obj: \
  ../InputGate.cpp \
  ../InputGate.h \
  ../OutputGate.h
+CMakeFiles/untitled7.dir/NandGate.cpp.obj: \
+ ../BinaryGate.h \
+ ../Gate.h \
+ ../NandGate.cpp \
+ ../NandGate.h
+CMakeFiles/untitled7.dir/NegateGate.cpp.obj: \
+ ../Gate.h \
+ ../NegateGate.cpp \
+ ../NegateGate.h \
+ ../UnaryGate.h
+CMakeFiles/untitled7.dir/NorGate.cpp.obj: \
+ ../BinaryGate.h \
+ ../Gate.h \
+ ../NorGate.cpp \
+ ../NorGate.h
 CMakeFiles/untitled7.dir/OrGate.cpp.obj: \
  ../BinaryGate.h \
  ../Gate.h \
@@ -41,7 +56,10 @@ CMakeFiles/untitled7.dir/main.cpp.obj: \
  ../BinaryGate.h \
  ../Gate.h \
  ../InputGate.h \
+ ../NandGate.h \
+ ../NegateGate.h \
  ../OrGate.h \
  ../OutputGate.h \
+ ../UnaryGate.h \
  ../XorGate.h \
  ../main.cpp

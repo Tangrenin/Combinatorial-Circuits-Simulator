@@ -18,6 +18,21 @@ CMakeFiles/untitled7.dir/InputGate.cpp.obj
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/InputGate.cpp
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/InputGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/OutputGate.h
+CMakeFiles/untitled7.dir/NandGate.cpp.obj
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/BinaryGate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/Gate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NandGate.cpp
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NandGate.h
+CMakeFiles/untitled7.dir/NegateGate.cpp.obj
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/Gate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NegateGate.cpp
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NegateGate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/UnaryGate.h
+CMakeFiles/untitled7.dir/NorGate.cpp.obj
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/BinaryGate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/Gate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NorGate.cpp
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NorGate.h
 CMakeFiles/untitled7.dir/OrGate.cpp.obj
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/BinaryGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/Gate.h
@@ -41,7 +56,10 @@ CMakeFiles/untitled7.dir/main.cpp.obj
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/BinaryGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/Gate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/InputGate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NandGate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NegateGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/OrGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/OutputGate.h
+ C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/UnaryGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/XorGate.h
  C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/main.cpp

@@ -182,6 +182,45 @@ CMakeFiles/untitled7.dir/XorGate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/XorGate.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\XorGate.cpp -o CMakeFiles\untitled7.dir\XorGate.cpp.s
 
+CMakeFiles/untitled7.dir/NandGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/NandGate.cpp.obj: ../NandGate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled7.dir/NandGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled7.dir\NandGate.cpp.obj -c C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NandGate.cpp
+
+CMakeFiles/untitled7.dir/NandGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/NandGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NandGate.cpp > CMakeFiles\untitled7.dir\NandGate.cpp.i
+
+CMakeFiles/untitled7.dir/NandGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/NandGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NandGate.cpp -o CMakeFiles\untitled7.dir\NandGate.cpp.s
+
+CMakeFiles/untitled7.dir/NorGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/NorGate.cpp.obj: ../NorGate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled7.dir/NorGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled7.dir\NorGate.cpp.obj -c C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NorGate.cpp
+
+CMakeFiles/untitled7.dir/NorGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/NorGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NorGate.cpp > CMakeFiles\untitled7.dir\NorGate.cpp.i
+
+CMakeFiles/untitled7.dir/NorGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/NorGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NorGate.cpp -o CMakeFiles\untitled7.dir\NorGate.cpp.s
+
+CMakeFiles/untitled7.dir/NegateGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/NegateGate.cpp.obj: ../NegateGate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled7.dir/NegateGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled7.dir\NegateGate.cpp.obj -c C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NegateGate.cpp
+
+CMakeFiles/untitled7.dir/NegateGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/NegateGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NegateGate.cpp > CMakeFiles\untitled7.dir\NegateGate.cpp.i
+
+CMakeFiles/untitled7.dir/NegateGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/NegateGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\NegateGate.cpp -o CMakeFiles\untitled7.dir\NegateGate.cpp.s
+
 # Object files for target untitled7
 untitled7_OBJECTS = \
 "CMakeFiles/untitled7.dir/main.cpp.obj" \
@@ -192,7 +231,10 @@ untitled7_OBJECTS = \
 "CMakeFiles/untitled7.dir/UnaryGate.cpp.obj" \
 "CMakeFiles/untitled7.dir/AndGate.cpp.obj" \
 "CMakeFiles/untitled7.dir/OrGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/XorGate.cpp.obj"
+"CMakeFiles/untitled7.dir/XorGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/NandGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/NorGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/NegateGate.cpp.obj"
 
 # External object files for target untitled7
 untitled7_EXTERNAL_OBJECTS =
@@ -206,11 +248,14 @@ untitled7.exe: CMakeFiles/untitled7.dir/UnaryGate.cpp.obj
 untitled7.exe: CMakeFiles/untitled7.dir/AndGate.cpp.obj
 untitled7.exe: CMakeFiles/untitled7.dir/OrGate.cpp.obj
 untitled7.exe: CMakeFiles/untitled7.dir/XorGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/NandGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/NorGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/NegateGate.cpp.obj
 untitled7.exe: CMakeFiles/untitled7.dir/build.make
 untitled7.exe: CMakeFiles/untitled7.dir/linklibs.rsp
 untitled7.exe: CMakeFiles/untitled7.dir/objects1.rsp
 untitled7.exe: CMakeFiles/untitled7.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable untitled7.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Documents\M1-MIC\LOA\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable untitled7.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled7.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

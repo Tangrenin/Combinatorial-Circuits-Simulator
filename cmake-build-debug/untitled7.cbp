@@ -104,6 +104,24 @@
 		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/InputGate.h">
 			<Option target="untitled7"/>
 		</Unit>
+		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NandGate.cpp">
+			<Option target="untitled7"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NandGate.h">
+			<Option target="untitled7"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NegateGate.cpp">
+			<Option target="untitled7"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NegateGate.h">
+			<Option target="untitled7"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NorGate.cpp">
+			<Option target="untitled7"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/NorGate.h">
+			<Option target="untitled7"/>
+		</Unit>
 		<Unit filename="C:/Users/user/Documents/M1-MIC/LOA/Combinatorial-Circuits-Simulator/OrGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>

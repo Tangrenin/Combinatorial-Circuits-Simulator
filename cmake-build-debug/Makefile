@@ -224,6 +224,78 @@ InputGate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/InputGate.cpp.s
 .PHONY : InputGate.cpp.s
 
+NandGate.obj: NandGate.cpp.obj
+.PHONY : NandGate.obj
+
+# target to build an object file
+NandGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NandGate.cpp.obj
+.PHONY : NandGate.cpp.obj
+
+NandGate.i: NandGate.cpp.i
+.PHONY : NandGate.i
+
+# target to preprocess a source file
+NandGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NandGate.cpp.i
+.PHONY : NandGate.cpp.i
+
+NandGate.s: NandGate.cpp.s
+.PHONY : NandGate.s
+
+# target to generate assembly for a file
+NandGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NandGate.cpp.s
+.PHONY : NandGate.cpp.s
+
+NegateGate.obj: NegateGate.cpp.obj
+.PHONY : NegateGate.obj
+
+# target to build an object file
+NegateGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NegateGate.cpp.obj
+.PHONY : NegateGate.cpp.obj
+
+NegateGate.i: NegateGate.cpp.i
+.PHONY : NegateGate.i
+
+# target to preprocess a source file
+NegateGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NegateGate.cpp.i
+.PHONY : NegateGate.cpp.i
+
+NegateGate.s: NegateGate.cpp.s
+.PHONY : NegateGate.s
+
+# target to generate assembly for a file
+NegateGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NegateGate.cpp.s
+.PHONY : NegateGate.cpp.s
+
+NorGate.obj: NorGate.cpp.obj
+.PHONY : NorGate.obj
+
+# target to build an object file
+NorGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NorGate.cpp.obj
+.PHONY : NorGate.cpp.obj
+
+NorGate.i: NorGate.cpp.i
+.PHONY : NorGate.i
+
+# target to preprocess a source file
+NorGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NorGate.cpp.i
+.PHONY : NorGate.cpp.i
+
+NorGate.s: NorGate.cpp.s
+.PHONY : NorGate.s
+
+# target to generate assembly for a file
+NorGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NorGate.cpp.s
+.PHONY : NorGate.cpp.s
+
 OrGate.obj: OrGate.cpp.obj
 .PHONY : OrGate.obj
 
@@ -365,6 +437,15 @@ help:
 	@echo ... InputGate.obj
 	@echo ... InputGate.i
 	@echo ... InputGate.s
+	@echo ... NandGate.obj
+	@echo ... NandGate.i
+	@echo ... NandGate.s
+	@echo ... NegateGate.obj
+	@echo ... NegateGate.i
+	@echo ... NegateGate.s
+	@echo ... NorGate.obj
+	@echo ... NorGate.i
+	@echo ... NorGate.s
 	@echo ... OrGate.obj
 	@echo ... OrGate.i
 	@echo ... OrGate.s
