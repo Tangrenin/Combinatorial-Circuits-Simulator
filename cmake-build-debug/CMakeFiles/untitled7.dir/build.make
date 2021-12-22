@@ -82,190 +82,190 @@ CMakeFiles/untitled7.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\main.cpp -o CMakeFiles\untitled7.dir\main.cpp.s
 
-CMakeFiles/untitled7.dir/OutputGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/OutputGate.cpp.obj: ../OutputGate.cpp
-CMakeFiles/untitled7.dir/OutputGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled7.dir/OutputGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/OutputGate.cpp.obj -MF CMakeFiles\untitled7.dir\OutputGate.cpp.obj.d -o CMakeFiles\untitled7.dir\OutputGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\OutputGate.cpp
+CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj: ../Gates/OutputGate.cpp
+CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\OutputGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\OutputGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\OutputGate.cpp
 
-CMakeFiles/untitled7.dir/OutputGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/OutputGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\OutputGate.cpp > CMakeFiles\untitled7.dir\OutputGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\OutputGate.cpp > CMakeFiles\untitled7.dir\Gates\OutputGate.cpp.i
 
-CMakeFiles/untitled7.dir/OutputGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/OutputGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\OutputGate.cpp -o CMakeFiles\untitled7.dir\OutputGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\OutputGate.cpp -o CMakeFiles\untitled7.dir\Gates\OutputGate.cpp.s
 
-CMakeFiles/untitled7.dir/InputGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/InputGate.cpp.obj: ../InputGate.cpp
-CMakeFiles/untitled7.dir/InputGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled7.dir/InputGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/InputGate.cpp.obj -MF CMakeFiles\untitled7.dir\InputGate.cpp.obj.d -o CMakeFiles\untitled7.dir\InputGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\InputGate.cpp
+CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj: ../Gates/InputGate.cpp
+CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\InputGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\InputGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\InputGate.cpp
 
-CMakeFiles/untitled7.dir/InputGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/InputGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\InputGate.cpp > CMakeFiles\untitled7.dir\InputGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/InputGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/InputGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\InputGate.cpp > CMakeFiles\untitled7.dir\Gates\InputGate.cpp.i
 
-CMakeFiles/untitled7.dir/InputGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/InputGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\InputGate.cpp -o CMakeFiles\untitled7.dir\InputGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/InputGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/InputGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\InputGate.cpp -o CMakeFiles\untitled7.dir\Gates\InputGate.cpp.s
 
-CMakeFiles/untitled7.dir/Gate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/Gate.cpp.obj: ../Gate.cpp
-CMakeFiles/untitled7.dir/Gate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled7.dir/Gate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gate.cpp.obj -MF CMakeFiles\untitled7.dir\Gate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gate.cpp
+CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj: ../Gates/Gate.cpp
+CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\Gate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\Gate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\Gate.cpp
 
-CMakeFiles/untitled7.dir/Gate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gate.cpp > CMakeFiles\untitled7.dir\Gate.cpp.i
+CMakeFiles/untitled7.dir/Gates/Gate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/Gate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\Gate.cpp > CMakeFiles\untitled7.dir\Gates\Gate.cpp.i
 
-CMakeFiles/untitled7.dir/Gate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gate.cpp -o CMakeFiles\untitled7.dir\Gate.cpp.s
+CMakeFiles/untitled7.dir/Gates/Gate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/Gate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\Gate.cpp -o CMakeFiles\untitled7.dir\Gates\Gate.cpp.s
 
-CMakeFiles/untitled7.dir/BinaryGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/BinaryGate.cpp.obj: ../BinaryGate.cpp
-CMakeFiles/untitled7.dir/BinaryGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled7.dir/BinaryGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/BinaryGate.cpp.obj -MF CMakeFiles\untitled7.dir\BinaryGate.cpp.obj.d -o CMakeFiles\untitled7.dir\BinaryGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\BinaryGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj: ../Gates/BinaryGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\BinaryGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\BinaryGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGate.cpp
 
-CMakeFiles/untitled7.dir/BinaryGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/BinaryGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\BinaryGate.cpp > CMakeFiles\untitled7.dir\BinaryGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGate.cpp > CMakeFiles\untitled7.dir\Gates\BinaryGate.cpp.i
 
-CMakeFiles/untitled7.dir/BinaryGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/BinaryGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\BinaryGate.cpp -o CMakeFiles\untitled7.dir\BinaryGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGate.cpp -o CMakeFiles\untitled7.dir\Gates\BinaryGate.cpp.s
 
-CMakeFiles/untitled7.dir/UnaryGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/UnaryGate.cpp.obj: ../UnaryGate.cpp
-CMakeFiles/untitled7.dir/UnaryGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled7.dir/UnaryGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/UnaryGate.cpp.obj -MF CMakeFiles\untitled7.dir\UnaryGate.cpp.obj.d -o CMakeFiles\untitled7.dir\UnaryGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\UnaryGate.cpp
+CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj: ../Gates/UnaryGate.cpp
+CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\UnaryGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\UnaryGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\UnaryGate.cpp
 
-CMakeFiles/untitled7.dir/UnaryGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/UnaryGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\UnaryGate.cpp > CMakeFiles\untitled7.dir\UnaryGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\UnaryGate.cpp > CMakeFiles\untitled7.dir\Gates\UnaryGate.cpp.i
 
-CMakeFiles/untitled7.dir/UnaryGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/UnaryGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\UnaryGate.cpp -o CMakeFiles\untitled7.dir\UnaryGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\UnaryGate.cpp -o CMakeFiles\untitled7.dir\Gates\UnaryGate.cpp.s
 
-CMakeFiles/untitled7.dir/AndGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/AndGate.cpp.obj: ../AndGate.cpp
-CMakeFiles/untitled7.dir/AndGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled7.dir/AndGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/AndGate.cpp.obj -MF CMakeFiles\untitled7.dir\AndGate.cpp.obj.d -o CMakeFiles\untitled7.dir\AndGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\AndGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj: ../Gates/BinaryGates/AndGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\BinaryGates\AndGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\BinaryGates\AndGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\AndGate.cpp
 
-CMakeFiles/untitled7.dir/AndGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/AndGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\AndGate.cpp > CMakeFiles\untitled7.dir\AndGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\AndGate.cpp > CMakeFiles\untitled7.dir\Gates\BinaryGates\AndGate.cpp.i
 
-CMakeFiles/untitled7.dir/AndGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/AndGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\AndGate.cpp -o CMakeFiles\untitled7.dir\AndGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\AndGate.cpp -o CMakeFiles\untitled7.dir\Gates\BinaryGates\AndGate.cpp.s
 
-CMakeFiles/untitled7.dir/OrGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/OrGate.cpp.obj: ../OrGate.cpp
-CMakeFiles/untitled7.dir/OrGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled7.dir/OrGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/OrGate.cpp.obj -MF CMakeFiles\untitled7.dir\OrGate.cpp.obj.d -o CMakeFiles\untitled7.dir\OrGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\OrGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj: ../Gates/BinaryGates/OrGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\BinaryGates\OrGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\BinaryGates\OrGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\OrGate.cpp
 
-CMakeFiles/untitled7.dir/OrGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/OrGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\OrGate.cpp > CMakeFiles\untitled7.dir\OrGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\OrGate.cpp > CMakeFiles\untitled7.dir\Gates\BinaryGates\OrGate.cpp.i
 
-CMakeFiles/untitled7.dir/OrGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/OrGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\OrGate.cpp -o CMakeFiles\untitled7.dir\OrGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\OrGate.cpp -o CMakeFiles\untitled7.dir\Gates\BinaryGates\OrGate.cpp.s
 
-CMakeFiles/untitled7.dir/XorGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/XorGate.cpp.obj: ../XorGate.cpp
-CMakeFiles/untitled7.dir/XorGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled7.dir/XorGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/XorGate.cpp.obj -MF CMakeFiles\untitled7.dir\XorGate.cpp.obj.d -o CMakeFiles\untitled7.dir\XorGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\XorGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj: ../Gates/BinaryGates/XorGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\BinaryGates\XorGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\BinaryGates\XorGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\XorGate.cpp
 
-CMakeFiles/untitled7.dir/XorGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/XorGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\XorGate.cpp > CMakeFiles\untitled7.dir\XorGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\XorGate.cpp > CMakeFiles\untitled7.dir\Gates\BinaryGates\XorGate.cpp.i
 
-CMakeFiles/untitled7.dir/XorGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/XorGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\XorGate.cpp -o CMakeFiles\untitled7.dir\XorGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\XorGate.cpp -o CMakeFiles\untitled7.dir\Gates\BinaryGates\XorGate.cpp.s
 
-CMakeFiles/untitled7.dir/NandGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/NandGate.cpp.obj: ../NandGate.cpp
-CMakeFiles/untitled7.dir/NandGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled7.dir/NandGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/NandGate.cpp.obj -MF CMakeFiles\untitled7.dir\NandGate.cpp.obj.d -o CMakeFiles\untitled7.dir\NandGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NandGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj: ../Gates/BinaryGates/NandGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\BinaryGates\NandGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\BinaryGates\NandGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\NandGate.cpp
 
-CMakeFiles/untitled7.dir/NandGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/NandGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NandGate.cpp > CMakeFiles\untitled7.dir\NandGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\NandGate.cpp > CMakeFiles\untitled7.dir\Gates\BinaryGates\NandGate.cpp.i
 
-CMakeFiles/untitled7.dir/NandGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/NandGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NandGate.cpp -o CMakeFiles\untitled7.dir\NandGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\NandGate.cpp -o CMakeFiles\untitled7.dir\Gates\BinaryGates\NandGate.cpp.s
 
-CMakeFiles/untitled7.dir/NorGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/NorGate.cpp.obj: ../NorGate.cpp
-CMakeFiles/untitled7.dir/NorGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled7.dir/NorGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/NorGate.cpp.obj -MF CMakeFiles\untitled7.dir\NorGate.cpp.obj.d -o CMakeFiles\untitled7.dir\NorGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NorGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj: ../Gates/BinaryGates/NorGate.cpp
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\BinaryGates\NorGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\BinaryGates\NorGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\NorGate.cpp
 
-CMakeFiles/untitled7.dir/NorGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/NorGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NorGate.cpp > CMakeFiles\untitled7.dir\NorGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\NorGate.cpp > CMakeFiles\untitled7.dir\Gates\BinaryGates\NorGate.cpp.i
 
-CMakeFiles/untitled7.dir/NorGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/NorGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NorGate.cpp -o CMakeFiles\untitled7.dir\NorGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\BinaryGates\NorGate.cpp -o CMakeFiles\untitled7.dir\Gates\BinaryGates\NorGate.cpp.s
 
-CMakeFiles/untitled7.dir/NegateGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
-CMakeFiles/untitled7.dir/NegateGate.cpp.obj: ../NegateGate.cpp
-CMakeFiles/untitled7.dir/NegateGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled7.dir/NegateGate.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/NegateGate.cpp.obj -MF CMakeFiles\untitled7.dir\NegateGate.cpp.obj.d -o CMakeFiles\untitled7.dir\NegateGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NegateGate.cpp
+CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj: CMakeFiles/untitled7.dir/flags.make
+CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj: ../Gates/UnaryGates/NegateGate.cpp
+CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj: CMakeFiles/untitled7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj -MF CMakeFiles\untitled7.dir\Gates\UnaryGates\NegateGate.cpp.obj.d -o CMakeFiles\untitled7.dir\Gates\UnaryGates\NegateGate.cpp.obj -c C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\UnaryGates\NegateGate.cpp
 
-CMakeFiles/untitled7.dir/NegateGate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/NegateGate.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NegateGate.cpp > CMakeFiles\untitled7.dir\NegateGate.cpp.i
+CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\UnaryGates\NegateGate.cpp > CMakeFiles\untitled7.dir\Gates\UnaryGates\NegateGate.cpp.i
 
-CMakeFiles/untitled7.dir/NegateGate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/NegateGate.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\NegateGate.cpp -o CMakeFiles\untitled7.dir\NegateGate.cpp.s
+CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator\Gates\UnaryGates\NegateGate.cpp -o CMakeFiles\untitled7.dir\Gates\UnaryGates\NegateGate.cpp.s
 
 # Object files for target untitled7
 untitled7_OBJECTS = \
 "CMakeFiles/untitled7.dir/main.cpp.obj" \
-"CMakeFiles/untitled7.dir/OutputGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/InputGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/Gate.cpp.obj" \
-"CMakeFiles/untitled7.dir/BinaryGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/UnaryGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/AndGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/OrGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/XorGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/NandGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/NorGate.cpp.obj" \
-"CMakeFiles/untitled7.dir/NegateGate.cpp.obj"
+"CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj" \
+"CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj"
 
 # External object files for target untitled7
 untitled7_EXTERNAL_OBJECTS =
 
 untitled7.exe: CMakeFiles/untitled7.dir/main.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/OutputGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/InputGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/Gate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/BinaryGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/UnaryGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/AndGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/OrGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/XorGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/NandGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/NorGate.cpp.obj
-untitled7.exe: CMakeFiles/untitled7.dir/NegateGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj
+untitled7.exe: CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj
 untitled7.exe: CMakeFiles/untitled7.dir/build.make
 untitled7.exe: CMakeFiles/untitled7.dir/linklibs.rsp
 untitled7.exe: CMakeFiles/untitled7.dir/objects1.rsp

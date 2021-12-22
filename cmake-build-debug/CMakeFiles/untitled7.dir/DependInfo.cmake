@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/AndGate.cpp" "CMakeFiles/untitled7.dir/AndGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/AndGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/BinaryGate.cpp" "CMakeFiles/untitled7.dir/BinaryGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/BinaryGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gate.cpp" "CMakeFiles/untitled7.dir/Gate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/InputGate.cpp" "CMakeFiles/untitled7.dir/InputGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/InputGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NandGate.cpp" "CMakeFiles/untitled7.dir/NandGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/NandGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NegateGate.cpp" "CMakeFiles/untitled7.dir/NegateGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/NegateGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NorGate.cpp" "CMakeFiles/untitled7.dir/NorGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/NorGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/OrGate.cpp" "CMakeFiles/untitled7.dir/OrGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/OrGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/OutputGate.cpp" "CMakeFiles/untitled7.dir/OutputGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/OutputGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/UnaryGate.cpp" "CMakeFiles/untitled7.dir/UnaryGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/UnaryGate.cpp.obj.d"
-  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/XorGate.cpp" "CMakeFiles/untitled7.dir/XorGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/XorGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGate.cpp" "CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/AndGate.cpp" "CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/NandGate.cpp" "CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/NorGate.cpp" "CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/OrGate.cpp" "CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/XorGate.cpp" "CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/Gate.cpp" "CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/InputGate.cpp" "CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/OutputGate.cpp" "CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/UnaryGate.cpp" "CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj.d"
+  "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/UnaryGates/NegateGate.cpp" "CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj.d"
   "C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/main.cpp" "CMakeFiles/untitled7.dir/main.cpp.obj" "gcc" "CMakeFiles/untitled7.dir/main.cpp.obj.d"
   )
 

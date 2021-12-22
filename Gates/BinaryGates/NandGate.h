@@ -5,7 +5,7 @@
 #ifndef UNTITLED7_NANDGATE_H
 #define UNTITLED7_NANDGATE_H
 
-#include "BinaryGate.h"
+#include "../BinaryGate.h"
 
 class NandGate : public BinaryGate{
 private:

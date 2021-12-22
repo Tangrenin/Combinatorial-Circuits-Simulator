@@ -80,70 +80,70 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/AndGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/AndGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/BinaryGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/AndGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/BinaryGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/AndGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/NandGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/NandGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/InputGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/NorGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/InputGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/NorGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NandGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/OrGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NandGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/OrGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NegateGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/XorGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NegateGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/BinaryGates/XorGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NorGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/Gate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/NorGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/Gate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/OrGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/InputGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/OrGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/InputGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/OutputGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/OutputGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/OutputGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/OutputGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/UnaryGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/UnaryGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/UnaryGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/UnaryGate.h">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/XorGate.cpp">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/UnaryGates/NegateGate.cpp">
 			<Option target="untitled7"/>
 		</Unit>
-		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/XorGate.h">
+		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/Gates/UnaryGates/NegateGate.h">
 			<Option target="untitled7"/>
 		</Unit>
 		<Unit filename="C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/main.cpp">

@@ -5,7 +5,7 @@
 #ifndef UNTITLED7_XORGATE_H
 #define UNTITLED7_XORGATE_H
 
-#include "BinaryGate.h"
+#include "../BinaryGate.h"
 
 class XorGate : public BinaryGate {
 private:

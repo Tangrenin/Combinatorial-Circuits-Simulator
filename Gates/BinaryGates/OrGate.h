@@ -5,7 +5,7 @@
 #ifndef UNTITLED7_ORGATE_H
 #define UNTITLED7_ORGATE_H
 
-#include "BinaryGate.h"
+#include "../BinaryGate.h"
 
 class OrGate : public BinaryGate {
 private:

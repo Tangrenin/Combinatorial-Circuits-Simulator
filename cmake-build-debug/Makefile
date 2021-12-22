@@ -128,269 +128,269 @@ untitled7/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/build
 .PHONY : untitled7/fast
 
-AndGate.obj: AndGate.cpp.obj
-.PHONY : AndGate.obj
+Gates/BinaryGate.obj: Gates/BinaryGate.cpp.obj
+.PHONY : Gates/BinaryGate.obj
 
 # target to build an object file
-AndGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/AndGate.cpp.obj
-.PHONY : AndGate.cpp.obj
+Gates/BinaryGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.obj
+.PHONY : Gates/BinaryGate.cpp.obj
 
-AndGate.i: AndGate.cpp.i
-.PHONY : AndGate.i
+Gates/BinaryGate.i: Gates/BinaryGate.cpp.i
+.PHONY : Gates/BinaryGate.i
 
 # target to preprocess a source file
-AndGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/AndGate.cpp.i
-.PHONY : AndGate.cpp.i
+Gates/BinaryGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.i
+.PHONY : Gates/BinaryGate.cpp.i
 
-AndGate.s: AndGate.cpp.s
-.PHONY : AndGate.s
+Gates/BinaryGate.s: Gates/BinaryGate.cpp.s
+.PHONY : Gates/BinaryGate.s
 
 # target to generate assembly for a file
-AndGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/AndGate.cpp.s
-.PHONY : AndGate.cpp.s
+Gates/BinaryGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGate.cpp.s
+.PHONY : Gates/BinaryGate.cpp.s
 
-BinaryGate.obj: BinaryGate.cpp.obj
-.PHONY : BinaryGate.obj
+Gates/BinaryGates/AndGate.obj: Gates/BinaryGates/AndGate.cpp.obj
+.PHONY : Gates/BinaryGates/AndGate.obj
 
 # target to build an object file
-BinaryGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/BinaryGate.cpp.obj
-.PHONY : BinaryGate.cpp.obj
+Gates/BinaryGates/AndGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.obj
+.PHONY : Gates/BinaryGates/AndGate.cpp.obj
 
-BinaryGate.i: BinaryGate.cpp.i
-.PHONY : BinaryGate.i
+Gates/BinaryGates/AndGate.i: Gates/BinaryGates/AndGate.cpp.i
+.PHONY : Gates/BinaryGates/AndGate.i
 
 # target to preprocess a source file
-BinaryGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/BinaryGate.cpp.i
-.PHONY : BinaryGate.cpp.i
+Gates/BinaryGates/AndGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.i
+.PHONY : Gates/BinaryGates/AndGate.cpp.i
 
-BinaryGate.s: BinaryGate.cpp.s
-.PHONY : BinaryGate.s
+Gates/BinaryGates/AndGate.s: Gates/BinaryGates/AndGate.cpp.s
+.PHONY : Gates/BinaryGates/AndGate.s
 
 # target to generate assembly for a file
-BinaryGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/BinaryGate.cpp.s
-.PHONY : BinaryGate.cpp.s
+Gates/BinaryGates/AndGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/AndGate.cpp.s
+.PHONY : Gates/BinaryGates/AndGate.cpp.s
 
-Gate.obj: Gate.cpp.obj
-.PHONY : Gate.obj
+Gates/BinaryGates/NandGate.obj: Gates/BinaryGates/NandGate.cpp.obj
+.PHONY : Gates/BinaryGates/NandGate.obj
 
 # target to build an object file
-Gate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gate.cpp.obj
-.PHONY : Gate.cpp.obj
+Gates/BinaryGates/NandGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.obj
+.PHONY : Gates/BinaryGates/NandGate.cpp.obj
 
-Gate.i: Gate.cpp.i
-.PHONY : Gate.i
+Gates/BinaryGates/NandGate.i: Gates/BinaryGates/NandGate.cpp.i
+.PHONY : Gates/BinaryGates/NandGate.i
 
 # target to preprocess a source file
-Gate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gate.cpp.i
-.PHONY : Gate.cpp.i
+Gates/BinaryGates/NandGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.i
+.PHONY : Gates/BinaryGates/NandGate.cpp.i
 
-Gate.s: Gate.cpp.s
-.PHONY : Gate.s
+Gates/BinaryGates/NandGate.s: Gates/BinaryGates/NandGate.cpp.s
+.PHONY : Gates/BinaryGates/NandGate.s
 
 # target to generate assembly for a file
-Gate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gate.cpp.s
-.PHONY : Gate.cpp.s
+Gates/BinaryGates/NandGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/NandGate.cpp.s
+.PHONY : Gates/BinaryGates/NandGate.cpp.s
 
-InputGate.obj: InputGate.cpp.obj
-.PHONY : InputGate.obj
+Gates/BinaryGates/NorGate.obj: Gates/BinaryGates/NorGate.cpp.obj
+.PHONY : Gates/BinaryGates/NorGate.obj
 
 # target to build an object file
-InputGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/InputGate.cpp.obj
-.PHONY : InputGate.cpp.obj
+Gates/BinaryGates/NorGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.obj
+.PHONY : Gates/BinaryGates/NorGate.cpp.obj
 
-InputGate.i: InputGate.cpp.i
-.PHONY : InputGate.i
+Gates/BinaryGates/NorGate.i: Gates/BinaryGates/NorGate.cpp.i
+.PHONY : Gates/BinaryGates/NorGate.i
 
 # target to preprocess a source file
-InputGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/InputGate.cpp.i
-.PHONY : InputGate.cpp.i
+Gates/BinaryGates/NorGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.i
+.PHONY : Gates/BinaryGates/NorGate.cpp.i
 
-InputGate.s: InputGate.cpp.s
-.PHONY : InputGate.s
+Gates/BinaryGates/NorGate.s: Gates/BinaryGates/NorGate.cpp.s
+.PHONY : Gates/BinaryGates/NorGate.s
 
 # target to generate assembly for a file
-InputGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/InputGate.cpp.s
-.PHONY : InputGate.cpp.s
+Gates/BinaryGates/NorGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/NorGate.cpp.s
+.PHONY : Gates/BinaryGates/NorGate.cpp.s
 
-NandGate.obj: NandGate.cpp.obj
-.PHONY : NandGate.obj
+Gates/BinaryGates/OrGate.obj: Gates/BinaryGates/OrGate.cpp.obj
+.PHONY : Gates/BinaryGates/OrGate.obj
 
 # target to build an object file
-NandGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NandGate.cpp.obj
-.PHONY : NandGate.cpp.obj
+Gates/BinaryGates/OrGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.obj
+.PHONY : Gates/BinaryGates/OrGate.cpp.obj
 
-NandGate.i: NandGate.cpp.i
-.PHONY : NandGate.i
+Gates/BinaryGates/OrGate.i: Gates/BinaryGates/OrGate.cpp.i
+.PHONY : Gates/BinaryGates/OrGate.i
 
 # target to preprocess a source file
-NandGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NandGate.cpp.i
-.PHONY : NandGate.cpp.i
+Gates/BinaryGates/OrGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.i
+.PHONY : Gates/BinaryGates/OrGate.cpp.i
 
-NandGate.s: NandGate.cpp.s
-.PHONY : NandGate.s
+Gates/BinaryGates/OrGate.s: Gates/BinaryGates/OrGate.cpp.s
+.PHONY : Gates/BinaryGates/OrGate.s
 
 # target to generate assembly for a file
-NandGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NandGate.cpp.s
-.PHONY : NandGate.cpp.s
+Gates/BinaryGates/OrGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/OrGate.cpp.s
+.PHONY : Gates/BinaryGates/OrGate.cpp.s
 
-NegateGate.obj: NegateGate.cpp.obj
-.PHONY : NegateGate.obj
+Gates/BinaryGates/XorGate.obj: Gates/BinaryGates/XorGate.cpp.obj
+.PHONY : Gates/BinaryGates/XorGate.obj
 
 # target to build an object file
-NegateGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NegateGate.cpp.obj
-.PHONY : NegateGate.cpp.obj
+Gates/BinaryGates/XorGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.obj
+.PHONY : Gates/BinaryGates/XorGate.cpp.obj
 
-NegateGate.i: NegateGate.cpp.i
-.PHONY : NegateGate.i
+Gates/BinaryGates/XorGate.i: Gates/BinaryGates/XorGate.cpp.i
+.PHONY : Gates/BinaryGates/XorGate.i
 
 # target to preprocess a source file
-NegateGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NegateGate.cpp.i
-.PHONY : NegateGate.cpp.i
+Gates/BinaryGates/XorGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.i
+.PHONY : Gates/BinaryGates/XorGate.cpp.i
 
-NegateGate.s: NegateGate.cpp.s
-.PHONY : NegateGate.s
+Gates/BinaryGates/XorGate.s: Gates/BinaryGates/XorGate.cpp.s
+.PHONY : Gates/BinaryGates/XorGate.s
 
 # target to generate assembly for a file
-NegateGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NegateGate.cpp.s
-.PHONY : NegateGate.cpp.s
+Gates/BinaryGates/XorGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/BinaryGates/XorGate.cpp.s
+.PHONY : Gates/BinaryGates/XorGate.cpp.s
 
-NorGate.obj: NorGate.cpp.obj
-.PHONY : NorGate.obj
+Gates/Gate.obj: Gates/Gate.cpp.obj
+.PHONY : Gates/Gate.obj
 
 # target to build an object file
-NorGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NorGate.cpp.obj
-.PHONY : NorGate.cpp.obj
+Gates/Gate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/Gate.cpp.obj
+.PHONY : Gates/Gate.cpp.obj
 
-NorGate.i: NorGate.cpp.i
-.PHONY : NorGate.i
+Gates/Gate.i: Gates/Gate.cpp.i
+.PHONY : Gates/Gate.i
 
 # target to preprocess a source file
-NorGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NorGate.cpp.i
-.PHONY : NorGate.cpp.i
+Gates/Gate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/Gate.cpp.i
+.PHONY : Gates/Gate.cpp.i
 
-NorGate.s: NorGate.cpp.s
-.PHONY : NorGate.s
+Gates/Gate.s: Gates/Gate.cpp.s
+.PHONY : Gates/Gate.s
 
 # target to generate assembly for a file
-NorGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/NorGate.cpp.s
-.PHONY : NorGate.cpp.s
+Gates/Gate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/Gate.cpp.s
+.PHONY : Gates/Gate.cpp.s
 
-OrGate.obj: OrGate.cpp.obj
-.PHONY : OrGate.obj
+Gates/InputGate.obj: Gates/InputGate.cpp.obj
+.PHONY : Gates/InputGate.obj
 
 # target to build an object file
-OrGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/OrGate.cpp.obj
-.PHONY : OrGate.cpp.obj
+Gates/InputGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/InputGate.cpp.obj
+.PHONY : Gates/InputGate.cpp.obj
 
-OrGate.i: OrGate.cpp.i
-.PHONY : OrGate.i
+Gates/InputGate.i: Gates/InputGate.cpp.i
+.PHONY : Gates/InputGate.i
 
 # target to preprocess a source file
-OrGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/OrGate.cpp.i
-.PHONY : OrGate.cpp.i
+Gates/InputGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/InputGate.cpp.i
+.PHONY : Gates/InputGate.cpp.i
 
-OrGate.s: OrGate.cpp.s
-.PHONY : OrGate.s
+Gates/InputGate.s: Gates/InputGate.cpp.s
+.PHONY : Gates/InputGate.s
 
 # target to generate assembly for a file
-OrGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/OrGate.cpp.s
-.PHONY : OrGate.cpp.s
+Gates/InputGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/InputGate.cpp.s
+.PHONY : Gates/InputGate.cpp.s
 
-OutputGate.obj: OutputGate.cpp.obj
-.PHONY : OutputGate.obj
+Gates/OutputGate.obj: Gates/OutputGate.cpp.obj
+.PHONY : Gates/OutputGate.obj
 
 # target to build an object file
-OutputGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/OutputGate.cpp.obj
-.PHONY : OutputGate.cpp.obj
+Gates/OutputGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.obj
+.PHONY : Gates/OutputGate.cpp.obj
 
-OutputGate.i: OutputGate.cpp.i
-.PHONY : OutputGate.i
+Gates/OutputGate.i: Gates/OutputGate.cpp.i
+.PHONY : Gates/OutputGate.i
 
 # target to preprocess a source file
-OutputGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/OutputGate.cpp.i
-.PHONY : OutputGate.cpp.i
+Gates/OutputGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.i
+.PHONY : Gates/OutputGate.cpp.i
 
-OutputGate.s: OutputGate.cpp.s
-.PHONY : OutputGate.s
+Gates/OutputGate.s: Gates/OutputGate.cpp.s
+.PHONY : Gates/OutputGate.s
 
 # target to generate assembly for a file
-OutputGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/OutputGate.cpp.s
-.PHONY : OutputGate.cpp.s
+Gates/OutputGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/OutputGate.cpp.s
+.PHONY : Gates/OutputGate.cpp.s
 
-UnaryGate.obj: UnaryGate.cpp.obj
-.PHONY : UnaryGate.obj
+Gates/UnaryGate.obj: Gates/UnaryGate.cpp.obj
+.PHONY : Gates/UnaryGate.obj
 
 # target to build an object file
-UnaryGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/UnaryGate.cpp.obj
-.PHONY : UnaryGate.cpp.obj
+Gates/UnaryGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.obj
+.PHONY : Gates/UnaryGate.cpp.obj
 
-UnaryGate.i: UnaryGate.cpp.i
-.PHONY : UnaryGate.i
+Gates/UnaryGate.i: Gates/UnaryGate.cpp.i
+.PHONY : Gates/UnaryGate.i
 
 # target to preprocess a source file
-UnaryGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/UnaryGate.cpp.i
-.PHONY : UnaryGate.cpp.i
+Gates/UnaryGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.i
+.PHONY : Gates/UnaryGate.cpp.i
 
-UnaryGate.s: UnaryGate.cpp.s
-.PHONY : UnaryGate.s
+Gates/UnaryGate.s: Gates/UnaryGate.cpp.s
+.PHONY : Gates/UnaryGate.s
 
 # target to generate assembly for a file
-UnaryGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/UnaryGate.cpp.s
-.PHONY : UnaryGate.cpp.s
+Gates/UnaryGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/UnaryGate.cpp.s
+.PHONY : Gates/UnaryGate.cpp.s
 
-XorGate.obj: XorGate.cpp.obj
-.PHONY : XorGate.obj
+Gates/UnaryGates/NegateGate.obj: Gates/UnaryGates/NegateGate.cpp.obj
+.PHONY : Gates/UnaryGates/NegateGate.obj
 
 # target to build an object file
-XorGate.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/XorGate.cpp.obj
-.PHONY : XorGate.cpp.obj
+Gates/UnaryGates/NegateGate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.obj
+.PHONY : Gates/UnaryGates/NegateGate.cpp.obj
 
-XorGate.i: XorGate.cpp.i
-.PHONY : XorGate.i
+Gates/UnaryGates/NegateGate.i: Gates/UnaryGates/NegateGate.cpp.i
+.PHONY : Gates/UnaryGates/NegateGate.i
 
 # target to preprocess a source file
-XorGate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/XorGate.cpp.i
-.PHONY : XorGate.cpp.i
+Gates/UnaryGates/NegateGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.i
+.PHONY : Gates/UnaryGates/NegateGate.cpp.i
 
-XorGate.s: XorGate.cpp.s
-.PHONY : XorGate.s
+Gates/UnaryGates/NegateGate.s: Gates/UnaryGates/NegateGate.cpp.s
+.PHONY : Gates/UnaryGates/NegateGate.s
 
 # target to generate assembly for a file
-XorGate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/XorGate.cpp.s
-.PHONY : XorGate.cpp.s
+Gates/UnaryGates/NegateGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled7.dir\build.make CMakeFiles/untitled7.dir/Gates/UnaryGates/NegateGate.cpp.s
+.PHONY : Gates/UnaryGates/NegateGate.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -425,39 +425,39 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled7
-	@echo ... AndGate.obj
-	@echo ... AndGate.i
-	@echo ... AndGate.s
-	@echo ... BinaryGate.obj
-	@echo ... BinaryGate.i
-	@echo ... BinaryGate.s
-	@echo ... Gate.obj
-	@echo ... Gate.i
-	@echo ... Gate.s
-	@echo ... InputGate.obj
-	@echo ... InputGate.i
-	@echo ... InputGate.s
-	@echo ... NandGate.obj
-	@echo ... NandGate.i
-	@echo ... NandGate.s
-	@echo ... NegateGate.obj
-	@echo ... NegateGate.i
-	@echo ... NegateGate.s
-	@echo ... NorGate.obj
-	@echo ... NorGate.i
-	@echo ... NorGate.s
-	@echo ... OrGate.obj
-	@echo ... OrGate.i
-	@echo ... OrGate.s
-	@echo ... OutputGate.obj
-	@echo ... OutputGate.i
-	@echo ... OutputGate.s
-	@echo ... UnaryGate.obj
-	@echo ... UnaryGate.i
-	@echo ... UnaryGate.s
-	@echo ... XorGate.obj
-	@echo ... XorGate.i
-	@echo ... XorGate.s
+	@echo ... Gates/BinaryGate.obj
+	@echo ... Gates/BinaryGate.i
+	@echo ... Gates/BinaryGate.s
+	@echo ... Gates/BinaryGates/AndGate.obj
+	@echo ... Gates/BinaryGates/AndGate.i
+	@echo ... Gates/BinaryGates/AndGate.s
+	@echo ... Gates/BinaryGates/NandGate.obj
+	@echo ... Gates/BinaryGates/NandGate.i
+	@echo ... Gates/BinaryGates/NandGate.s
+	@echo ... Gates/BinaryGates/NorGate.obj
+	@echo ... Gates/BinaryGates/NorGate.i
+	@echo ... Gates/BinaryGates/NorGate.s
+	@echo ... Gates/BinaryGates/OrGate.obj
+	@echo ... Gates/BinaryGates/OrGate.i
+	@echo ... Gates/BinaryGates/OrGate.s
+	@echo ... Gates/BinaryGates/XorGate.obj
+	@echo ... Gates/BinaryGates/XorGate.i
+	@echo ... Gates/BinaryGates/XorGate.s
+	@echo ... Gates/Gate.obj
+	@echo ... Gates/Gate.i
+	@echo ... Gates/Gate.s
+	@echo ... Gates/InputGate.obj
+	@echo ... Gates/InputGate.i
+	@echo ... Gates/InputGate.s
+	@echo ... Gates/OutputGate.obj
+	@echo ... Gates/OutputGate.i
+	@echo ... Gates/OutputGate.s
+	@echo ... Gates/UnaryGate.obj
+	@echo ... Gates/UnaryGate.i
+	@echo ... Gates/UnaryGate.s
+	@echo ... Gates/UnaryGates/NegateGate.obj
+	@echo ... Gates/UnaryGates/NegateGate.i
+	@echo ... Gates/UnaryGates/NegateGate.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

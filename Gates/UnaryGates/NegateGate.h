@@ -5,7 +5,7 @@
 #ifndef UNTITLED7_NEGATEGATE_H
 #define UNTITLED7_NEGATEGATE_H
 
-#include "UnaryGate.h"
+#include "../UnaryGate.h"
 
 class NegateGate : public UnaryGate {
 private:

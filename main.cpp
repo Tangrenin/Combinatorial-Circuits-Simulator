@@ -1,10 +1,10 @@
 #include <iostream>
-#include "InputGate.h"
-#include "OrGate.h"
-#include "XorGate.h"
-#include "AndGate.h"
-#include "NegateGate.h"
-#include "NandGate.h"
+#include "Gates/InputGate.h"
+#include "Gates/BinaryGates/OrGate.h"
+#include "Gates/BinaryGates/XorGate.h"
+#include "Gates/BinaryGates/AndGate.h"
+#include "Gates/UnaryGates/NegateGate.h"
+#include "Gates/BinaryGates/NandGate.h"
 
 using namespace std;
 
