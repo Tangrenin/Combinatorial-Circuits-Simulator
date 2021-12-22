@@ -1,4 +1,0 @@
-C:\Users\quent\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\quent\CLionProjects\Combinatorial-Circuits-Simulator
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/quent/CLionProjects/Combinatorial-Circuits-Simulator/cmake-build-debug
