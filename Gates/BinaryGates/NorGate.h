@@ -13,7 +13,8 @@ public:
     NorGate(Gate* left, Gate* right);
     void afficher() override;
     int calculer() override;
+    void showExpression() override;
 };
-
+std::ostream& operator<<(std::ostream& out, const NorGate *x);
 
 #endif //UNTITLED7_NORGATE_H

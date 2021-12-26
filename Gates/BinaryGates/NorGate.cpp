@@ -20,3 +20,12 @@ void NorGate::afficher() {
 int NorGate::calculer() {
     return not(g_left->calculer()) or not(g_right->calculer());
 }
+
+void NorGate::showExpression() {
+    cout<<"NOR";
+}
+
+ostream& operator<<(ostream& out, const NorGate * g){
+    out << "NOR";
+    return out;
+}

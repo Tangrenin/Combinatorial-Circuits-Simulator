@@ -10,15 +10,22 @@
 class InputGate : public Gate {
 private:
     int value = 0;
+    int profondeur = 0;
     char const input;
 public:
-    InputGate(char input);
+    explicit InputGate(char input);
+
     char getInput() const;
     int getValue() const;
+    int getProfondeur() const override;
+    std::string getType()const override;
 
     void afficher() override;
     int calculer() override;
-};
+    void showExpression() override;
 
+    std::vector<std::vector<Gate*>>  empileGates() override;
+};
+std::ostream& operator<<(std::ostream& out, const InputGate *x);
 
 #endif //UNTITLED7_INPUTGATE_H

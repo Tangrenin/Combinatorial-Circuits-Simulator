@@ -20,3 +20,12 @@ void NandGate::afficher() {
 int NandGate::calculer() {
     return not(g_left->calculer()) and not(g_right->calculer());
 }
+
+void NandGate::showExpression() {
+    cout<<"NAND";
+}
+
+ostream& operator<<(ostream& out, const NandGate * g){
+    out << "NAND";
+    return out;
+}

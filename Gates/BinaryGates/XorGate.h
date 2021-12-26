@@ -13,7 +13,8 @@ public:
     XorGate(Gate* left, Gate* right);
     void afficher() override;
     int calculer() override;
+    void showExpression() override;
 };
-
+std::ostream& operator<<(std::ostream& out, const XorGate *x);
 
 #endif //UNTITLED7_XORGATE_H

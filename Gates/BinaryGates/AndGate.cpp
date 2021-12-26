@@ -19,3 +19,12 @@ void AndGate::afficher() {
 int AndGate::calculer() {
     return g_left->calculer() and g_right->calculer();
 }
+
+void AndGate::showExpression() {
+    cout<<"AND";
+}
+
+ostream& operator<<(ostream& out, const AndGate * g){
+    out << "AND";
+    return out;
+}

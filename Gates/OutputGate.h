@@ -7,18 +7,23 @@
 
 #include "Gate.h"
 #include <string>
+#include <vector>
 
 class OutputGate {
 private:
+    std::vector<std::vector<Gate*>> g_pile;
     Gate* g_main;
     std::string const g_main_text;
 public:
-    OutputGate(Gate* main);
+    explicit OutputGate(Gate* main);
     OutputGate(std::string mainText);
     Gate* getMainGate();
     std::string getMainText();
+    void textToGatePile();
+    std::vector<std::vector<Gate*>> getPile();
     void afficher();
     int calculer();
+
 };
 
 

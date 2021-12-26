@@ -21,3 +21,12 @@ void XorGate::afficher() {
 int XorGate::calculer() {
     return g_left->calculer() xor g_right->calculer();
 }
+
+void XorGate::showExpression() {
+     cout << "XOR";
+}
+
+ostream& operator<<(ostream& out, const XorGate * g){
+    out << "XOR";
+    return out;
+}

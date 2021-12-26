@@ -6,6 +6,7 @@
 #define UNTITLED7_BINARYGATE_H
 
 #include "Gate.h"
+#include <string>
 
 class BinaryGate : public Gate{
 protected:
@@ -14,10 +15,13 @@ protected:
 
 public:
     BinaryGate(Gate* left, Gate* right);
-    //virtual int calculer()=0;
-    Gate* getGateRight() const;
-    Gate* getGateLeft() const;
-    //void afficher() override =0;
+
+    Gate* getGateRight() const ;
+    Gate* getGateLeft() const ;
+    int getProfondeur() const override;
+    std::string getType() const override;
+
+    std::vector<std::vector<Gate*>>  empileGates() override;
 };
 
 

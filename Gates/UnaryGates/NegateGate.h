@@ -13,7 +13,8 @@ public:
     NegateGate(Gate* main);
     void afficher() override;
     int calculer() override;
+    void showExpression() override;
 };
-
+std::ostream& operator<<(std::ostream& out, const NegateGate *x);
 
 #endif //UNTITLED7_NEGATEGATE_H

@@ -18,3 +18,7 @@ void NegateGate::afficher() {
 int NegateGate::calculer() {
     return not g_main->calculer();
 }
+
+void NegateGate::showExpression() {
+    cout << "NEGATE";
+}

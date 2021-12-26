@@ -13,7 +13,9 @@ public:
     AndGate(Gate* left, Gate* right);
     void afficher() override;
     int calculer() override;
+    void showExpression() override;
 };
+std::ostream& operator<<(std::ostream& out, const AndGate *x);
 
 
 #endif //UNTITLED7_ANDGATE_H

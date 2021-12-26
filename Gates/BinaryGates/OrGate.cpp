@@ -19,3 +19,12 @@ void OrGate::afficher() {
 int OrGate::calculer() {
     return g_left->calculer() or g_right->calculer();
 }
+
+void OrGate::showExpression() {
+    cout<<"OR";
+}
+
+ostream& operator<<(ostream& out, const OrGate * g){
+    out << "OR";
+    return out;
+}

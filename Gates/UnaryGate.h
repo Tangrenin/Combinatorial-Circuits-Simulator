@@ -6,13 +6,18 @@
 #define UNTITLED7_UNARYGATE_H
 
 #include "Gate.h"
+#include <string>
 
 class UnaryGate : public Gate {
 protected:
     Gate* g_main;
 public:
-    UnaryGate(Gate* main);
-    Gate* getGate();
+    explicit UnaryGate(Gate* main);
+    int getProfondeur() const override;
+    Gate* getGate() const;
+    std::string getType() const override;
+
+    std::vector<std::vector<Gate*>>  empileGates() override;
 };
 
 
