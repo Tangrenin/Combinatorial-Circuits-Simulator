@@ -6,7 +6,8 @@
 #include <iostream>
 
 using namespace std;
-InputGate::InputGate(char inputG): input(inputG) {}
+InputGate::InputGate(char inputG, bool value): input(inputG), value(value) {}
+
 
 char InputGate::getInput() const {
     return input;
@@ -15,6 +16,11 @@ char InputGate::getInput() const {
 int InputGate::getValue() const {
     return value;
 }
+
+void InputGate::setValue(bool newValue) {
+    value = newValue;
+}
+
 
 void InputGate::afficher() {
     cout <<input;
@@ -34,7 +40,7 @@ std::string InputGate::getType() const {
 }
 
 void InputGate::showExpression() {
-    cout <<" "<<this->getInput()<<" ";
+    cout <<this->getInput()<<":"<<this->getValue();
 }
 
 std::vector<std::vector<Gate *>> InputGate::empileGates() {

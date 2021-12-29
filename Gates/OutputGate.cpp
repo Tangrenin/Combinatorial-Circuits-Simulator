@@ -72,6 +72,28 @@ void OutputGate::showOutput() const {
             g_pile[i][j]->showLigne();
             cout << string(espace_milieu,' ');
         }
+        cout<<endl;
+        if (i!=g_pile.size()-1) {
+            cout << string(debut_ligne + 1, ' ');
+            if (g_pile[i].size()==1){
+                cout << string((espace_milieu / 2) + 3, '*') <<endl;
+                cout << string(debut_ligne + 2 * i + 3, ' ');
+                cout<< '|';
+            }else {
+                for (int k = 0; k < g_pile[i].size() / 2; k++) {
+                    cout << string((espace_milieu / 2) + 2, '*');
+                    cout << string(1, ' ');
+                    cout << string((espace_milieu / 2) + 2, '*');
+                    cout << string(espace_milieu + 2, ' ');
+                }
+                cout << endl;
+                for (int k = 0; k < g_pile[i].size() / 2; k++) {
+                    cout << string(debut_ligne + 2 * i + 3, ' ');
+                    cout << "|";
+                    cout << string(espace_milieu + 3, ' ');
+                }
+            }
+        }
         debut_ligne+=2*i+2;
         espace_milieu=debut_ligne+3;
         cout << endl;

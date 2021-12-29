@@ -18,7 +18,7 @@ void NandGate::afficher() {
 }
 
 int NandGate::calculer() {
-    return not(g_left->calculer()) and not(g_right->calculer());
+    return not((g_left->calculer()) and (g_right->calculer()));
 }
 
 void NandGate::showExpression() {

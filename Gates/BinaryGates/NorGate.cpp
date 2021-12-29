@@ -18,7 +18,7 @@ void NorGate::afficher() {
 }
 
 int NorGate::calculer() {
-    return not(g_left->calculer()) or not(g_right->calculer());
+    return not((g_left->calculer()) or (g_right->calculer()));
 }
 
 void NorGate::showExpression() {

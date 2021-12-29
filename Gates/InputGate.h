@@ -13,10 +13,11 @@ private:
     int profondeur = 0;
     char const input;
 public:
-    explicit InputGate(char input);
+    InputGate(char input, bool value = 0);
 
     char getInput() const;
     int getValue() const;
+    void setValue(bool newValue);
     int getProfondeur() const override;
     std::string getType()const override;
 
