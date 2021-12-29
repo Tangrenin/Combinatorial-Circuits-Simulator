@@ -16,7 +16,7 @@ public:
     int getProfondeur() const override;
     Gate* getGate() const;
     std::string getType() const override;
-
+    void showLigne() override;
     std::vector<std::vector<Gate*>>  empileGates() override;
 };
 

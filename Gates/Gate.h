@@ -16,6 +16,7 @@ public:
     virtual std::string getType() const=0;
 
     virtual void afficher()=0;
+    virtual void showLigne()=0;
     virtual int calculer()=0;
     virtual void showExpression()=0;
 

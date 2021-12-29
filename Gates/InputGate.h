@@ -23,6 +23,7 @@ public:
     void afficher() override;
     int calculer() override;
     void showExpression() override;
+    void showLigne() override;
 
     std::vector<std::vector<Gate*>>  empileGates() override;
 };

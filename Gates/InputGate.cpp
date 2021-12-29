@@ -34,7 +34,7 @@ std::string InputGate::getType() const {
 }
 
 void InputGate::showExpression() {
-    cout << this->getInput();
+    cout <<" "<<this->getInput()<<" ";
 }
 
 std::vector<std::vector<Gate *>> InputGate::empileGates() {
@@ -43,6 +43,10 @@ std::vector<std::vector<Gate *>> InputGate::empileGates() {
     sous_pile.push_back(this);
     g_pile.push_back(sous_pile);
     return g_pile;
+}
+
+void InputGate::showLigne() {
+    cout <<" | ";
 }
 
 ostream& operator<<(ostream& out, const InputGate * g){

@@ -17,20 +17,13 @@ int main() {
     Gate * and1 = new AndGate (a , b ) ;
     Gate * and2 = new XorGate ( or1 , and1 ) ;
     OutputGate * A = new OutputGate ( and2 ) ;
+    OutputGate * A_bis = new OutputGate ("xor(or(a,b),and(a,b)");
     cout << "A = ";
     A->afficher();
-    for(int i=0;i<A->getPile().size();i++)
-    {
-        for(int j =0;j<A->getPile()[i].size();j++)
-        {
-            (A->getPile()[i][j]->showExpression());
-            cout <<",";
-        }
-        cout <<endl;
-    }
-
+    A->showOutput();
     cout << "Value : " << A->calculer() << endl;
 
+    A_bis->textToGatePile();
     //Test 2
     cout << "****************Test 2***************" << endl;
     InputGate * c = new InputGate ( 'c') ;
@@ -41,15 +34,7 @@ int main() {
     B->afficher();
     cout << "Value : " << B->calculer() << endl;
 
-    for(int i=0;i<B->getPile().size();i++)
-    {
-        for(int j =0;j<B->getPile()[i].size();j++)
-        {
-            (B->getPile()[i][j]->showExpression());
-            cout <<",";
-        }
-        cout <<endl;
-    }
+    B->showOutput();
     //Test 3
     cout << "****************Test 3***************" << endl;
     Gate * nand1 = new NandGate (a,b ) ;
@@ -76,16 +61,23 @@ int main() {
     OutputGate * D = new OutputGate ( negate2 ) ;
     cout << "D = ";
     D->afficher();
-    for(int i=0;i<D->getPile().size();i++)
-    {
-        for(int j =0;j<D->getPile()[i].size();j++)
-        {
-            (D->getPile()[i][j]->showExpression());
-            cout <<",";
-        }
-        cout <<endl;
-    }
+    D->showOutput();
 
+    cout << "****************Test 5***************" << endl;
+    InputGate * a1 = new InputGate ( 'a') ;
+    InputGate * b1 = new InputGate ( 'b') ;
+    InputGate * c1 = new InputGate ( 'c') ;
+    InputGate * d1 = new InputGate ( 'd') ;
+    Gate * or5 = new OrGate (a1 , b1 ) ;
+    Gate * xor1 = new XorGate ( c1 , or5 ) ;
+    Gate * or6 = new OrGate (d1 , xor1 ) ;
+
+    OutputGate * E = new OutputGate ( or6 ) ;
+    cout << "E = ";
+    E->afficher();
+    E->showOutput();
+
+    cout << "Value : " << E->calculer() << endl;
 
     return 0;
 }

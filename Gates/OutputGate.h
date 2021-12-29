@@ -16,11 +16,12 @@ private:
     std::string const g_main_text;
 public:
     explicit OutputGate(Gate* main);
-    OutputGate(std::string mainText);
+    explicit OutputGate(std::string mainText);
     Gate* getMainGate();
     std::string getMainText();
     void textToGatePile();
     std::vector<std::vector<Gate*>> getPile();
+    void showOutput() const;
     void afficher();
     int calculer();
 

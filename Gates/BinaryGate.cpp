@@ -30,26 +30,24 @@ int BinaryGate::getProfondeur() const {
 
 std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
 
-    vector<vector<Gate*>> g_pile;
+    vector<vector<Gate*>> g_pile, pile_bis;
     queue<Gate *> g_queue;
     vector<Gate*> sous_pile;
-    vector<vector<Gate*>> pile_bis;
 
 
     g_queue.push(this);
 
-    int i = g_queue.front()->getProfondeur()+1;
+    int i = g_queue.front()->getProfondeur();
     sous_pile.push_back(g_queue.front());
+    pile_bis.push_back(sous_pile);
+    sous_pile.clear();
+
+    Gate* currentGate = g_queue.front();
 
     while(i>0){
-        Gate*currentGate = g_queue.front();
-        if (i>currentGate->getProfondeur()) {
-            i=currentGate->getProfondeur();
-            pile_bis.push_back(sous_pile);
-            sous_pile.clear();
-        }
+
         if (currentGate->getType()=="binary"){
-            if((((BinaryGate*)(currentGate))->getGateRight()->getProfondeur())>(((BinaryGate*)(currentGate))->getProfondeur())){
+            if((((BinaryGate*)(currentGate))->getGateRight()->getProfondeur())>(((BinaryGate*)(currentGate))->getGateLeft()->getProfondeur())){
                 g_queue.push(((BinaryGate*)(currentGate))->getGateRight());
                 sous_pile.push_back(g_queue.back());
                 g_queue.push(((BinaryGate*)(currentGate))->getGateLeft());
@@ -65,7 +63,17 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
             g_queue.push(((UnaryGate*)(currentGate))->getGate());
             sous_pile.push_back(g_queue.back());
         }
-        g_queue.pop();
+
+        do  {
+            g_queue.pop();
+            currentGate = g_queue.front();
+        }while(currentGate->getProfondeur() == 0 && (g_queue.size()>1));
+
+        if (i!=currentGate->getProfondeur()){
+            i=currentGate->getProfondeur();
+            pile_bis.push_back(sous_pile);
+            sous_pile.clear();
+        }
     }
 
     for( int i=pile_bis.size()-1;i>=0;i--)
@@ -73,6 +81,10 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
         g_pile.push_back(pile_bis[i]);
     }
     return g_pile;
+}
+
+void BinaryGate::showLigne() {
+    cout << " | ";
 }
 
 

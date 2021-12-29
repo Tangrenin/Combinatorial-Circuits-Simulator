@@ -22,7 +22,7 @@ int NandGate::calculer() {
 }
 
 void NandGate::showExpression() {
-    cout<<"NAND";
+    cout<<"NAN";
 }
 
 ostream& operator<<(ostream& out, const NandGate * g){

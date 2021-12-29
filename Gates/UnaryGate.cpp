@@ -4,6 +4,7 @@
 
 #include "UnaryGate.h"
 #include <queue>
+#include "iostream"
 
 using namespace std;
 
@@ -58,4 +59,8 @@ std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
         g_pile.push_back(pile_bis[i]);
     }
     return g_pile;
+}
+
+void UnaryGate::showLigne() {
+    cout << " | ";
 }
