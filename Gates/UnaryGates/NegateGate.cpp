@@ -20,5 +20,5 @@ int NegateGate::calculer() {
 }
 
 void NegateGate::showExpression() {
-    cout << "NE";
+    cout << "NE_";
 }

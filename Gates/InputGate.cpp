@@ -39,7 +39,7 @@ int InputGate::getProfondeur() const {
     return profondeur;
 }
 
-std::string InputGate::getType() const {
+string InputGate::getType() const {
     return "input";
 }
 

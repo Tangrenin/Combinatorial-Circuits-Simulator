@@ -33,7 +33,7 @@ vector<vector<Gate *>> OutputGate::getPile() {
     return g_pile;
 }
 
-// Fonction bizarre et inutile
+// Brouillon fonction de création de circuit à partir du texte
 //void OutputGate::textToGatePile() {
 //    string inputCopy = g_main_text;
 //    vector<vector<string>> gates_text;
@@ -52,18 +52,21 @@ vector<vector<Gate *>> OutputGate::getPile() {
 //}
 
 void OutputGate::showOutput() const {
+    /*
+     * Affichage graphique du circuit
+     * */
     int debut_ligne = 0;
     int espace_milieu = 1;
     for (int i = 0; i < g_pile.size(); i++) {
         cout << string(debut_ligne, ' ');
-        for (int j = 0; j < g_pile[i].size(); j++) {
-            g_pile[i][j]->showExpression();
+        for (auto gate : g_pile[i]) {
+            gate->showExpression();
             cout << string(espace_milieu, ' ');
         }
         cout << endl;
         cout << string(debut_ligne, ' ');
-        for (int j = 0; j < g_pile[i].size(); j++) {
-            g_pile[i][j]->showLigne();
+        for (auto gate : g_pile[i]) {
+            gate->showLigne();
             cout << string(espace_milieu, ' ');
         }
         cout << endl;
@@ -73,7 +76,8 @@ void OutputGate::showOutput() const {
                 cout << string((espace_milieu / 2) + 3, '*') << endl;
                 cout << string(debut_ligne + 2 * i + 3, ' ');
                 cout << '|';
-            } else {
+            }
+            else {
                 for (int k = 0; k < g_pile[i].size() / 2; k++) {
                     cout << string((espace_milieu / 2) + 2, '*');
                     cout << string(1, ' ');
