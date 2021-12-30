@@ -9,7 +9,10 @@ using namespace std;
 
 InputGate::InputGate(char varName, bool value) : name(varName), value(value) {}
 
+InputGate::~InputGate() = default;
 
+
+// Getters
 char InputGate::getName() const {
     return name;
 }

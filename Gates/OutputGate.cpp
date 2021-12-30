@@ -20,35 +20,37 @@ string OutputGate::getMainText() {
     return g_main_text;
 }
 
+OutputGate::~OutputGate() {
+    delete g_main;
+}
+
+// Getters
 Gate *OutputGate::getMainGate() {
     return g_main;
 }
 
-
 vector<vector<Gate *>> OutputGate::getPile() {
     return g_pile;
 }
-
-void OutputGate::textToGatePile() {
-    string inputCopy = g_main_text;
-    vector<vector<string>> gates_text;
-    vector<string> sous_text;
-    unsigned long int pos;
-    while ((pos = inputCopy.find('(')) >= 0) {
-        sous_text.push_back(inputCopy.substr(0, pos));
-        inputCopy.erase(0, pos + 1);
-        inputCopy.erase(inputCopy.size() - 1, 1);
-    }
-    for (int i = 0; i < gates_text.size(); i++) {
-        for (string s: gates_text[i]) {
-            cout << s << endl;
-        }
-    }
-
-}
+// Fonction bizarre et inutile
+//void OutputGate::textToGatePile() {
+//    string inputCopy = g_main_text;
+//    vector<vector<string>> gates_text;
+//    vector<string> sous_text;
+//    int pos;
+//    while ((pos = inputCopy.find('(')) >= 0) {
+//        sous_text.push_back(inputCopy.substr(0, pos));
+//        inputCopy.erase(0, pos + 1);
+//        inputCopy.erase(inputCopy.size() - 1, 1);
+//    }
+//    for (int i = 0; i < gates_text.size(); i++) {
+//        for (string s: gates_text[i]) {
+//            cout << s << endl;
+//        }
+//    }
+//}
 
 void OutputGate::showOutput() const {
-
     int debut_ligne = 0;
     int espace_milieu = 1;
     for (int i = 0; i < g_pile.size(); i++) {
@@ -100,6 +102,7 @@ void OutputGate::afficher() {
 int OutputGate::calculer() {
     return g_main->calculer();
 }
+
 
 /**
 * if (g_pile[i].size()==2){

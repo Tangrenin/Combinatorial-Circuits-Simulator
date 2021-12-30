@@ -9,6 +9,14 @@
 
 using namespace std;
 
+BinaryGate::BinaryGate(Gate *left, Gate *right) : g_left(left), g_right(right) {}
+
+BinaryGate::~BinaryGate() {
+    delete g_left;
+    delete g_right;
+}
+
+// Getters
 Gate *BinaryGate::getGateRight() const {
     return g_right;
 }
@@ -17,8 +25,6 @@ Gate *BinaryGate::getGateLeft() const {
     return g_left;
 }
 
-BinaryGate::BinaryGate(Gate *left, Gate *right) : g_left(left), g_right(right) {}
-
 std::string BinaryGate::getType() const {
     return "binary";
 }
@@ -26,7 +32,6 @@ std::string BinaryGate::getType() const {
 int BinaryGate::getProfondeur() const {
     return std::max(g_right->getProfondeur(), g_left->getProfondeur()) + 1;
 }
-
 
 std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
 
@@ -85,5 +90,4 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
 void BinaryGate::showLigne() {
     cout << " | ";
 }
-
 

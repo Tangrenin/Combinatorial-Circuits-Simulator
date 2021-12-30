@@ -4,3 +4,4 @@
 
 #include "Gate.h"
 
+Gate::~Gate() = default;

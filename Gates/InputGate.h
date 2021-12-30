@@ -15,6 +15,7 @@ private:
     char const name;
 public:
     explicit InputGate(char varName, bool value = false);
+    ~InputGate() override;
     // Getters
     char getName() const;
     int getValue() const;

@@ -23,7 +23,7 @@ int main() {
     A->showOutput();
     cout << "Value : " << A->calculer() << endl;
 
-    A_bis->textToGatePile();
+
     //Test 2
     cout << "****************Test 2***************" << endl;
     InputGate *c = new InputGate('c');

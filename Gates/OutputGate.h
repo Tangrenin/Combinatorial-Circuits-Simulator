@@ -17,11 +17,12 @@ private:
 public:
     explicit OutputGate(Gate *main);
     explicit OutputGate(std::string mainText);
+    ~OutputGate();
     // Getters
     Gate *getMainGate();
     std::string getMainText();
     // Class Methods
-    void textToGatePile();
+    //void textToGatePile();
     std::vector<std::vector<Gate *>> getPile();
     void showOutput() const;
     void afficher();

@@ -13,6 +13,7 @@ protected:
     Gate *g_main;
 public:
     explicit UnaryGate(Gate *main);
+    ~UnaryGate() override;
     // Getters
     int getProfondeur() const override;
     Gate *getGate() const;

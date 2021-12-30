@@ -11,6 +11,7 @@
 class Gate {
 private:
 public:
+    virtual ~Gate();
     // Getters
     virtual int getProfondeur() const = 0;
     virtual std::string getType() const = 0;
