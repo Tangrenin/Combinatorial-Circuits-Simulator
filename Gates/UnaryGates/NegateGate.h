@@ -10,11 +10,12 @@
 class NegateGate : public UnaryGate {
 private:
 public:
-    NegateGate(Gate* main);
+    NegateGate(Gate *main);
     void afficher() override;
     int calculer() override;
     void showExpression() override;
 };
-std::ostream& operator<<(std::ostream& out, const NegateGate *x);
+
+std::ostream &operator<<(std::ostream &out, const NegateGate *x);
 
 #endif //UNTITLED7_NEGATEGATE_H

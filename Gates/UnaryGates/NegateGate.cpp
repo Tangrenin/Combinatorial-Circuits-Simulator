@@ -7,12 +7,12 @@
 
 using namespace std;
 
-NegateGate::NegateGate(Gate *main): UnaryGate(main) {}
+NegateGate::NegateGate(Gate *main) : UnaryGate(main) {}
 
 void NegateGate::afficher() {
-    cout <<"negate(";
+    cout << "negate(";
     g_main->afficher();
-    cout <<")";
+    cout << ")";
 }
 
 int NegateGate::calculer() {

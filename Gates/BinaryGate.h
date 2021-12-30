@@ -8,21 +8,22 @@
 #include "Gate.h"
 #include <string>
 
-class BinaryGate : public Gate{
+class BinaryGate : public Gate {
 protected:
-    Gate* g_left;
-    Gate* g_right;
+    Gate *g_left;
+    Gate *g_right;
 
 public:
-    BinaryGate(Gate* left, Gate* right);
-
-    Gate* getGateRight() const ;
-    Gate* getGateLeft() const ;
+    BinaryGate(Gate *left, Gate *right);
+    // Getters
+    Gate *getGateRight() const;
+    Gate *getGateLeft() const;
     int getProfondeur() const override;
     std::string getType() const override;
+    // Class Methods
     void showLigne() override;
 
-    std::vector<std::vector<Gate*>>  empileGates() override;
+    std::vector<std::vector<Gate *>> empileGates() override;
 };
 
 

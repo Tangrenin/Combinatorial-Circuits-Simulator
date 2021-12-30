@@ -4,16 +4,17 @@
 
 #include "AndGate.h"
 #include <iostream>
+
 using namespace std;
 
-AndGate::AndGate(Gate* left, Gate* right) : BinaryGate(left, right) {}
+AndGate::AndGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void AndGate::afficher() {
-    cout <<"and(";
+    cout << "and(";
     g_left->afficher();
-    cout<<",";
+    cout << ",";
     g_right->afficher();
-    cout <<")";
+    cout << ")";
 }
 
 int AndGate::calculer() {
@@ -21,10 +22,10 @@ int AndGate::calculer() {
 }
 
 void AndGate::showExpression() {
-    cout<<"AND";
+    cout << "AND";
 }
 
-ostream& operator<<(ostream& out, const AndGate * g){
+ostream &operator<<(ostream &out, const AndGate *g) {
     out << "AND";
     return out;
 }

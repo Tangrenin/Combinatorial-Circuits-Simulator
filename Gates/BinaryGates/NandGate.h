@@ -7,14 +7,15 @@
 
 #include "../BinaryGate.h"
 
-class NandGate : public BinaryGate{
+class NandGate : public BinaryGate {
 private:
 public:
-    NandGate(Gate* left, Gate* right);
+    NandGate(Gate *left, Gate *right);
     void afficher() override;
     int calculer() override;
     void showExpression() override;
 };
-std::ostream& operator<<(std::ostream& out, const NandGate *x);
+
+std::ostream &operator<<(std::ostream &out, const NandGate *x);
 
 #endif //UNTITLED7_NANDGATE_H

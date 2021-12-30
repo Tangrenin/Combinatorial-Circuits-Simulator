@@ -11,16 +11,18 @@
 
 class OutputGate {
 private:
-    std::vector<std::vector<Gate*>> g_pile;
-    Gate* g_main;
+    std::vector<std::vector<Gate *>> g_pile;
+    Gate *g_main;
     std::string const g_main_text;
 public:
-    explicit OutputGate(Gate* main);
+    explicit OutputGate(Gate *main);
     explicit OutputGate(std::string mainText);
-    Gate* getMainGate();
+    // Getters
+    Gate *getMainGate();
     std::string getMainText();
+    // Class Methods
     void textToGatePile();
-    std::vector<std::vector<Gate*>> getPile();
+    std::vector<std::vector<Gate *>> getPile();
     void showOutput() const;
     void afficher();
     int calculer();

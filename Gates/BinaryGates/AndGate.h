@@ -7,15 +7,16 @@
 
 #include "../BinaryGate.h"
 
-class AndGate : public BinaryGate{
+class AndGate : public BinaryGate {
 private:
 public:
-    AndGate(Gate* left, Gate* right);
+    AndGate(Gate *left, Gate *right);
     void afficher() override;
     int calculer() override;
     void showExpression() override;
 };
-std::ostream& operator<<(std::ostream& out, const AndGate *x);
+
+std::ostream &operator<<(std::ostream &out, const AndGate *x);
 
 
 #endif //UNTITLED7_ANDGATE_H

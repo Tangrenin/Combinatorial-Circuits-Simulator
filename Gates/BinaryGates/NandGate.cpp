@@ -5,16 +5,17 @@
 #include "NandGate.h"
 
 #include <iostream>
+
 using namespace std;
 
-NandGate::NandGate(Gate* left, Gate* right) : BinaryGate(left, right) {}
+NandGate::NandGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void NandGate::afficher() {
-    cout <<"nand(";
+    cout << "nand(";
     g_left->afficher();
-    cout<<",";
+    cout << ",";
     g_right->afficher();
-    cout <<")";
+    cout << ")";
 }
 
 int NandGate::calculer() {
@@ -22,10 +23,10 @@ int NandGate::calculer() {
 }
 
 void NandGate::showExpression() {
-    cout<<"NAN";
+    cout << "NAN";
 }
 
-ostream& operator<<(ostream& out, const NandGate * g){
+ostream &operator<<(ostream &out, const NandGate *g) {
     out << "NAND";
     return out;
 }

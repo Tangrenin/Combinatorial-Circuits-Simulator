@@ -5,16 +5,17 @@
 #include "NorGate.h"
 
 #include <iostream>
+
 using namespace std;
 
-NorGate::NorGate(Gate* left, Gate* right) : BinaryGate(left, right) {}
+NorGate::NorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void NorGate::afficher() {
-    cout <<"nor(";
+    cout << "nor(";
     g_left->afficher();
-    cout<<",";
+    cout << ",";
     g_right->afficher();
-    cout <<")";
+    cout << ")";
 }
 
 int NorGate::calculer() {
@@ -22,10 +23,10 @@ int NorGate::calculer() {
 }
 
 void NorGate::showExpression() {
-    cout<<"NOR";
+    cout << "NOR";
 }
 
-ostream& operator<<(ostream& out, const NorGate * g){
+ostream &operator<<(ostream &out, const NorGate *g) {
     out << "NOR";
     return out;
 }

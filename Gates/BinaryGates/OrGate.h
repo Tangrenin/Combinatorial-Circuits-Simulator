@@ -10,11 +10,12 @@
 class OrGate : public BinaryGate {
 private:
 public:
-    OrGate(Gate* left, Gate* right);
+    OrGate(Gate *left, Gate *right);
     void afficher() override;
     int calculer() override;
     void showExpression() override;
 };
-std::ostream& operator<<(std::ostream& out, const OrGate *x);
+
+std::ostream &operator<<(std::ostream &out, const OrGate *x);
 
 #endif //UNTITLED7_ORGATE_H

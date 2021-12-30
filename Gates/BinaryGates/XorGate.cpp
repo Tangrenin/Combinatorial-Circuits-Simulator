@@ -4,18 +4,18 @@
 
 #include "XorGate.h"
 #include <iostream>
+
 using namespace std;
 
-XorGate::XorGate(Gate* left, Gate* right) : BinaryGate(left, right) {}
-
+XorGate::XorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 
 void XorGate::afficher() {
-    cout <<"xor(";
+    cout << "xor(";
     g_left->afficher();
-    cout<<",";
+    cout << ",";
     g_right->afficher();
-    cout <<")";
+    cout << ")";
 }
 
 int XorGate::calculer() {
@@ -23,10 +23,10 @@ int XorGate::calculer() {
 }
 
 void XorGate::showExpression() {
-     cout << "XOR";
+    cout << "XOR";
 }
 
-ostream& operator<<(ostream& out, const XorGate * g){
+ostream &operator<<(ostream &out, const XorGate *g) {
     out << "XOR";
     return out;
 }

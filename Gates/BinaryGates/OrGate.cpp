@@ -4,16 +4,17 @@
 
 #include "OrGate.h"
 #include <iostream>
+
 using namespace std;
 
-OrGate::OrGate(Gate* left, Gate* right) : BinaryGate(left, right) {}
+OrGate::OrGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void OrGate::afficher() {
-    cout <<"or(";
+    cout << "or(";
     g_left->afficher();
-    cout<<",";
+    cout << ",";
     g_right->afficher();
-    cout <<")";
+    cout << ")";
 }
 
 int OrGate::calculer() {
@@ -21,10 +22,10 @@ int OrGate::calculer() {
 }
 
 void OrGate::showExpression() {
-    cout<<"OR_";
+    cout << "OR_";
 }
 
-ostream& operator<<(ostream& out, const OrGate * g){
+ostream &operator<<(ostream &out, const OrGate *g) {
     out << "OR";
     return out;
 }

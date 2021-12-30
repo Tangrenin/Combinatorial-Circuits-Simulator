@@ -10,11 +10,12 @@
 class XorGate : public BinaryGate {
 private:
 public:
-    XorGate(Gate* left, Gate* right);
+    XorGate(Gate *left, Gate *right);
     void afficher() override;
     int calculer() override;
     void showExpression() override;
 };
-std::ostream& operator<<(std::ostream& out, const XorGate *x);
+
+std::ostream &operator<<(std::ostream &out, const XorGate *x);
 
 #endif //UNTITLED7_XORGATE_H
