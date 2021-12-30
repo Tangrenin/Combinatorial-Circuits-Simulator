@@ -22,7 +22,7 @@ int OrGate::calculer() {
 }
 
 void OrGate::showExpression() {
-    cout << "OR_";
+    cout << "OR";
 }
 
 ostream &operator<<(ostream &out, const OrGate *g) {

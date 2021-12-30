@@ -32,6 +32,7 @@ Gate *OutputGate::getMainGate() {
 vector<vector<Gate *>> OutputGate::getPile() {
     return g_pile;
 }
+
 // Fonction bizarre et inutile
 //void OutputGate::textToGatePile() {
 //    string inputCopy = g_main_text;
