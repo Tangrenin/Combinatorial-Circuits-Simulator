@@ -10,13 +10,13 @@
 
 class InputGate : public Gate {
 private:
-    int value = 0;
+    bool value = false;
     int profondeur = 0;
-    char const input;
+    char const name;
 public:
-    InputGate(char input, bool value = 0);
+    explicit InputGate(char varName, bool value = false);
     // Getters
-    char getInput() const;
+    char getName() const;
     int getValue() const;
     void setValue(bool newValue);
     int getProfondeur() const override;

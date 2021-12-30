@@ -7,11 +7,11 @@
 
 using namespace std;
 
-InputGate::InputGate(char inputG, bool value) : input(inputG), value(value) {}
+InputGate::InputGate(char varName, bool value) : name(varName), value(value) {}
 
 
-char InputGate::getInput() const {
-    return input;
+char InputGate::getName() const {
+    return name;
 }
 
 int InputGate::getValue() const {
@@ -24,7 +24,7 @@ void InputGate::setValue(bool newValue) {
 
 
 void InputGate::afficher() {
-    cout << input;
+    cout << name;
 
 }
 
@@ -41,7 +41,7 @@ std::string InputGate::getType() const {
 }
 
 void InputGate::showExpression() {
-    cout << this->getInput() << ":" << this->getValue();
+    cout << this->getName() << ":" << this->getValue();
 }
 
 std::vector<std::vector<Gate *>> InputGate::empileGates() {
@@ -57,6 +57,6 @@ void InputGate::showLigne() {
 }
 
 ostream &operator<<(ostream &out, const InputGate *g) {
-    out << g->getInput();
+    out << g->getName();
     return out;
 }
