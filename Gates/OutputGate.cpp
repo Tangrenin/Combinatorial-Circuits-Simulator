@@ -5,8 +5,9 @@
 #include "OutputGate.h"
 #include <iostream>
 #include <string>
-#include <math.h>
+#include <cmath>
 #include <queue>
+#include <utility>
 
 using namespace std;
 
@@ -23,9 +24,9 @@ OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>
     g_pile = g_main->empileGates();
 }
 
-OutputGate::OutputGate(std::string mainText) : g_main(nullptr), g_main_text(mainText) {}
+OutputGate::OutputGate(string mainText) : g_main(nullptr), g_main_text(move(mainText)) {}
 
-std::string OutputGate::getMainText() {
+string OutputGate::getMainText() {
     return g_main_text;
 }
 
@@ -34,7 +35,7 @@ Gate *OutputGate::getMainGate() {
 }
 
 
-std::vector<std::vector<Gate *>> OutputGate::getPile() {
+vector<vector<Gate *>> OutputGate::getPile() {
     return g_pile;
 }
 
