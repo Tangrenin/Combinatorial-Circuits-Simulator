@@ -5,20 +5,10 @@
 #include "OutputGate.h"
 #include <iostream>
 #include <string>
-#include <cmath>
 #include <queue>
 #include <utility>
 
 using namespace std;
-
-void OutputGate::afficher() {
-    g_main->afficher();
-    cout << endl;
-}
-
-int OutputGate::calculer() {
-    return g_main->calculer();
-}
 
 OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>()) {
     g_pile = g_main->empileGates();
@@ -43,7 +33,7 @@ void OutputGate::textToGatePile() {
     string inputCopy = g_main_text;
     vector<vector<string>> gates_text;
     vector<string> sous_text;
-    int pos;
+    unsigned long int pos;
     while ((pos = inputCopy.find('(')) >= 0) {
         sous_text.push_back(inputCopy.substr(0, pos));
         inputCopy.erase(0, pos + 1);
@@ -100,6 +90,15 @@ void OutputGate::showOutput() const {
         cout << endl;
     }
 
+}
+
+void OutputGate::afficher() {
+    g_main->afficher();
+    cout << endl;
+}
+
+int OutputGate::calculer() {
+    return g_main->calculer();
 }
 
 /**
