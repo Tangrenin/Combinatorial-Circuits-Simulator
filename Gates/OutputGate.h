@@ -20,15 +20,14 @@ public:
     explicit OutputGate(std::string mainText);
     ~OutputGate();
     // Getters
-    Gate *getMainGate();
-    std::string getMainText();
+    Gate *getMainGate() const;
+    std::string getMainText() const;
+    std::vector<std::vector<Gate *>> getPile() const;
     char getName() const;
     // Class Methods
-    //void textToGatePile();
-    std::vector<std::vector<Gate *>> getPile();
     void showOutput() const;
-    void afficher();
-    int calculer();
+    void afficher() const;
+    int calculer() const;
 
     static char nameTracker;
 

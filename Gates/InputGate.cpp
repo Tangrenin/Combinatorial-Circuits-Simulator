@@ -26,12 +26,12 @@ void InputGate::setValue(bool newValue) {
 }
 
 
-void InputGate::afficher() {
+void InputGate::afficher() const {
     cout << name;
 
 }
 
-int InputGate::calculer() {
+int InputGate::calculer() const{
     return this->getValue();
 }
 
@@ -43,7 +43,7 @@ string InputGate::getType() const {
     return "input";
 }
 
-void InputGate::showExpression() {
+void InputGate::showExpression() const {
     cout << this->getName() << ":" << this->getValue();
 }
 
@@ -55,7 +55,7 @@ std::vector<std::vector<Gate *>> InputGate::empileGates() {
     return g_pile;
 }
 
-void InputGate::showLigne() {
+void InputGate::showLigne() const {
     cout << " | ";
 }
 

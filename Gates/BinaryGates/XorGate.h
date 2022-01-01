@@ -11,9 +11,9 @@ class XorGate : public BinaryGate {
 private:
 public:
     XorGate(Gate *left, Gate *right);
-    void afficher() override;
-    int calculer() override;
-    void showExpression() override;
+    void afficher() const override;
+    int calculer() const override;
+    void showExpression() const override;
 };
 
 std::ostream &operator<<(std::ostream &out, const XorGate *x);

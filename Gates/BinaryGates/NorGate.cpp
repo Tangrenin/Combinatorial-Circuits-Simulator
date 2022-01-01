@@ -10,7 +10,7 @@ using namespace std;
 
 NorGate::NorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
-void NorGate::afficher() {
+void NorGate::afficher() const {
     cout << "nor(";
     g_left->afficher();
     cout << ",";
@@ -18,11 +18,11 @@ void NorGate::afficher() {
     cout << ")";
 }
 
-int NorGate::calculer() {
+int NorGate::calculer() const {
     return not((g_left->calculer()) or (g_right->calculer()));
 }
 
-void NorGate::showExpression() {
+void NorGate::showExpression() const {
     cout << "NOR";
 }
 

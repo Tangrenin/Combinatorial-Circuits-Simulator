@@ -10,7 +10,7 @@ using namespace std;
 
 NandGate::NandGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
-void NandGate::afficher() {
+void NandGate::afficher() const {
     cout << "nand(";
     g_left->afficher();
     cout << ",";
@@ -18,11 +18,11 @@ void NandGate::afficher() {
     cout << ")";
 }
 
-int NandGate::calculer() {
+int NandGate::calculer() const {
     return not((g_left->calculer()) and (g_right->calculer()));
 }
 
-void NandGate::showExpression() {
+void NandGate::showExpression() const {
     cout << "NAND";
 }
 

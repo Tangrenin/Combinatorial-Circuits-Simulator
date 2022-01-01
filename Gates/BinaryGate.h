@@ -22,7 +22,7 @@ public:
     int getProfondeur() const override;
     std::string getType() const override;
     // Class Methods
-    void showLigne() override;
+    void showLigne() const override;
 
     std::vector<std::vector<Gate *>> empileGates() override;
 };

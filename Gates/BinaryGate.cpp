@@ -87,7 +87,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
     return g_pile;
 }
 
-void BinaryGate::showLigne() {
+void BinaryGate::showLigne() const {
     cout << " | ";
 }
 

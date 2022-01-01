@@ -24,10 +24,10 @@ public:
     std::string getType() const override;
 
     // Class Methods
-    void afficher() override;
-    int calculer() override;
-    void showExpression() override;
-    void showLigne() override;
+    void afficher() const override;
+    int calculer() const override;
+    void showExpression() const override;
+    void showLigne() const override;
     std::vector<std::vector<Gate *>> empileGates() override;
 };
 

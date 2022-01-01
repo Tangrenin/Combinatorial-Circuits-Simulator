@@ -9,7 +9,7 @@ using namespace std;
 
 OrGate::OrGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
-void OrGate::afficher() {
+void OrGate::afficher() const {
     cout << "or(";
     g_left->afficher();
     cout << ",";
@@ -17,11 +17,11 @@ void OrGate::afficher() {
     cout << ")";
 }
 
-int OrGate::calculer() {
+int OrGate::calculer() const {
     return g_left->calculer() or g_right->calculer();
 }
 
-void OrGate::showExpression() {
+void OrGate::showExpression() const {
     cout << "OR_";
 }
 

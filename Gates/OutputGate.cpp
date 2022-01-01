@@ -20,20 +20,21 @@ OutputGate::OutputGate(string mainText) : g_main(nullptr), g_main_text(move(main
 
 }
 
-string OutputGate::getMainText() {
-    return g_main_text;
-}
-
 OutputGate::~OutputGate() {
     delete g_main;
 }
 
+
 // Getters
-Gate *OutputGate::getMainGate() {
+Gate *OutputGate::getMainGate() const{
     return g_main;
 }
 
-vector<vector<Gate *>> OutputGate::getPile() {
+string OutputGate::getMainText() const {
+    return g_main_text;
+}
+
+vector<vector<Gate *>> OutputGate::getPile() const {
     return g_pile;
 }
 
@@ -107,13 +108,13 @@ void OutputGate::showOutput() const {
 
 }
 
-void OutputGate::afficher() {
+void OutputGate::afficher() const {
     cout << name << " = ";
     g_main->afficher();
     cout << endl;
 }
 
-int OutputGate::calculer() {
+int OutputGate::calculer() const {
     return g_main->calculer();
 }
 

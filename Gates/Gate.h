@@ -16,10 +16,10 @@ public:
     virtual int getProfondeur() const = 0;
     virtual std::string getType() const = 0;
     // Class Methods
-    virtual void afficher() = 0;
-    virtual void showLigne() = 0;
-    virtual int calculer() = 0;
-    virtual void showExpression() = 0;
+    virtual void afficher() const = 0;
+    virtual void showLigne() const = 0;
+    virtual int calculer() const = 0;
+    virtual void showExpression() const = 0;
     virtual std::vector<std::vector<Gate *>> empileGates() = 0;
 };
 

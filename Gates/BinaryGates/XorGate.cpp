@@ -10,7 +10,7 @@ using namespace std;
 XorGate::XorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 
-void XorGate::afficher() {
+void XorGate::afficher() const {
     cout << "xor(";
     g_left->afficher();
     cout << ",";
@@ -18,11 +18,11 @@ void XorGate::afficher() {
     cout << ")";
 }
 
-int XorGate::calculer() {
+int XorGate::calculer() const {
     return g_left->calculer() xor g_right->calculer();
 }
 
-void XorGate::showExpression() {
+void XorGate::showExpression() const {
     cout << "XOR";
 }
 

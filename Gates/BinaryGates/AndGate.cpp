@@ -9,7 +9,7 @@ using namespace std;
 
 AndGate::AndGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
-void AndGate::afficher() {
+void AndGate::afficher() const {
     cout << "and(";
     g_left->afficher();
     cout << ",";
@@ -17,11 +17,11 @@ void AndGate::afficher() {
     cout << ")";
 }
 
-int AndGate::calculer() {
+int AndGate::calculer() const {
     return g_left->calculer() and g_right->calculer();
 }
 
-void AndGate::showExpression() {
+void AndGate::showExpression() const {
     cout << "AND";
 }
 

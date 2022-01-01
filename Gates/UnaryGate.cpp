@@ -63,7 +63,7 @@ std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
     return g_pile;
 }
 
-void UnaryGate::showLigne() {
+void UnaryGate::showLigne() const {
     cout << " | ";
 }
 

@@ -11,9 +11,9 @@ class NandGate : public BinaryGate {
 private:
 public:
     NandGate(Gate *left, Gate *right);
-    void afficher() override;
-    int calculer() override;
-    void showExpression() override;
+    void afficher() const override;
+    int calculer() const override;
+    void showExpression() const override;
 };
 
 std::ostream &operator<<(std::ostream &out, const NandGate *x);

@@ -9,16 +9,16 @@ using namespace std;
 
 NegateGate::NegateGate(Gate *main) : UnaryGate(main) {}
 
-void NegateGate::afficher() {
+void NegateGate::afficher() const {
     cout << "negate(";
     g_main->afficher();
     cout << ")";
 }
 
-int NegateGate::calculer() {
+int NegateGate::calculer() const {
     return not g_main->calculer();
 }
 
-void NegateGate::showExpression() {
+void NegateGate::showExpression() const {
     cout << "NE_";
 }
