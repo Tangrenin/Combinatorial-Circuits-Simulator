@@ -79,6 +79,7 @@ void OutputGate::showOutput() const {
             cout << string(espace_milieu, ' ');
         }
         cout << endl;
+
         if (i != g_pile.size() - 1) {
             cout << string(debut_ligne + 1, ' ');
             if (g_pile[i].size() == 1) {
@@ -100,12 +101,13 @@ void OutputGate::showOutput() const {
                     cout << string(espace_milieu + 3, ' ');
                 }
             }
+            cout << endl;
+            debut_ligne += 2 * i + 2;
+            espace_milieu = debut_ligne + 3;
         }
-        debut_ligne += 2 * i + 2;
-        espace_milieu = debut_ligne + 3;
-        cout << endl;
     }
-
+    cout << string(debut_ligne + 1, ' ') << name << "\n\n";
+    cout << "Ouput value :  "  << calculer() << "\n\n";
 }
 
 void OutputGate::afficher() const {
@@ -117,8 +119,6 @@ void OutputGate::afficher() const {
 int OutputGate::calculer() const {
     return g_main->calculer();
 }
-
-
 
 
 /**

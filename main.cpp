@@ -20,7 +20,6 @@ int main() {
     // auto *A_bis = new OutputGate("xor(or(a,b),and(a,b)");
     A->afficher();
     A->showOutput();
-    cout << "Value : " << A->calculer() << endl;
 
 
     //Test 2
@@ -30,7 +29,6 @@ int main() {
     Gate *or2 = new OrGate(negate1, b);
     auto *B = new OutputGate(or2);
     B->afficher();
-    cout << "Value : " << B->calculer() << endl;
 
     B->showOutput();
     //Test 3
@@ -49,8 +47,6 @@ int main() {
     }
 
     C->showOutput();
-
-    cout << "Value : " << C->calculer() << endl;
 
     // Test 4
     cout << "****************Test 4***************" << endl;
@@ -73,8 +69,6 @@ int main() {
     auto *E = new OutputGate(or6);
     E->afficher();
     E->showOutput();
-
-    cout << "Value : " << E->calculer() << endl;
 
     return 0;
 }
