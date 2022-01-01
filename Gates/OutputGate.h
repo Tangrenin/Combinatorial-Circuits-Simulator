@@ -14,6 +14,7 @@ private:
     std::vector<std::vector<Gate *>> g_pile;
     Gate *g_main;
     std::string const g_main_text;
+    char const name;
 public:
     explicit OutputGate(Gate *main);
     explicit OutputGate(std::string mainText);
@@ -21,12 +22,15 @@ public:
     // Getters
     Gate *getMainGate();
     std::string getMainText();
+    char getName() const;
     // Class Methods
     //void textToGatePile();
     std::vector<std::vector<Gate *>> getPile();
     void showOutput() const;
     void afficher();
     int calculer();
+
+    static char nameTracker;
 
 };
 

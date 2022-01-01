@@ -11,14 +11,13 @@ using namespace std;
 int main() {
     //Test 1
     cout << "****************Test 1***************" << endl;
-    InputGate *a = new InputGate('a');
-    InputGate *b = new InputGate('b');
+    auto *a = new InputGate('a');
+    auto *b = new InputGate('b');
     Gate *or1 = new OrGate(a, b);
     Gate *and1 = new AndGate(a, b);
     Gate *and2 = new XorGate(or1, and1);
-    OutputGate *A = new OutputGate(and2);
-    OutputGate *A_bis = new OutputGate("xor(or(a,b),and(a,b)");
-    cout << "A = ";
+    auto *A = new OutputGate(and2);
+    // auto *A_bis = new OutputGate("xor(or(a,b),and(a,b)");
     A->afficher();
     A->showOutput();
     cout << "Value : " << A->calculer() << endl;
@@ -26,11 +25,10 @@ int main() {
 
     //Test 2
     cout << "****************Test 2***************" << endl;
-    InputGate *c = new InputGate('c');
+    auto *c = new InputGate('c');
     Gate *negate1 = new NegateGate(c);
     Gate *or2 = new OrGate(negate1, b);
-    OutputGate *B = new OutputGate(or2);
-    cout << "B = ";
+    auto *B = new OutputGate(or2);
     B->afficher();
     cout << "Value : " << B->calculer() << endl;
 
@@ -39,8 +37,7 @@ int main() {
     cout << "****************Test 3***************" << endl;
     Gate *nand1 = new NandGate(a, b);
     Gate *and3 = new AndGate(nand1, c);
-    OutputGate *C = new OutputGate(nand1);
-    cout << "C = ";
+    auto *C = new OutputGate(and3);
     C->afficher();
 
     for (int i = 0; i < C->getPile().size(); i++) {
@@ -52,26 +49,25 @@ int main() {
     }
     cout << "Value : " << C->calculer() << endl;
 
-    //Test 3
+    // Test 4
     cout << "****************Test 4***************" << endl;
     Gate *and4 = new AndGate(a, b);
     Gate *negate2 = new NegateGate(and4);
-    OutputGate *D = new OutputGate(negate2);
-    cout << "D = ";
+    auto *D = new OutputGate(negate2);
     D->afficher();
     D->showOutput();
 
+    // Test 5
     cout << "****************Test 5***************" << endl;
-    InputGate *a1 = new InputGate('a');
-    InputGate *b1 = new InputGate('b');
-    InputGate *c1 = new InputGate('c');
-    InputGate *d1 = new InputGate('d');
+    auto *a1 = new InputGate('a');
+    auto *b1 = new InputGate('b');
+    auto *c1 = new InputGate('c');
+    auto *d1 = new InputGate('d');
     Gate *or5 = new OrGate(a1, b1);
     Gate *xor1 = new XorGate(c1, or5);
     Gate *or6 = new OrGate(d1, xor1);
 
-    OutputGate *E = new OutputGate(or6);
-    cout << "E = ";
+    auto *E = new OutputGate(or6);
     E->afficher();
     E->showOutput();
 

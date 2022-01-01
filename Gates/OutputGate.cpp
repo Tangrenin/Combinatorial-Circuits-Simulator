@@ -10,11 +10,15 @@
 
 using namespace std;
 
-OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>()) {
+char OutputGate::nameTracker = 'A';
+
+OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>()), name(nameTracker++) {
     g_pile = g_main->empileGates();
 }
 
-OutputGate::OutputGate(string mainText) : g_main(nullptr), g_main_text(move(mainText)) {}
+OutputGate::OutputGate(string mainText) : g_main(nullptr), g_main_text(move(mainText)), name(nameTracker++) {
+
+}
 
 string OutputGate::getMainText() {
     return g_main_text;
@@ -31,6 +35,10 @@ Gate *OutputGate::getMainGate() {
 
 vector<vector<Gate *>> OutputGate::getPile() {
     return g_pile;
+}
+
+char OutputGate::getName() const {
+    return name;
 }
 
 // Brouillon fonction de création de circuit à partir du texte
@@ -100,6 +108,7 @@ void OutputGate::showOutput() const {
 }
 
 void OutputGate::afficher() {
+    cout << name << " = ";
     g_main->afficher();
     cout << endl;
 }
@@ -107,6 +116,8 @@ void OutputGate::afficher() {
 int OutputGate::calculer() {
     return g_main->calculer();
 }
+
+
 
 
 /**
