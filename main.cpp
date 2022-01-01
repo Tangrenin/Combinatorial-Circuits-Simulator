@@ -47,6 +47,9 @@ int main() {
         }
         cout << endl;
     }
+
+    C->showOutput();
+
     cout << "Value : " << C->calculer() << endl;
 
     // Test 4
