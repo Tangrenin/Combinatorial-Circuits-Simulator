@@ -10,8 +10,15 @@
 using namespace std;
 
 int main() {
+    cout << "========== Simulation de circuits combinatoires ==========\n\n";
+    cout << "Par Madeleine Schmit et Quentin Didier\n";
+    cout << "Github repository at : https://github.com/Tangrenin/Combinatorial-Circuits-Simulator\n\n";
+    cout << "Ci-dessous, la demonstration du fonctionnement des simulations via quelques tests.\n";
+    cout << "Vous pouvez modifier les valeurs de verite des variable ou ajouter des portes de votre choix.\n";
+    cout << "Sinon, asseyez-vous confortablement et observez les tests se derouler sous vos yeux...\n\n";
     //Test 1
     cout << "****************Test 1***************" << endl;
+    cout << "** Creation d'un circuit simple et son affichage textuel et graphique **\n\n";
     auto *a = new InputGate('a');
     auto *b = new InputGate('b', true);
     Gate *or1 = new OrGate(a, b);
@@ -24,6 +31,7 @@ int main() {
 
     //Test 2
     cout << "****************Test 2***************" << endl;
+    cout << "** Creation d'un circuit assymetrique avec une branche plus longue **\n\n";
     auto *c = new InputGate('c', true);
     Gate *negate1 = new NegateGate(c);
     Gate *or2 = new OrGate(negate1, b);
@@ -33,11 +41,12 @@ int main() {
     B->showOutput();
     //Test 3
     cout << "****************Test 3***************" << endl;
+    cout << "** Etude du fonctionnement de la pile permettant l'affichage graphique **\n\n";
     Gate *nand1 = new NandGate(a, b);
     Gate *and3 = new AndGate(nand1, c);
     auto *C = new OutputGate(and3);
     C->afficher();
-
+    cout << "\nAffichage des elements de la pile...\n";
     for (int i = 0; i < C->getPile().size(); i++) {
         for (int j = 0; j < C->getPile()[i].size(); j++) {
             (C->getPile()[i][j]->showExpression());
@@ -45,11 +54,12 @@ int main() {
         }
         cout << endl;
     }
+    cout << C->getName() << "\n\n";
 
-    C->showOutput();
 
     // Test 4
     cout << "****************Test 4***************" << endl;
+    cout << "** Encore un exemple de circuit pour la route... **\n\n";
     Gate *and4 = new AndGate(a, b);
     Gate *negate2 = new NegateGate(and4);
     auto *D = new OutputGate(negate2);
@@ -58,6 +68,8 @@ int main() {
 
     // Test 5
     cout << "****************Test 5***************" << endl;
+    cout << "** Affichage d'un gros circuit assymetrique **\n";
+    cout << "** On verifie que tout s'affiche correctement avec le bon alignement **\n\n";
     auto *a1 = new InputGate('a', true);
     auto *b1 = new InputGate('b');
     auto *c1 = new InputGate('c');
@@ -72,17 +84,23 @@ int main() {
 
     // Test 6 : Creer un circuit à partir d'une expression textuelle
     cout << "****************Test 6***************" << endl;
+    cout << "** Creation d'un circuit a partir d'une expression textuelle : F = nor(or(a,b),and(a,b)) **\n\n";
     auto *F = new OutputGate("F = nor(or(a,b),and(a,b))");
     F->afficher();
     F->showOutput();
 
     // Test 7 : Ecriture dans un fichier
+    cout << "****************Test 7***************" << endl;
+    cout << "** Sauvegarde d'un circuit dans un fichier. Allez voir par vous-meme dans le dossier saved-circuits **\n\n";
     F->saveInFile();
 
     // Test 8 : Lecture d'un fichier
     cout << "****************Test 8***************" << endl;
+    cout << "** Creation d'un circuit a partir d'un fichier de sauvegarde de circuit **\n\n";
     auto *Fbis = new OutputGate("saved-circuits/circuit-F.txt");
     Fbis->afficher();
     Fbis->showOutput();
+
+    cout << "\n====== Merci pour votre attention ! ======\n\n";
     return 0;
 }
