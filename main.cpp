@@ -5,6 +5,7 @@
 #include "Gates/BinaryGates/AndGate.h"
 #include "Gates/UnaryGates/NegateGate.h"
 #include "Gates/BinaryGates/NandGate.h"
+#include "Gates/BinaryGates/NorGate.h"
 
 using namespace std;
 
@@ -17,7 +18,6 @@ int main() {
     Gate *and1 = new AndGate(a, b);
     Gate *and2 = new XorGate(or1, and1);
     auto *A = new OutputGate(and2);
-    // auto *A_bis = new OutputGate("xor(or(a,b),and(a,b)");
     A->afficher();
     A->showOutput();
 
@@ -64,11 +64,16 @@ int main() {
     auto *d1 = new InputGate('d');
     Gate *or5 = new OrGate(a1, b1);
     Gate *xor1 = new XorGate(c1, or5);
-    Gate *or6 = new OrGate(d1, xor1);
+    Gate *nor1 = new NorGate(d1, xor1);
 
-    auto *E = new OutputGate(or6);
+    auto *E = new OutputGate(nor1);
     E->afficher();
     E->showOutput();
+
+    // Test 6 : Creer un circuit à partir d'une expression textuelle
+    auto *F = new OutputGate("F = nor(or(a,b),and(a,b))");
+    F->afficher();
+    F->showOutput();
 
     return 0;
 }

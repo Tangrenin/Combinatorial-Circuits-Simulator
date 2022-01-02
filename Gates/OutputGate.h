@@ -15,6 +15,7 @@ private:
     Gate *g_main;
     std::string const g_main_text;
     char const name;
+    static char nameTracker;
 public:
     explicit OutputGate(Gate *main);
     explicit OutputGate(std::string mainText);
@@ -28,8 +29,8 @@ public:
     void showOutput() const;
     void afficher() const;
     int calculer() const;
-
-    static char nameTracker;
+    static Gate *generateByExpr(std::string expr);
+    static std::pair<std::string, std::string> parseExprIntoArgs(std::string expr);
 
 };
 
