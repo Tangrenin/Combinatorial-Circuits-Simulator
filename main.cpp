@@ -101,6 +101,6 @@ int main() {
     Fbis->afficher();
     Fbis->showOutput();
 
-    cout << "\n====== Merci pour votre attention ! ======\n\n";
+    cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }
