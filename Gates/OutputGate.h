@@ -13,8 +13,8 @@ class OutputGate {
 private:
     std::vector<std::vector<Gate *>> g_pile;
     Gate *g_main;
-    std::string const g_main_text;
-    char const name;
+    std::string g_main_text;
+    char name;
     static char nameTracker;
 public:
     explicit OutputGate(Gate *main);

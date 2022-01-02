@@ -29,9 +29,22 @@ g_main_text(move(mainText)), name(g_main_text[0]) {
     /*
      * Reconstruit un circuit à partir d'une expression textuelle
      * Exemple : A = xor(or(a,b),and(a,b)
+     * ou à partir d'un fichier si on lui passe une string contenant '.txt'
      */
+    if (g_main_text.find(".txt") != string::npos) { // Si on reçoit un nom de fichier, en extraire l'expression textuelle
+        ifstream in(g_main_text);
+        string line;
+        for (int i = 0; i < 3; i++) //skipping the first three lines
+            getline(in, line);
+        getline(in, line);
+        g_main_text = line;
+        name = g_main_text[0];
+    }
+
+    // Creer le circuit à partir de expression textuelle
     g_main = generateByExpr(g_main_text.substr(4)); // On enlève la partie "A = " de l'expression textuelle
     g_pile = g_main->empileGates();
+
 }
 
 OutputGate::~OutputGate() {

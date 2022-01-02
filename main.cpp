@@ -71,6 +71,7 @@ int main() {
     E->showOutput();
 
     // Test 6 : Creer un circuit à partir d'une expression textuelle
+    cout << "****************Test 6***************" << endl;
     auto *F = new OutputGate("F = nor(or(a,b),and(a,b))");
     F->afficher();
     F->showOutput();
@@ -78,5 +79,10 @@ int main() {
     // Test 7 : Ecriture dans un fichier
     F->saveInFile();
 
+    // Test 8 : Lecture d'un fichier
+    cout << "****************Test 8***************" << endl;
+    auto *Fbis = new OutputGate("saved-circuits/circuit-F.txt");
+    Fbis->afficher();
+    Fbis->showOutput();
     return 0;
 }
