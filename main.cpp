@@ -13,7 +13,7 @@ int main() {
     //Test 1
     cout << "****************Test 1***************" << endl;
     auto *a = new InputGate('a');
-    auto *b = new InputGate('b');
+    auto *b = new InputGate('b', true);
     Gate *or1 = new OrGate(a, b);
     Gate *and1 = new AndGate(a, b);
     Gate *and2 = new XorGate(or1, and1);
@@ -24,7 +24,7 @@ int main() {
 
     //Test 2
     cout << "****************Test 2***************" << endl;
-    auto *c = new InputGate('c');
+    auto *c = new InputGate('c', true);
     Gate *negate1 = new NegateGate(c);
     Gate *or2 = new OrGate(negate1, b);
     auto *B = new OutputGate(or2);
@@ -58,10 +58,10 @@ int main() {
 
     // Test 5
     cout << "****************Test 5***************" << endl;
-    auto *a1 = new InputGate('a');
+    auto *a1 = new InputGate('a', true);
     auto *b1 = new InputGate('b');
     auto *c1 = new InputGate('c');
-    auto *d1 = new InputGate('d');
+    auto *d1 = new InputGate('d', true);
     Gate *or5 = new OrGate(a1, b1);
     Gate *xor1 = new XorGate(c1, or5);
     Gate *nor1 = new NorGate(d1, xor1);
