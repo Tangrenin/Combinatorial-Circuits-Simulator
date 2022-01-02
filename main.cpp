@@ -14,7 +14,7 @@ int main() {
     cout << "Par Madeleine Schmit et Quentin Didier\n";
     cout << "Github repository at : https://github.com/Tangrenin/Combinatorial-Circuits-Simulator\n\n";
     cout << "Ci-dessous, la demonstration du fonctionnement des simulations via quelques tests.\n";
-    cout << "Vous pouvez modifier les valeurs de verite des variable ou ajouter des portes de votre choix.\n";
+    cout << "Vous pouvez modifier les valeurs de verite des variables ou ajouter des portes de votre choix.\n";
     cout << "Sinon, asseyez-vous confortablement et observez les tests se derouler sous vos yeux...\n\n";
     //Test 1
     cout << "****************Test 1***************" << endl;
