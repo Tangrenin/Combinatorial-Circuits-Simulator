@@ -1,5 +1,5 @@
 # Combinatorial-Circuits-Simulator
-##Master's c++ project
+## Master's c++ project
 
 Simulation of combinatorial circuits in console application.
 
