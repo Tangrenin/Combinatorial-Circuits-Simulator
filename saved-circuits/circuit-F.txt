@@ -1,0 +1,20 @@
+======== Circuit combinatoire ========
+
+Expression textuelle du circuit : 
+F = nor(or(a,b),and(a,b))
+
+Affichage graphique du circuit : 
+a:0 b:0 a:0 b:0 
+ |   |   |   |  
+ ** **   ** **   
+   |       |    
+  OR_     AND     
+   |       |      
+   **** ****       
+       |        
+      NOR         
+       |          
+       F
+
+Ouput value :  1
+

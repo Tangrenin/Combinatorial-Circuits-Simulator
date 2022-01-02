@@ -75,5 +75,8 @@ int main() {
     F->afficher();
     F->showOutput();
 
+    // Test 7 : Ecriture dans un fichier
+    F->saveInFile();
+
     return 0;
 }

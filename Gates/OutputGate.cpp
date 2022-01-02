@@ -5,6 +5,7 @@
 #include "OutputGate.h"
 #include "InputGate.h"
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <queue>
 #include <utility>
@@ -165,4 +166,28 @@ pair<string, string> OutputGate::parseExprIntoArgs(string expr) {
     args.first = expr.substr(0, virgulePos);
     args.second = expr.substr(virgulePos + 1, expr.size());
     return args;
+}
+
+void OutputGate::saveInFile() const {
+    /*
+     * Save circuit in a file in the "saved-circuits" directory, both text expression and graphic display
+     */
+    // Creating File...
+    string outputDirectoryName = "saved-circuits";
+    string fileName = "circuit-";
+    fileName += name;
+    fileName += ".txt";
+    ofstream out("saved-circuits/" + fileName);
+    // Redirecting cout stream to our file
+    streambuf *coutbuf = cout.rdbuf(); // saving old buffer
+    std::cout.rdbuf(out.rdbuf());
+    cout << "======== Circuit combinatoire ========\n" << endl;
+    cout << "Expression textuelle du circuit : " << endl;
+    afficher();
+    cout << "\nAffichage graphique du circuit : \n";
+    showOutput();
+
+    // Restoring stream to standard output
+    cout.rdbuf(coutbuf);
+    out.close();
 }
