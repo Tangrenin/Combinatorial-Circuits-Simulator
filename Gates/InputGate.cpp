@@ -21,6 +21,7 @@ int InputGate::getValue() const {
     return value;
 }
 
+//permet de modifier la valeur d'une expression à tout moment
 void InputGate::setValue(bool newValue) {
     value = newValue;
 }

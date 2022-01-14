@@ -16,11 +16,13 @@ protected:
 public:
     BinaryGate(Gate *left, Gate *right);
     ~BinaryGate() override;
+
     // Getters
     Gate *getGateRight() const;
     Gate *getGateLeft() const;
     int getProfondeur() const override;
     std::string getType() const override;
+
     // Class Methods
     void showLigne() const override;
 

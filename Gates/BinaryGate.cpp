@@ -35,14 +35,15 @@ int BinaryGate::getProfondeur() const {
 
 std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
 
+    //début : prinicpe similaire que celui d'UnaryGate
     vector<vector<Gate *>> g_pile, pile_bis;
-    queue<Gate *> g_queue;
     vector<Gate *> sous_pile;
-
+    queue<Gate *> g_queue;
 
     g_queue.push(this);
 
     int i = g_queue.front()->getProfondeur();
+    //ici on rajoute déjà le premier élément au vecteur
     sous_pile.push_back(g_queue.front());
     pile_bis.push_back(sous_pile);
     sous_pile.clear();
@@ -52,6 +53,8 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
     while (i > 0) {
 
         if (currentGate->getType() == "binary") {
+            //si le Gate à droite a une profondeur plus importante que celui à gauche,
+            //on ajoute d'abord le gate à droite et ensuite le gate à gauche à la pile
             if ((((BinaryGate *) (currentGate))->getGateRight()->getProfondeur()) >
                 (((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur())) {
                 g_queue.push(((BinaryGate *) (currentGate))->getGateRight());
@@ -59,6 +62,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
                 g_queue.push(((BinaryGate *) (currentGate))->getGateLeft());
                 sous_pile.push_back(g_queue.back());
             } else {
+                //sinon on fait l'inverse
                 g_queue.push(((BinaryGate *) (currentGate))->getGateLeft());
                 sous_pile.push_back(g_queue.back());
                 g_queue.push(((BinaryGate *) (currentGate))->getGateRight());
@@ -69,6 +73,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
             sous_pile.push_back(g_queue.back());
         }
 
+        //on vérifie qu'il n'y a plus de Gates dans la pile qui ne sont pas des feuilles de l'arbre booléen
         do {
             g_queue.pop();
             currentGate = g_queue.front();
@@ -81,6 +86,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
         }
     }
 
+    //on renvers l'ordre des éléments du vecteur
     for (int i = pile_bis.size() - 1; i >= 0; i--) {
         g_pile.push_back(pile_bis[i]);
     }

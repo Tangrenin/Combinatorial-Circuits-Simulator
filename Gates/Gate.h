@@ -12,9 +12,11 @@ class Gate {
 private:
 public:
     virtual ~Gate();
+
     // Getters
     virtual int getProfondeur() const = 0;
     virtual std::string getType() const = 0;
+
     // Class Methods
     virtual void afficher() const = 0;
     virtual void showLigne() const = 0;

@@ -25,7 +25,7 @@ int main() {
     Gate *and1 = new AndGate(a, b);
     Gate *and2 = new XorGate(or1, and1);
     auto *A = new OutputGate(and2);
-    A->afficher();
+    A->afficherOutput();
     A->showOutput();
 
 
@@ -36,7 +36,7 @@ int main() {
     Gate *negate1 = new NegateGate(c);
     Gate *or2 = new OrGate(negate1, b);
     auto *B = new OutputGate(or2);
-    B->afficher();
+    B->afficherOutput();
 
     B->showOutput();
     //Test 3
@@ -45,7 +45,7 @@ int main() {
     Gate *nand1 = new NandGate(a, b);
     Gate *and3 = new AndGate(nand1, c);
     auto *C = new OutputGate(and3);
-    C->afficher();
+    C->afficherOutput();
     cout << "\nAffichage des elements de la pile...\n";
     for (int i = 0; i < C->getPile().size(); i++) {
         for (int j = 0; j < C->getPile()[i].size(); j++) {
@@ -63,7 +63,7 @@ int main() {
     Gate *and4 = new AndGate(a, b);
     Gate *negate2 = new NegateGate(and4);
     auto *D = new OutputGate(negate2);
-    D->afficher();
+    D->afficherOutput();
     D->showOutput();
 
     // Test 5
@@ -79,14 +79,14 @@ int main() {
     Gate *nor1 = new NorGate(d1, xor1);
 
     auto *E = new OutputGate(nor1);
-    E->afficher();
+    E->afficherOutput();
     E->showOutput();
 
     // Test 6 : Creer un circuit à partir d'une expression textuelle
     cout << "****************Test 6***************" << endl;
     cout << "** Creation d'un circuit a partir d'une expression textuelle : F = nor(or(a,b),and(a,b)) **\n\n";
     auto *F = new OutputGate("F = nor(or(a,b),and(a,b))");
-    F->afficher();
+    F->afficherOutput();
     F->showOutput();
 
     // Test 7 : Ecriture dans un fichier
@@ -98,7 +98,7 @@ int main() {
     cout << "****************Test 8***************" << endl;
     cout << "** Creation d'un circuit a partir d'un fichier de sauvegarde de circuit **\n\n";
     auto *Fbis = new OutputGate("saved-circuits/circuit-F.txt");
-    Fbis->afficher();
+    Fbis->afficherOutput();
     Fbis->showOutput();
 
     cout << "\n====== Merci de votre attention ! ======\n\n";

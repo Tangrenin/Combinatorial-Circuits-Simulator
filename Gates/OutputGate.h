@@ -20,15 +20,17 @@ public:
     explicit OutputGate(Gate *main);
     explicit OutputGate(std::string mainText);
     ~OutputGate();
+
     // Getters
     Gate *getMainGate() const;
     std::string getMainText() const;
     std::vector<std::vector<Gate *>> getPile() const;
     char getName() const;
+
     // Class Methods
     void showOutput() const;
-    void afficher() const;
-    int calculer() const;
+    void afficherOutput() const;
+    int calculerOutput() const;
     void saveInFile() const;
     static Gate *generateByExpr(std::string expr);
     static std::pair<std::string, std::string> parseExprIntoArgs(std::string expr);

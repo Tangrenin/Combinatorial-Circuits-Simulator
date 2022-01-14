@@ -27,36 +27,46 @@ int UnaryGate::getProfondeur() const {
     return g_main->getProfondeur() + 1;
 }
 
+/*
+ * crée un vecteur de Gates à partir d'un OutputGate
+ * permet de retrouver facilement les Gates individuels qui constituent l'OutputGate
+ */
 std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
-    vector<vector<Gate *>> g_pile;
-    queue<Gate *> g_queue;
+
+    vector<vector<Gate *>> g_pile, pile_bis;
+    //le vecteur qui représente un étage
     vector<Gate *> sous_pile;
-    vector<vector<Gate *>> pile_bis;
+    //la pile qui contient les gates d'un même étage
+    queue<Gate *> g_queue;
 
 
-    g_queue.push(this);
+    g_queue.push(this); //On rajoute à la pile le premier élément du OutputGate
 
-    int i = g_queue.front()->getProfondeur() + 1;
-    sous_pile.push_back(g_queue.front());
+    int i = g_queue.front()->getProfondeur() + 1; // i représente la profondeur + 1 de l'élément qu'on vient d'ajouter à la pile
+    sous_pile.push_back(g_queue.front()); // on rajoute la pile au premier sous-vecteur
 
     while (i > 0) {
         Gate *currentGate = g_queue.front();
+        //Ici on vérifie si on a changé de profondeur
         if (i > currentGate->getProfondeur()) {
+            //on change de profondeur et on ajoute le sous-vecteur courant au vecteur final
             i = currentGate->getProfondeur();
             pile_bis.push_back(sous_pile);
             sous_pile.clear();
         }
         if (currentGate->getType() == "binary") {
+            //si c'est un gate binaire on fait appel à la fonction empileGates() pour les gates binaire
             g_pile = currentGate->empileGates();
             g_pile.resize(g_pile.size() - 1);
             break;
         } else {
+            //sinon on rajoute le Gate courant à la pile et au sous-vecteur courant
             g_queue.push(((UnaryGate *) (currentGate))->getGate());
             sous_pile.push_back(g_queue.back());
         }
         g_queue.pop();
     }
-
+    //on inverse les éléments de la pile, pour commencer par la profondeur 0
     for (int i = pile_bis.size() - 1; i >= 0; i--) {
         g_pile.push_back(pile_bis[i]);
     }
