@@ -128,7 +128,7 @@ void OutputGate::showOutput() const {
     cout << "Ouput value :  "  << calculerOutput() << "\n\n";
 }
 
-void OutputGate::afficherOutput() const {
+void OutputGate::outputToText() const {
     cout << name << " = ";
     g_main->afficher();
     cout << endl;
@@ -164,6 +164,7 @@ Gate *OutputGate::generateByExpr(string expr) {
                 return  new XorGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
         }
     }
+    return nullptr;
 
 }
 
@@ -205,7 +206,7 @@ void OutputGate::saveInFile() const {
     std::cout.rdbuf(out.rdbuf());
     cout << "======== Circuit combinatoire ========\n" << endl;
     cout << "Expression textuelle du circuit : " << endl;
-    afficherOutput();
+    outputToText();
     cout << "\nAffichage graphique du circuit : \n";
     showOutput();
 

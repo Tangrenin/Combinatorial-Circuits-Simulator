@@ -29,7 +29,7 @@ public:
 
     // Class Methods
     void showOutput() const;
-    void afficherOutput() const;
+    void outputToText() const;
     int calculerOutput() const;
     void saveInFile() const;
     static Gate *generateByExpr(std::string expr);

@@ -9,19 +9,21 @@
 #include <string>
 
 class InputGate : public Gate {
+
 private:
-    bool value = false;
-    int profondeur = 0;
     char const name;
+    bool value = false;
+    int const profondeur = 0;
+
 public:
     explicit InputGate(char varName, bool value = false);
     ~InputGate() override;
-    // Getters
+    // Getters and Setters
     char getName() const;
     int getValue() const;
-    void setValue(bool newValue);
     int getProfondeur() const override;
     std::string getType() const override;
+    void setValue(bool newValue);
 
     // Class Methods
     void afficher() const override;
