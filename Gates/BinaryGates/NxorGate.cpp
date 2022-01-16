@@ -23,10 +23,10 @@ int NxorGate::calculer() const {
 }
 
 void NxorGate::showExpression() const {
-    cout << "NXR";
+    cout << "NXOR";
 }
 
 ostream &operator<<(ostream &out, const NxorGate *g) {
-    out << "NXR";
+    out << "NXOR";
     return out;
 }

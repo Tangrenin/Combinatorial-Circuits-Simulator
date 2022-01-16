@@ -42,6 +42,7 @@ g_main_text(move(mainText)), name(g_main_text[0]) {
 
     // Creer le circuit à partir de expression textuelle
     g_main = generateByExpr(g_main_text.substr(4)); // On enlève la partie "A = " de l'expression textuelle
+    if (g_main!= nullptr)
     g_pile = g_main->empileGates();
 
 }
@@ -69,73 +70,85 @@ char OutputGate::getName() const {
 }
 
 void OutputGate::showOutput() const {
-    /*
-     * Affichage graphique du circuit
-     * */
-    int debut_ligne = 0; //On fixe les indices qui nous permettront de gérer les espaces en début de ligne et entre deux Gates
-    int espace_milieu = 1;
-    for (int i = 0; i < g_pile.size(); i++) {
-        //On itère le procédé sur chaque étage de l'expression booléenne
-        //On part de l'étage 0
-        cout << string(debut_ligne, ' '); //On ajoute le nombre nécessaire d'espaces en début de ligne
+    if (g_main!= nullptr) {
         /*
-         * On affiche d'abord la forme textuelle des Gates
-         * Ensuite on va à la ligne, et on affiche pour chaque Gate la ligne représentant la sortie correspondante
-         */
-        for (auto gate : g_pile[i]) {
-            gate->showExpression(); //forme textuelle
-            cout << string(espace_milieu, ' ');
-        }
-        cout << endl;
-        cout << string(debut_ligne, ' ');
-        for (auto gate : g_pile[i]) {
-            gate->showLigne(); //les lignes représentant les sorties
-            cout << string(espace_milieu, ' ');
-        }
-        cout << endl;
-        //Pour chaque Gate qui ne fait pas parti du dernier étage de l'arbre booléen
-        //On formate l'expression en rajoutant des '*'
-        if (i != g_pile.size() - 1) {
-            cout << string(debut_ligne + 1, ' ');
-            //si l'étage ne contient qu'un seul Gate
-            if (g_pile[i].size() == 1) {
-                cout << string((espace_milieu / 2) + 3, '*') << endl;
-                cout << string(debut_ligne + 2 * i + 3, ' ');
-                cout << '|';
-            }
-            //sinon
-            else {
-                for (int k = 0; k < g_pile[i].size() / 2; k++) {
-                    cout << string((espace_milieu / 2) + 2, '*');
-                    cout << string(1, ' ');
-                    cout << string((espace_milieu / 2) + 2, '*');
-                    cout << string(espace_milieu + 2, ' ');
-                }
-                cout << endl;
-                for (int k = 0; k < g_pile[i].size() / 2; k++) {
-                    cout << string(debut_ligne + 2 * i + 3, ' ');
-                    cout << "|";
-                    cout << string(espace_milieu + 3, ' ');
-                }
+         * Affichage graphique du circuit
+         * */
+        int debut_ligne = 0; //On fixe les indices qui nous permettront de gérer les espaces en début de ligne et entre deux Gates
+        int espace_milieu = 1;
+        for (int i = 0; i < g_pile.size(); i++) {
+            //On itère le procédé sur chaque étage de l'expression booléenne
+            //On part de l'étage 0
+            cout << string(debut_ligne, ' '); //On ajoute le nombre nécessaire d'espaces en début de ligne
+            /*
+             * On affiche d'abord la forme textuelle des Gates
+             * Ensuite on va à la ligne, et on affiche pour chaque Gate la ligne représentant la sortie correspondante
+             */
+            for (auto gate: g_pile[i]) {
+                gate->showExpression(); //forme textuelle
+                cout << string(espace_milieu, ' ');
             }
             cout << endl;
-            //on met à jour nos indices gérant les espaces
-            debut_ligne += 2 * i + 2;
-            espace_milieu = debut_ligne + 3;
+            cout << string(debut_ligne, ' ');
+            for (auto gate: g_pile[i]) {
+                gate->showLigne(); //les lignes représentant les sorties
+                cout << string(espace_milieu, ' ');
+            }
+            cout << endl;
+            //Pour chaque Gate qui ne fait pas parti du dernier étage de l'arbre booléen
+            //On formate l'expression en rajoutant des '*'
+            if (i != g_pile.size() - 1) {
+                cout << string(debut_ligne + 1, ' ');
+                //si l'étage ne contient qu'un seul Gate
+                if (g_pile[i].size() == 1) {
+                    cout << string((espace_milieu / 2) + 3, '*') << endl;
+                    cout << string(debut_ligne + 2 * i + 3, ' ');
+                    cout << '|';
+                }
+                    //sinon
+                else {
+                    for (int k = 0; k < g_pile[i].size() / 2; k++) {
+                        cout << string((espace_milieu / 2) + 2, '*');
+                        cout << string(1, ' ');
+                        cout << string((espace_milieu / 2) + 2, '*');
+                        cout << string(espace_milieu + 2, ' ');
+                    }
+                    cout << endl;
+                    for (int k = 0; k < g_pile[i].size() / 2; k++) {
+                        cout << string(debut_ligne + 2 * i + 3, ' ');
+                        cout << "|";
+                        cout << string(espace_milieu + 3, ' ');
+                    }
+                }
+                cout << endl;
+                //on met à jour nos indices gérant les espaces
+                debut_ligne += 2 * i + 2;
+                espace_milieu = debut_ligne + 3;
+            }
         }
+        cout << string(debut_ligne + 1, ' ') << name << "\n\n";
+        cout << "Ouput value :  " << calculerOutput() << "\n\n";
+    }else{
+        cout << "circuit non coherent";
     }
-    cout << string(debut_ligne + 1, ' ') << name << "\n\n";
-    cout << "Ouput value :  "  << calculerOutput() << "\n\n";
+    cout << endl;
 }
 
 void OutputGate::outputToText() const {
-    cout << name << " = ";
-    g_main->afficher();
+    if (g_main !=nullptr){
+        cout << name << " = ";
+        g_main->afficher();
+    }
+    else
+        cout << "circuit non coherent";
     cout << endl;
 }
 
 int OutputGate::calculerOutput() const {
-    return g_main->calculer();
+    if (g_main!= nullptr){
+        return g_main->calculer();
+    }
+    return -1;
 }
 
 Gate *OutputGate::generateByExpr(string expr) {
@@ -145,6 +158,10 @@ Gate *OutputGate::generateByExpr(string expr) {
     }
     else { // Si l'expression est une porte logique
         string gateType = expr.substr(0, expr.find('('));
+        //rendre la méthode insensible à la casse
+        for (int i = 0; i < gateType.length(); i++) {
+            gateType[i] = tolower(gateType[i]);
+        }
         pair<string, string> gateArgs =
                 parseExprIntoArgs(expr.substr(expr.find('(') + 1, expr.size() - expr.find('(') - 2));
         if (gateArgs.first.empty()) { // Unary gate
@@ -162,6 +179,9 @@ Gate *OutputGate::generateByExpr(string expr) {
                 return  new OrGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
             else if (gateType == "xor")
                 return  new XorGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
+            else{
+                return nullptr;
+            }
         }
     }
     return nullptr;

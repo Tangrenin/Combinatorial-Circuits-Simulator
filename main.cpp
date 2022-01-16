@@ -100,7 +100,7 @@ int main() {
     // Test 7 : Creer un circuit à partir d'une expression textuelle
     cout << "****************Test 7***************" << endl;
     cout << "** Creation d'un circuit a partir d'une expression textuelle : F = nor(or(a,b),and(a,b)) **\n\n";
-    auto *G = new OutputGate("F = nor(or(a,b),and(a,b))");
+    auto *G = new OutputGate("F = Nor(or(a,b),and(a,b))");
     G->outputToText();
     G->showOutput();
 
