@@ -52,7 +52,7 @@ Your interface with a circuit through its `OutputGate` object and using its meth
 You can save a circuit in a text file and rebuilt it from that file later using the following method :
 - _*saveInFile :*_ saves the circuit in the _saved-circuits_ folder, using the circuit name to generate the filename.
 
-============================
+
 
 ## Instructions en français :
 ### Installation et execution
