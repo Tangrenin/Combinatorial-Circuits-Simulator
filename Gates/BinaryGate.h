@@ -12,9 +12,8 @@ class BinaryGate : public Gate {
 protected:
     Gate *g_left;
     Gate *g_right;
-
-public:
     BinaryGate(Gate *left, Gate *right);
+public:
     ~BinaryGate() override;
 
     // Getters

@@ -20,13 +20,11 @@ public:
     explicit OutputGate(Gate *main);
     explicit OutputGate(std::string mainText);
     ~OutputGate();
-
     // Getters
     Gate *getMainGate() const;
     std::string getMainText() const;
     std::vector<std::vector<Gate *>> getPile() const;
     char getName() const;
-
     // Class Methods
     void showOutput() const;
     void outputToText() const;

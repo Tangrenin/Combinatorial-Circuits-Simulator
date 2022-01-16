@@ -11,8 +11,8 @@
 class UnaryGate : public Gate {
 protected:
     Gate *g_main;
-public:
     explicit UnaryGate(Gate *main);
+public:
     ~UnaryGate() override;
     // Getters
     int getProfondeur() const override;
