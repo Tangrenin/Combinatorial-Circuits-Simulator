@@ -206,8 +206,12 @@ pair<string, string> OutputGate::parseExprIntoArgs(string expr) {
         else if ((expr[i] == ',') && (parenthesisCounter == 0))
             virgulePos = i;
     }
-    args.first = expr.substr(0, virgulePos);
-    args.second = expr.substr(virgulePos + 1, expr.size());
+    if (virgulePos!=0){
+        args.first = expr.substr(0, virgulePos);
+        args.second = expr.substr(virgulePos + 1, expr.size());
+    }else{
+        args.second = expr.substr(virgulePos, expr.size());
+    }
     return args;
 }
 

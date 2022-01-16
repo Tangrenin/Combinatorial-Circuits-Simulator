@@ -116,6 +116,13 @@ int main() {
     Fbis->outputToText();
     Fbis->showOutput();
 
+    // Test 10 : Creer un circuit à partir d'une expression textuelle
+    cout << "****************Test 10***************" << endl;
+    cout << "** Creation d'un circuit a partir d'une expression textuelle : H = negate(or(and(a,b),c)) **\n\n";
+    auto *H = new OutputGate("H = negate(or(and(a,b),c))");
+    H->outputToText();
+    H->showOutput();
+
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }
