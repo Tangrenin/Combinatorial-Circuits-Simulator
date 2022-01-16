@@ -56,7 +56,7 @@ You can save a circuit in a text file and rebuilt it from that file later using 
 
 ## Instructions en français :
 ### Installation et execution
-1. Cloner le projet
+1. Clonez le projet
 2. Exécutez la commande `make test` ou utilisez cmake pour lancer le projet.
 
 ### Utilisation
