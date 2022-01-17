@@ -38,12 +38,13 @@ g_main_text(move(mainText)), name(g_main_text[0]) {
         getline(in, line);
         g_main_text = line;
         name = g_main_text[0];
+        in.close();
     }
 
-    // Creer le circuit à partir de expression textuelle
+    // Creer le circuit à partir d'une' expression textuelle
     g_main = generateByExpr(g_main_text.substr(4)); // On enlève la partie "A = " de l'expression textuelle
     if (g_main!= nullptr)
-    g_pile = g_main->empileGates();
+        g_pile = g_main->empileGates();
 
 }
 
