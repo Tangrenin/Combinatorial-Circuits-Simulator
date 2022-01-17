@@ -45,8 +45,9 @@ Then create successive Gates feeding them with either an InputGate or another Ga
 
 #### Displaying a circuit
 Your interface with a circuit through its `OutputGate` object and using its methods :
-- _*showOutput :*_ prints the truth value at the output of the circuit.
-- _*outputToText :*_ Graphical display of the circuit in console.
+- _*calculerOutput :*_ prints the truth value at the output of the circuit and a graphical display of the circuit in console.
+- _*showOutput :*_ Graphical display of the circuit in console.
+- _*calculerOutput :*_ prints only the truth value at the output of the circuit
 
 #### Saving a circuit
 You can save a circuit in a text file and rebuilt it from that file later using the following method :
@@ -72,8 +73,9 @@ Un circuit peut être construit de 3 façons différentes :
 
 #### Affichage d'un circuit
 Vous interagissez avec un circuit à travers un objet `OutputGate`, en utilisant ses méthodes :
-- _*showOutput :*_ Affiche la valeur de vérité en sortie du circuit.
-- _*outputToText :*_ Affichage graphique du circuit en console.
+- _*showOutput :*_ Affiche la valeur de vérité en sortie du circuit et le graphique du circuit en console.
+- _*outputToText :*_ Affiche la forme textuelle d'un circuit combinatoire.
+- _*calculerOutput :*_ Affiche uniquement la valeur de vérité en sortie du circuit.
 
 #### Sauvegarder un circuit
 Vous pouvez enregistrer un circuit dans un fichier texte et le reconstruire ultérieurement à partir de ce fichier en utilisant la méthode suivante :

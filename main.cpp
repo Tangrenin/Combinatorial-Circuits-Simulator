@@ -123,6 +123,18 @@ int main() {
     H->outputToText();
     H->showOutput();
 
+    // Test 10 : Creer un circuit assymétrique et étudier sa valeur de vérité
+    cout << "****************Test 10***************" << endl;
+    cout << "** Creation d'un circuit a partir d'une expression textuelle : H = negate(or(and(a,b),c)) **\n\n";
+    InputGate *f = new InputGate('f');
+    Gate *nand2 = new NandGate(a, f);
+    Gate *xor2 = new XorGate(nand2, c);
+    auto *I = new OutputGate(xor2);
+
+    I->showOutput();
+    a->setValue(1);
+    f->setValue(1);
+    I->showOutput();
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }

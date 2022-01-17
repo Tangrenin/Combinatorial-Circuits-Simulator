@@ -127,7 +127,7 @@ void OutputGate::showOutput() const {
             }
         }
         cout << string(debut_ligne + 1, ' ') << name << "\n\n";
-        cout << "Ouput value :  " << calculerOutput() << "\n\n";
+        cout << calculerOutput() << "\n\n";
     }else{
         cout << "circuit non coherent";
     }
@@ -145,6 +145,7 @@ void OutputGate::outputToText() const {
 }
 
 int OutputGate::calculerOutput() const {
+    cout << "Ouput value :  " ;
     if (g_main!= nullptr){
         return g_main->calculer();
     }
