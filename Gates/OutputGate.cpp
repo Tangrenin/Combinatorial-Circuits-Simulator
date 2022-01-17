@@ -116,14 +116,14 @@ void OutputGate::showOutput() const {
                     }
                     cout << endl;
                     for (int k = 0; k < g_pile[i].size() / 2; k++) {
-                        cout << string(debut_ligne + 2 * i + 3, ' ');
+                        cout << string(debut_ligne + (espace_milieu / 2) +3, ' ');
                         cout << "|";
                         cout << string(espace_milieu + 3, ' ');
                     }
                 }
                 cout << endl;
                 //on met à jour nos indices gérant les espaces
-                debut_ligne += 2 * i + 2;
+                debut_ligne += (espace_milieu / 2) + 2;
                 espace_milieu = debut_ligne + 3;
             }
         }
