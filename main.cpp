@@ -122,10 +122,11 @@ int main() {
     auto *H = new OutputGate("H = negate(or(and(a,b),c))");
     H->outputToText();
     H->showOutput();
+    H->saveInFile();
 
     // Test 10 : Creer un circuit assymétrique et étudier sa valeur de vérité
-    cout << "****************Test 10***************" << endl;
-    cout << "** Creation d'un circuit a partir d'une expression textuelle : H = negate(or(and(a,b),c)) **\n\n";
+    cout << "****************Test 11***************" << endl;
+    cout << "** Creation d'un circuit assymetrique et etude de sa valeur de verite **\n\n";
     InputGate *f = new InputGate('f');
     Gate *nand2 = new NandGate(a, f);
     Gate *xor2 = new XorGate(nand2, c);

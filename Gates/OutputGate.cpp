@@ -6,7 +6,6 @@
 #include "InputGate.h"
 #include <iostream>
 #include <fstream>
-#include <string>
 #include <queue>
 #include "UnaryGates/NegateGate.h"
 #include "BinaryGates/AndGate.h"
@@ -146,7 +145,7 @@ void OutputGate::outputToText() const {
 }
 
 int OutputGate::calculerOutput() const {
-    cout << "Ouput value :  " ;
+    cout << "Output value :  " ;
     if (g_main!= nullptr){
         return g_main->calculer();
     }
@@ -227,16 +226,22 @@ void OutputGate::saveInFile() const {
     fileName += name;
     fileName += ".txt";
     ofstream out("saved-circuits/" + fileName);
-    // Redirecting cout stream to our file
-    streambuf *coutbuf = cout.rdbuf(); // saving old buffer
-    std::cout.rdbuf(out.rdbuf());
-    cout << "======== Circuit combinatoire ========\n" << endl;
-    cout << "Expression textuelle du circuit : " << endl;
-    outputToText();
-    cout << "\nAffichage graphique du circuit : \n";
-    showOutput();
+    cout << (errno) << endl;
+    if (out) {
+        // Redirecting cout stream to our file
+        streambuf *coutbuf = cout.rdbuf(); // saving old buffer
+        std::cout.rdbuf(out.rdbuf());
+        cout << "======== Circuit combinatoire ========\n" << endl;
+        cout << "Expression textuelle du circuit : " << endl;
+        outputToText();
+        cout << "\nAffichage graphique du circuit : \n";
+        showOutput();
 
-    // Restoring stream to standard output
-    cout.rdbuf(coutbuf);
-    out.close();
+        // Restoring stream to standard output
+        cout.rdbuf(coutbuf);
+        out.close();
+    }
+    else{
+        cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
+    }
 }

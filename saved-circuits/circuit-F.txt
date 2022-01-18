@@ -16,6 +16,6 @@ a:0 b:0 a:0 b:0
        |          
        F
 
-Ouput value :  1
+Output value :  1
 
 

@@ -1,0 +1,25 @@
+======== Circuit combinatoire ========
+
+Expression textuelle du circuit : 
+H = negate(or(and(a,b),c))
+
+Affichage graphique du circuit : 
+a:0 b:0 
+ |   |  
+ ** **   
+   |    
+  AND     c:0     
+   |       |      
+   **** ****       
+       |        
+      OR_         
+       |          
+       *******
+             |
+            NE_               
+             |                
+             H
+
+Output value :  1
+
+
