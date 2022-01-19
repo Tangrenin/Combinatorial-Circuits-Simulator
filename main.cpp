@@ -62,8 +62,10 @@ int main() {
     cout << "\nAffichage des elements de la pile...\n";
     for (int i = 0; i < D->getPile().size(); i++) {
         for (int j = 0; j < D->getPile()[i].size(); j++) {
-            (D->getPile()[i][j]->showExpression());
-            cout << ",";
+            if (D->getPile()[i][j]!=nullptr){
+                (D->getPile()[i][j]->showExpression());
+                cout << ",";
+            }
         }
         cout << endl;
     }
@@ -162,6 +164,11 @@ int main() {
     I->outputToText();
     I->showOutput();
 
+    OutputGate *test = new OutputGate(new OrGate(new XorGate(new OrGate(new InputGate('a'),new InputGate('b')),new InputGate('c')),new XorGate(new InputGate('a'),new NegateGate(new InputGate('d')))));
+    test->showOutput();
+
+    OutputGate *test2 = new OutputGate(new OrGate(new XorGate(new OrGate(new InputGate('a'),new InputGate('b')),new InputGate('c')),new XorGate(new InputGate('a'),new NorGate(new InputGate('d'), new InputGate('e')))));
+    test2->showOutput();
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }

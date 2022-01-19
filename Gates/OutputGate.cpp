@@ -100,14 +100,24 @@ void OutputGate::showOutput() const {
              * Ensuite on va à la ligne, et on affiche pour chaque Gate la ligne représentant la sortie correspondante
              */
             for (auto gate: g_pile[i]) {
-                gate->showExpression(); //forme textuelle
-                cout << string(espace_milieu, ' ');
+                if (gate!=nullptr){
+                    gate->showExpression(); //forme textuelle
+                    cout << string(espace_milieu, ' ');
+                }
+                else{
+                    cout << string(3+espace_milieu,' ');
+                }
             }
             cout << endl;
             cout << string(debut_ligne, ' ');
             for (auto gate: g_pile[i]) {
+                if (gate!=nullptr){
                 gate->showLigne(); //les lignes représentant les sorties
                 cout << string(espace_milieu, ' ');
+                }
+                else{
+                    cout << string(3+espace_milieu,' ');
+                }
             }
             cout << endl;
             //Pour chaque Gate qui ne fait pas partie du dernier étage de l'arbre booléen
@@ -116,29 +126,45 @@ void OutputGate::showOutput() const {
                 cout << string(debut_ligne + 1, ' ');
                 //si l'étage ne contient qu'un seul Gate
                 if (g_pile[i].size() == 1) {
+
                     cout << string((espace_milieu / 2) + 3, '*') << endl;
-                    cout << string(debut_ligne + 2 * i + 3, ' ');
+                    cout << string(debut_ligne + (espace_milieu / 2) + 3, ' ');
                     cout << '|';
                 }
                     //sinon
                 else {
-                    for (int k = 0; k < g_pile[i].size() / 2; k++) {
-                        cout << string((espace_milieu / 2) + 2, '*');
-                        cout << string(1, ' ');
-                        cout << string((espace_milieu / 2) + 2, '*');
-                        cout << string(espace_milieu + 2, ' ');
+                    for (int k = 0; k < g_pile[i].size(); k+=2) {
+                        if (g_pile[i][k]!=nullptr && g_pile[i][k+1]!=nullptr){
+                            cout << string((espace_milieu / 2) + 2, '*');
+                            cout << string(1, ' ');
+                            cout << string((espace_milieu / 2) + 2, '*');
+                            cout << string(espace_milieu + 2, ' ');
+                        }
+                        else if (g_pile[i][k]!=nullptr){
+                                cout << string((espace_milieu / 2) + 2, '*');
+                                cout << string(1, ' ');
+                                cout << string(espace_milieu+(espace_milieu / 2) + 4, ' ');
+                        }
+                        else{
+                            cout<< string(espace_milieu + 7,' ');
+                        }
                     }
                     cout << endl;
-                    for (int k = 0; k < g_pile[i].size() / 2; k++) {
-                        cout << string(debut_ligne + (espace_milieu / 2) + 3, ' ');
-                        cout << "|";
-                        cout << string(espace_milieu + 3, ' ');
+                    for (int k = 0; k < g_pile[i].size(); k+=2) {
+                        if (g_pile[i][k]!=nullptr) {
+                            cout << string(debut_ligne + (espace_milieu / 2) + 3, ' ');
+                            cout << "|";
+                            cout << string(espace_milieu + 3, ' ');
+                        }
+                        else{
+                            cout<< string((2*espace_milieu + 6),' ');
+                        }
                     }
                 }
                 cout << endl;
                 //on met à jour nos indices gérant les espaces
                 debut_ligne += (espace_milieu / 2) + 2;
-                espace_milieu = debut_ligne + 3;
+                espace_milieu = 2*debut_ligne+1;
             }
         }
         cout << string(debut_ligne + 1, ' ') << name << "\n\n";

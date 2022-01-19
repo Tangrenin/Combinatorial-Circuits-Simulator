@@ -77,6 +77,10 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
 
         //on vérifie qu'il n'y a plus de Gates dans la pile qui ne sont pas des feuilles de l'arbre booléen
         do {
+            if (currentGate->getProfondeur() == 0){
+                sous_pile.push_back(nullptr);
+                sous_pile.push_back(nullptr);
+            }
             g_queue.pop();
             currentGate = g_queue.front();
         } while (currentGate->getProfondeur() == 0 && (g_queue.size() > 1));

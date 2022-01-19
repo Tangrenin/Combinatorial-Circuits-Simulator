@@ -5,16 +5,16 @@ F = Nor(or(a,b),and(a,b))
 
 
 Affichage graphique du circuit : 
-a:0 b:0 a:0 b:0 
- |   |   |   |  
- ** **   ** **   
-   |       |    
+a:0 b:0 a:0 b:0                         
+ |   |   |   |                          
+ ** **   ** **                           
+   |       |                            
   OR_     AND     
    |       |      
    **** ****       
        |        
-      NOR         
-       |          
+      NOR             
+       |              
        F
 
 Output value :  1

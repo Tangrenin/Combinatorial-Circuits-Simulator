@@ -5,21 +5,21 @@ Z = negate(or(and(a,b),c))
 
 
 Affichage graphique du circuit : 
-a:0 b:0 
- |   |  
- ** **   
-   |    
+a:0 b:0                 
+ |   |                  
+ ** **                   
+   |                    
   AND     c:0     
    |       |      
    **** ****       
        |        
-      OR_         
-       |          
-       *******
-             |
-            NE_               
-             |                
-             Z
+      OR_             
+       |              
+       *********
+               |
+              NE_                             
+               |                              
+               Z
 
 Output value :  1
 
