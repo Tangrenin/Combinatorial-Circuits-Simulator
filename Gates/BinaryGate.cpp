@@ -13,7 +13,7 @@ BinaryGate::BinaryGate(Gate *left, Gate *right) : g_left(left), g_right(right) {
     profondeur = std::max(g_right->getProfondeur(), g_left->getProfondeur()) + 1;
 }
 
-BinaryGate::BinaryGate(const BinaryGate &b) : g_left(b.g_left), g_right(b.g_right), profondeur(b.profondeur){}
+BinaryGate::BinaryGate(const BinaryGate &b) : g_left(b.g_left), g_right(b.g_right), profondeur(b.profondeur) {}
 
 BinaryGate::~BinaryGate() {
     delete g_left;
@@ -33,7 +33,7 @@ std::string BinaryGate::getType() const {
     return "binary";
 }
 
-void BinaryGate::setProfondeur(int prof)  {
+void BinaryGate::setProfondeur(int prof) {
     profondeur = prof;
 }
 
@@ -69,8 +69,9 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
                 sous_pile.push_back(g_queue.back());
                 g_queue.push(((BinaryGate *) (currentGate))->getGateLeft());
                 //On ajuste la profondeur des Gates qui se trouvent au même étage
-                if ((((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur())!=0){
-                    ((BinaryGate *) (currentGate))->getGateLeft()->setProfondeur(((BinaryGate *) (currentGate))->getGateRight()->getProfondeur());
+                if ((((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur()) != 0) {
+                    ((BinaryGate *) (currentGate))->getGateLeft()->setProfondeur(
+                            ((BinaryGate *) (currentGate))->getGateRight()->getProfondeur());
                 }
                 sous_pile.push_back(g_queue.back());
             } else {
@@ -80,8 +81,9 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
                 g_queue.push(((BinaryGate *) (currentGate))->getGateRight());
                 sous_pile.push_back(g_queue.back());
                 //On ajuste la profondeur des Gates qui se trouvent au même étage
-                if ((((BinaryGate *) (currentGate))->getGateRight()->getProfondeur())!=0){
-                    ((BinaryGate *) (currentGate))->getGateRight()->setProfondeur(((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur());
+                if ((((BinaryGate *) (currentGate))->getGateRight()->getProfondeur()) != 0) {
+                    ((BinaryGate *) (currentGate))->getGateRight()->setProfondeur(
+                            ((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur());
                 }
             }
         } else {
@@ -107,7 +109,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
     }
 
     //on renverse l'ordre des éléments du vecteur
-    for (int j = (int)pile_bis.size() - 1; j >= 0; j--) {
+    for (int j = (int) pile_bis.size() - 1; j >= 0; j--) {
         g_pile.push_back(pile_bis[j]);
     }
     return g_pile;

@@ -91,7 +91,7 @@ void OutputGate::showOutput() const {
          * */
         int debut_ligne = 0; //On fixe les indices qui nous permettront de gérer les espaces en début de ligne et entre deux Gates
         int espace_milieu = 1;
-        for (int i = 0; i < (int)g_pile.size(); i++) {
+        for (int i = 0; i < (int) g_pile.size(); i++) {
             //On itère le procédé sur chaque étage de l'expression booléenne
             //On part de l'étage 0
             cout << string(debut_ligne, ' '); //On ajoute le nombre nécessaire d'espaces en début de ligne
@@ -120,7 +120,7 @@ void OutputGate::showOutput() const {
             cout << endl;
             //Pour chaque Gate qui ne fait pas partie du dernier étage de l'arbre booléen
             //On formate l'expression en rajoutant des '*'
-            if (i != (int)g_pile.size() - 1) {
+            if (i != (int) g_pile.size() - 1) {
                 cout << string(debut_ligne + 1, ' ');
                 //si l'étage ne contient qu'un seul Gate
                 if (g_pile[i].size() == 1) {
@@ -131,8 +131,8 @@ void OutputGate::showOutput() const {
                 }
                     //sinon
                 else {
-                    for (int k = 0; k < (int)g_pile[i].size(); k += 2) {
-                        if (k<g_pile[i].size()-1 && g_pile[i][k] != nullptr && g_pile[i][k + 1] != nullptr) {
+                    for (int k = 0; k < (int) g_pile[i].size(); k += 2) {
+                        if (k < g_pile[i].size() - 1 && g_pile[i][k] != nullptr && g_pile[i][k + 1] != nullptr) {
                             cout << string((espace_milieu / 2) + 2, '*');
                             cout << string(1, ' ');
                             cout << string((espace_milieu / 2) + 2, '*');
@@ -146,7 +146,7 @@ void OutputGate::showOutput() const {
                         }
                     }
                     cout << endl;
-                    for (int k = 0; k < (int)g_pile[i].size(); k += 2) {
+                    for (int k = 0; k < (int) g_pile[i].size(); k += 2) {
                         if (g_pile[i][k] != nullptr) {
                             cout << string(debut_ligne + (espace_milieu / 2) + 3, ' ');
                             cout << "|";
@@ -242,7 +242,7 @@ pair<string, string> OutputGate::parseExprIntoArgs(string expr) {
     int virgulePos(0);
     int parenthesisCounter = 0;
     // Se charge de trouver la virgule principale séparant l'expression, si c'est une porte binaire.
-    for (int i(0); i < (int)expr.size(); i++) {
+    for (int i(0); i < (int) expr.size(); i++) {
         if (expr[i] == '(')
             parenthesisCounter++;
         else if (expr[i] == ')')

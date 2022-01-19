@@ -60,8 +60,8 @@ int main() {
     D->outputToText();
     D->showOutput();
     cout << "\nAffichage des elements de la pile...\n";
-    for (int i = 0; i < (int)D->getPile().size(); i++) {
-        for (int j = 0; j < (int)D->getPile()[i].size(); j++) {
+    for (int i = 0; i < (int) D->getPile().size(); i++) {
+        for (int j = 0; j < (int) D->getPile()[i].size(); j++) {
             if (D->getPile()[i][j] != nullptr) {
                 (D->getPile()[i][j]->showExpression());
                 cout << ",";
@@ -181,7 +181,7 @@ int main() {
     K->outputToText();
     K->showOutput();
 
-    auto *L = new OutputGate(new AndGate(new OrGate(e1,f),new OrGate(b,new AndGate(e1,new OrGate(a,b)))));
+    auto *L = new OutputGate(new AndGate(new OrGate(e1, f), new OrGate(b, new AndGate(e1, new OrGate(a, b)))));
 
     L->showOutput();
     cout << "\n====== Merci de votre attention ! ======\n\n";

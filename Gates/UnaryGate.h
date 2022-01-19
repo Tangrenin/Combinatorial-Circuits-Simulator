@@ -20,7 +20,7 @@ public:
     int getProfondeur() const override;
     Gate *getGate() const;
     std::string getType() const override;
-    void setProfondeur(int prof) ;
+    void setProfondeur(int prof) override;
     // Class Methods
     void showLigne() const override;
     std::vector<std::vector<Gate *>> empileGates() override;

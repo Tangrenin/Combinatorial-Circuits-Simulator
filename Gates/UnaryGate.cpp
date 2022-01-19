@@ -76,8 +76,8 @@ std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
         g_queue.pop();
     }
     //on inverse les éléments de la pile, pour commencer par la profondeur 0
-    for (int i = pile_bis.size() - 1; i >= 0; i--) {
-        g_pile.push_back(pile_bis[i]);
+    for (int j = (int)pile_bis.size() - 1; j >= 0; j--) {
+        g_pile.push_back(pile_bis[j]);
     }
     return g_pile;
 }
