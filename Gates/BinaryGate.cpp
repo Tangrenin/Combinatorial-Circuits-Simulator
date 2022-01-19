@@ -77,7 +77,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
 
         //on vérifie qu'il n'y a plus de Gates dans la pile qui ne sont pas des feuilles de l'arbre booléen
         do {
-            if (currentGate->getProfondeur() == 0){
+            if (currentGate->getProfondeur() == 0) {
                 sous_pile.push_back(nullptr);
                 sous_pile.push_back(nullptr);
             }
@@ -93,7 +93,7 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
     }
 
     //on renverse l'ordre des éléments du vecteur
-    for (int j = pile_bis.size() - 1; j >= 0; j--) {
+    for (int j = (int)pile_bis.size() - 1; j >= 0; j--) {
         g_pile.push_back(pile_bis[j]);
     }
     return g_pile;

@@ -44,7 +44,8 @@ std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
 
     g_queue.push(this); //On rajoute à la pile le premier élément du OutputGate
 
-    int i = g_queue.front()->getProfondeur() + 1; // i représente la profondeur + 1 de l'élément qu'on vient d'ajouter à la pile
+    int i = g_queue.front()->getProfondeur() +
+            1; // i représente la profondeur + 1 de l'élément qu'on vient d'ajouter à la pile
     sous_pile.push_back(g_queue.front()); // on rajoute la pile au premier sous-vecteur
 
     while (i > 0) {
@@ -56,12 +57,12 @@ std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
             pile_bis.push_back(sous_pile);
             sous_pile.clear();
         }
-        if ((currentGate->getType() == "binary") || (currentGate->getType() == "input"))  {
+        if ((currentGate->getType() == "binary") || (currentGate->getType() == "input")) {
             //si c'est un gate binaire on fait appel à la fonction empileGates() pour les gates binaire
             g_pile = currentGate->empileGates();
             g_pile.resize(g_pile.size() - 1);
             break;
-        }else {
+        } else {
             //sinon on rajoute le Gate courant à la pile et au sous-vecteur courant
             g_queue.push(((UnaryGate *) (currentGate))->getGate());
             sous_pile.push_back(g_queue.back());

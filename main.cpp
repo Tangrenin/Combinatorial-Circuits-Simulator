@@ -62,7 +62,7 @@ int main() {
     cout << "\nAffichage des elements de la pile...\n";
     for (int i = 0; i < D->getPile().size(); i++) {
         for (int j = 0; j < D->getPile()[i].size(); j++) {
-            if (D->getPile()[i][j]!=nullptr){
+            if (D->getPile()[i][j] != nullptr) {
                 (D->getPile()[i][j]->showExpression());
                 cout << ",";
             }
@@ -107,9 +107,10 @@ int main() {
     Fbis->showOutput();
 
     cout << "On remarque que la creation du circuit a bien fonctionne malgre le N majuscule de 'Nor'.\n";
-    cout << "De plus, vous pouvez essayer de modifier l'expression textuelle en quelque chose d'incoherent pour voir ce qu'il advient \n\n";
+    cout
+            << "De plus, vous pouvez essayer de modifier l'expression textuelle en quelque chose d'incoherent pour voir ce qu'il advient \n\n";
 
-         // Test 8 : Ecriture dans un fichier
+    // Test 8 : Ecriture dans un fichier
     cout << "****************Test 8***************" << endl;
     cout
             << "** Sauvegarde d'un circuit dans un fichier. Allez voir par vous-meme dans le dossier saved-circuits **\n\n";
@@ -157,18 +158,30 @@ int main() {
     a->setValue(true);
     f->setValue(true);
 
-    cout << "Cicruit apres modification des valeurs de verite des InputGate du circuit original: \n\n";
+    cout << "Circuit apres modification des valeurs de verite des InputGate du circuit original: \n\n";
     H->outputToText();
     H->showOutput();
     cout << "Copie du circuit : On remarque que la modification des InputGate ne l'a pas affecte \n\n";
     I->outputToText();
     I->showOutput();
 
-    OutputGate *test = new OutputGate(new OrGate(new XorGate(new OrGate(new InputGate('a'),new InputGate('b')),new InputGate('c')),new XorGate(new InputGate('a'),new NegateGate(new InputGate('d')))));
-    test->showOutput();
+    // Test 11 : Affichage de circuits plus complexes
+    cout << "****************Test 12***************" << endl;
+    cout << "** Affichage de circuits plus complexes **\n\n";
 
-    OutputGate *test2 = new OutputGate(new OrGate(new XorGate(new OrGate(new InputGate('a'),new InputGate('b')),new InputGate('c')),new XorGate(new InputGate('a'),new NorGate(new InputGate('d'), new InputGate('e')))));
-    test2->showOutput();
+    auto *J = new OutputGate(
+            new OrGate(new XorGate(new OrGate(new InputGate('a'), new InputGate('b')), new InputGate('c')),
+                       new XorGate(new InputGate('a'), new NegateGate(new InputGate('d')))));
+    J->outputToText();
+    J->showOutput();
+
+    auto *K = new OutputGate(
+            new OrGate(new XorGate(new OrGate(new InputGate('a'), new InputGate('b')), new InputGate('c')),
+                       new XorGate(new InputGate('a'), new NorGate(new InputGate('d'), new InputGate('e')))));
+    K->outputToText();
+    K->showOutput();
+
+
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }

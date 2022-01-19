@@ -58,7 +58,7 @@ OutputGate::OutputGate(string mainText) : g_main(nullptr), g_pile(vector<vector<
         g_pile = g_main->empileGates();
     else
         throw runtime_error("ERREUR : Expression textuelle ou chemin de fichier non coherent pour le circuit "
-            + string{name} + ".");
+                            + string{name} + ".");
 }
 
 
@@ -100,23 +100,21 @@ void OutputGate::showOutput() const {
              * Ensuite on va à la ligne, et on affiche pour chaque Gate la ligne représentant la sortie correspondante
              */
             for (auto gate: g_pile[i]) {
-                if (gate!=nullptr){
+                if (gate != nullptr) {
                     gate->showExpression(); //forme textuelle
                     cout << string(espace_milieu, ' ');
-                }
-                else{
-                    cout << string(3+espace_milieu,' ');
+                } else {
+                    cout << string(3 + espace_milieu, ' ');
                 }
             }
             cout << endl;
             cout << string(debut_ligne, ' ');
             for (auto gate: g_pile[i]) {
-                if (gate!=nullptr){
-                gate->showLigne(); //les lignes représentant les sorties
-                cout << string(espace_milieu, ' ');
-                }
-                else{
-                    cout << string(3+espace_milieu,' ');
+                if (gate != nullptr) {
+                    gate->showLigne(); //les lignes représentant les sorties
+                    cout << string(espace_milieu, ' ');
+                } else {
+                    cout << string(3 + espace_milieu, ' ');
                 }
             }
             cout << endl;
@@ -133,38 +131,35 @@ void OutputGate::showOutput() const {
                 }
                     //sinon
                 else {
-                    for (int k = 0; k < g_pile[i].size(); k+=2) {
-                        if (g_pile[i][k]!=nullptr && g_pile[i][k+1]!=nullptr){
+                    for (int k = 0; k < g_pile[i].size(); k += 2) {
+                        if (g_pile[i][k] != nullptr && g_pile[i][k + 1] != nullptr) {
                             cout << string((espace_milieu / 2) + 2, '*');
                             cout << string(1, ' ');
                             cout << string((espace_milieu / 2) + 2, '*');
                             cout << string(espace_milieu + 2, ' ');
-                        }
-                        else if (g_pile[i][k]!=nullptr){
-                                cout << string((espace_milieu / 2) + 2, '*');
-                                cout << string(1, ' ');
-                                cout << string(espace_milieu+(espace_milieu / 2) + 4, ' ');
-                        }
-                        else{
-                            cout<< string(espace_milieu + 7,' ');
+                        } else if (g_pile[i][k] != nullptr) {
+                            cout << string((espace_milieu / 2) + 2, '*');
+                            cout << string(1, ' ');
+                            cout << string(espace_milieu + (espace_milieu / 2) + 4, ' ');
+                        } else {
+                            cout << string(espace_milieu + 7, ' ');
                         }
                     }
                     cout << endl;
-                    for (int k = 0; k < g_pile[i].size(); k+=2) {
-                        if (g_pile[i][k]!=nullptr) {
+                    for (int k = 0; k < g_pile[i].size(); k += 2) {
+                        if (g_pile[i][k] != nullptr) {
                             cout << string(debut_ligne + (espace_milieu / 2) + 3, ' ');
                             cout << "|";
                             cout << string(espace_milieu + 3, ' ');
-                        }
-                        else{
-                            cout<< string((2*espace_milieu + 6),' ');
+                        } else {
+                            cout << string((2 * espace_milieu + 6), ' ');
                         }
                     }
                 }
                 cout << endl;
                 //on met à jour nos indices gérant les espaces
                 debut_ligne += (espace_milieu / 2) + 2;
-                espace_milieu = 2*debut_ligne+1;
+                espace_milieu = 2 * debut_ligne + 1;
             }
         }
         cout << string(debut_ligne + 1, ' ') << name << "\n\n";
@@ -211,7 +206,7 @@ Gate *OutputGate::generateByExpr(string expr) {
         string gateType = expr.substr(0, expr.find('('));
         //Rendre la méthode insensible à la casse
         transform(gateType.begin(), gateType.end(), gateType.begin(),
-                  [](unsigned char c){ return tolower(c); });
+                  [](unsigned char c) { return tolower(c); });
         pair<string, string> gateArgs =
                 parseExprIntoArgs(expr.substr(expr.find('(') + 1, expr.size() - expr.find('(') - 2));
         if (gateArgs.first.empty()) { // Unary gate

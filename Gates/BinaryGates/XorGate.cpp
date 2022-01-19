@@ -23,7 +23,7 @@ void XorGate::showExpression() const {
 }
 
 std::string XorGate::getText() const {
-    return "xor("+g_left->getText()+","+g_right->getText()+")";
+    return "xor(" + g_left->getText() + "," + g_right->getText() + ")";
 }
 
 ostream &operator<<(ostream &out, const XorGate *g) {
