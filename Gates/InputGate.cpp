@@ -9,7 +9,7 @@ using namespace std;
 
 InputGate::InputGate(char varName, bool value) : name(varName), value(value) {}
 
-InputGate::InputGate(const InputGate &i): name(i.name), value(i.value){}
+InputGate::InputGate(const InputGate &i) : name(i.name), value(i.value) {}
 
 InputGate::~InputGate() = default;
 
@@ -34,7 +34,7 @@ void InputGate::afficher() const {
 
 }
 
-int InputGate::calculer() const{
+int InputGate::calculer() const {
     return this->getValue();
 }
 
@@ -63,7 +63,7 @@ void InputGate::showLigne() const {
 }
 
 string InputGate::getText() const {
-    return string(1,name);
+    return string{name};
 }
 
 
