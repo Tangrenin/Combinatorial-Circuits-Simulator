@@ -9,6 +9,7 @@
 
 class NegateGate : public UnaryGate {
 private:
+    NegateGate(const NegateGate &n );
 public:
     explicit NegateGate(Gate *main);
     void afficher() const override;

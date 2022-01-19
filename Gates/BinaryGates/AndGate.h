@@ -9,6 +9,7 @@
 
 class AndGate : public BinaryGate {
 private:
+    AndGate(const AndGate &a);
 public:
     AndGate(Gate *left, Gate *right);
     void afficher() const override;

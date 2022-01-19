@@ -9,6 +9,9 @@
 #include <vector>
 
 class Gate {
+protected:
+    Gate();
+    Gate(const Gate &g);
 public:
     virtual ~Gate();
 

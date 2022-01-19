@@ -14,6 +14,7 @@ private:
     char const name;
     bool value = false;
     int const profondeur = 0;
+    InputGate(const InputGate &i );
 
 public:
     explicit InputGate(char varName, bool value = false);

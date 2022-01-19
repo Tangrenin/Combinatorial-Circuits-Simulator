@@ -5,3 +5,7 @@
 #include "Gate.h"
 
 Gate::~Gate() = default;
+
+Gate::Gate() {}
+
+Gate::Gate(const Gate &g) {}

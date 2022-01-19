@@ -9,6 +9,7 @@
 
 class OrGate : public BinaryGate {
 private:
+    OrGate(const OrGate &o );
 public:
     OrGate(Gate *left, Gate *right);
     void afficher() const override;

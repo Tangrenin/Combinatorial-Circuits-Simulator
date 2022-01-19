@@ -12,6 +12,7 @@ class UnaryGate : public Gate {
 protected:
     Gate *g_main;
     explicit UnaryGate(Gate *main);
+    UnaryGate(const UnaryGate &u );
 public:
     ~UnaryGate() override;
     // Getters

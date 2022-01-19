@@ -13,6 +13,7 @@ protected:
     Gate *g_left;
     Gate *g_right;
     BinaryGate(Gate *left, Gate *right);
+    BinaryGate(const BinaryGate &b);
 public:
     ~BinaryGate() override;
 

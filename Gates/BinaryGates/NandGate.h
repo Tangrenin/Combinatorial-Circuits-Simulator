@@ -9,6 +9,7 @@
 
 class NandGate : public BinaryGate {
 private:
+    NandGate(const NandGate &n);
 public:
     NandGate(Gate *left, Gate *right);
     void afficher() const override;

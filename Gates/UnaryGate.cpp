@@ -11,6 +11,8 @@ using namespace std;
 
 UnaryGate::UnaryGate(Gate *main) : g_main(main) {}
 
+UnaryGate::UnaryGate(const UnaryGate &u) : g_main(u.g_main) {}
+
 UnaryGate::~UnaryGate() {
     delete g_main;
 }

@@ -8,6 +8,7 @@
 #include "../BinaryGate.h"
 class NxorGate : public BinaryGate {
 private:
+    NxorGate(const NxorGate &n);
 public:
     NxorGate(Gate *left, Gate *right);
     void afficher() const override;

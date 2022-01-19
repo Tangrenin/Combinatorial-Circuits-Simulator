@@ -9,6 +9,8 @@ using namespace std;
 
 InputGate::InputGate(char varName, bool value) : name(varName), value(value) {}
 
+InputGate::InputGate(const InputGate &i): name(i.name), value(i.value){}
+
 InputGate::~InputGate() = default;
 
 
@@ -59,6 +61,7 @@ std::vector<std::vector<Gate *>> InputGate::empileGates() {
 void InputGate::showLigne() const {
     cout << " | ";
 }
+
 
 ostream &operator<<(ostream &out, const InputGate *g) {
     out << g->getName();

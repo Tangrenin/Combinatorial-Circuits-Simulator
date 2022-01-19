@@ -11,6 +11,8 @@ using namespace std;
 
 BinaryGate::BinaryGate(Gate *left, Gate *right) : g_left(left), g_right(right) {}
 
+BinaryGate::BinaryGate(const BinaryGate &b) : g_left(b.g_left), g_right(b.g_right) {}
+
 BinaryGate::~BinaryGate() {
     delete g_left;
     delete g_right;

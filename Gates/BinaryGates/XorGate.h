@@ -9,6 +9,7 @@
 
 class XorGate : public BinaryGate {
 private:
+    XorGate(const XorGate &x );
 public:
     XorGate(Gate *left, Gate *right);
     void afficher() const override;

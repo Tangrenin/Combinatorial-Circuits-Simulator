@@ -9,6 +9,7 @@
 
 class NorGate : public BinaryGate {
 private:
+    NorGate(const NorGate &n);
 public:
     NorGate(Gate *left, Gate *right);
     void afficher() const override;
