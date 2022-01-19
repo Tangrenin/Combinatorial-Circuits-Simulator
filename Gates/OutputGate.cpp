@@ -25,13 +25,14 @@ OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>
 OutputGate::OutputGate(const OutputGate &o) : g_main(o.g_main), g_pile(o.g_pile), g_main_text(o.g_main_text),name(o.name) {}
 
 OutputGate::OutputGate(string mainText) : g_main(nullptr), g_pile(vector<vector<Gate *>>()),
-g_main_text(move(mainText)), name(g_main_text[0]) {
+                                          g_main_text(move(mainText)), name(g_main_text[0]) {
     /*
      * Reconstruit un circuit à partir d'une expression textuelle
      * Exemple : A = xor(or(a,b),and(a,b)
      * ou à partir d'un fichier si on lui passe une string contenant '.txt'
      */
-    if (g_main_text.find(".txt") != string::npos) { // Si on reçoit un nom de fichier, en extraire l'expression textuelle
+    if (g_main_text.find(".txt") !=
+        string::npos) { // Si on reçoit un nom de fichier, en extraire l'expression textuelle
         ifstream in(g_main_text);
         string line;
         for (int i = 0; i < 3; i++) //skipping the first three lines
@@ -44,10 +45,11 @@ g_main_text(move(mainText)), name(g_main_text[0]) {
 
     // Creer le circuit à partir d'une' expression textuelle
     g_main = generateByExpr(g_main_text.substr(4)); // On enlève la partie "A = " de l'expression textuelle
-    if (g_main!= nullptr)
+    if (g_main != nullptr)
         g_pile = g_main->empileGates();
 
 }
+
 
 OutputGate::~OutputGate() {
     delete g_main;
@@ -55,7 +57,7 @@ OutputGate::~OutputGate() {
 
 
 // Getters
-Gate *OutputGate::getMainGate() const{
+Gate *OutputGate::getMainGate() const {
     return g_main;
 }
 
@@ -72,7 +74,7 @@ char OutputGate::getName() const {
 }
 
 void OutputGate::showOutput() const {
-    if (g_main!= nullptr) {
+    if (g_main != nullptr) {
         /*
          * Affichage graphique du circuit
          * */
@@ -117,7 +119,7 @@ void OutputGate::showOutput() const {
                     }
                     cout << endl;
                     for (int k = 0; k < g_pile[i].size() / 2; k++) {
-                        cout << string(debut_ligne + (espace_milieu / 2) +3, ' ');
+                        cout << string(debut_ligne + (espace_milieu / 2) + 3, ' ');
                         cout << "|";
                         cout << string(espace_milieu + 3, ' ');
                     }
@@ -130,36 +132,46 @@ void OutputGate::showOutput() const {
         }
         cout << string(debut_ligne + 1, ' ') << name << "\n\n";
         cout << calculerOutput() << "\n\n";
-    }else{
+    } else {
         cout << "circuit non coherent";
     }
     cout << endl;
 }
 
 void OutputGate::outputToText() const {
-    if (g_main !=nullptr){
-        cout << name << " = ";
-        g_main->afficher();
+    try {
+        if (g_main != nullptr) {
+            cout << name << " = ";
+            g_main->afficher();
+        } else
+            throw runtime_error("Circuit non coherent");
     }
-    else
-        cout << "circuit non coherent";
+    catch (exception const &err) {
+        cerr << "ERREUR : " << err.what() << endl;
+    }
     cout << endl;
 }
 
 int OutputGate::calculerOutput() const {
-    cout << "Output value :  " ;
-    if (g_main!= nullptr){
-        return g_main->calculer();
+    // On vérifie que le circuit a été correctement construit
+    cout << "Output value :  ";
+    try {
+        if (g_main != nullptr)
+            return g_main->calculer();
+        else
+            throw runtime_error("Circuit non coherent");
     }
-    return -1;
+    catch (exception const &err) {
+        cerr << "ERREUR : " << err.what() << endl;
+        return -1;
+    }
 }
 
 Gate *OutputGate::generateByExpr(string expr) {
     // On vérifie si l'expression une variable input
-    if (expr.size() == 1){
+    if (expr.size() == 1) {
         return new InputGate(expr[0]);
-    }
-    else { // Si l'expression est une porte logique
+    } else { // Si l'expression est une porte logique
         string gateType = expr.substr(0, expr.find('('));
         //rendre la méthode insensible à la casse
         for (int i = 0; i < gateType.length(); i++) {
@@ -170,19 +182,18 @@ Gate *OutputGate::generateByExpr(string expr) {
         if (gateArgs.first.empty()) { // Unary gate
             if (gateType == "negate")
                 return new NegateGate(generateByExpr(gateArgs.second));
-        }
-        else { // Binary gates
+        } else { // Binary gates
             if (gateType == "and")
-                return  new AndGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
+                return new AndGate(generateByExpr(gateArgs.first), generateByExpr(gateArgs.second));
             else if (gateType == "nand")
-                return  new NandGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
+                return new NandGate(generateByExpr(gateArgs.first), generateByExpr(gateArgs.second));
             else if (gateType == "nor")
-                return  new NorGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
+                return new NorGate(generateByExpr(gateArgs.first), generateByExpr(gateArgs.second));
             else if (gateType == "or")
-                return  new OrGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
+                return new OrGate(generateByExpr(gateArgs.first), generateByExpr(gateArgs.second));
             else if (gateType == "xor")
-                return  new XorGate(generateByExpr(gateArgs.first),generateByExpr(gateArgs.second));
-            else{
+                return new XorGate(generateByExpr(gateArgs.first), generateByExpr(gateArgs.second));
+            else {
                 return nullptr;
             }
         }
@@ -201,7 +212,7 @@ pair<string, string> OutputGate::parseExprIntoArgs(string expr) {
     int virgulePos(0);
     int parenthesisCounter = 0;
     // Se charge de trouver la virgule principale séparant l'expression, si c'est une porte binaire.
-    for (int i(0) ; i < expr.size() ; i++){
+    for (int i(0); i < expr.size(); i++) {
         if (expr[i] == '(')
             parenthesisCounter++;
         else if (expr[i] == ')')
@@ -209,10 +220,10 @@ pair<string, string> OutputGate::parseExprIntoArgs(string expr) {
         else if ((expr[i] == ',') && (parenthesisCounter == 0))
             virgulePos = i;
     }
-    if (virgulePos!=0){
+    if (virgulePos != 0) {
         args.first = expr.substr(0, virgulePos);
         args.second = expr.substr(virgulePos + 1, expr.size());
-    }else{
+    } else {
         args.second = expr.substr(virgulePos, expr.size());
     }
     return args;
@@ -242,8 +253,7 @@ void OutputGate::saveInFile() const {
         // Restoring stream to standard output
         cout.rdbuf(coutbuf);
         out.close();
-    }
-    else{
+    } else {
         cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
     }
 }

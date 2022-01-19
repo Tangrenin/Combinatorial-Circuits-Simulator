@@ -33,7 +33,6 @@ public:
     void saveInFile() const;
     static Gate *generateByExpr(std::string expr);
     static std::pair<std::string, std::string> parseExprIntoArgs(std::string expr);
-
 };
 
 

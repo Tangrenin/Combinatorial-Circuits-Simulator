@@ -129,10 +129,11 @@ int main() {
     H->showOutput();
     H->saveInFile();
 
-    // Test 10 : Creer un circuit assymétrique et étudier sa valeur de vérité ainsi que sa copie
+    // Test 11 : Creer un circuit assymétrique et étudier sa valeur de vérité ainsi que sa copie
     cout << "****************Test 11***************" << endl;
     cout << "** Creation d'un circuit assymetrique et etude de sa valeur de verite ainsi que de sa copie**\n\n";
-    InputGate *f = new InputGate('f');
+    auto *f = new InputGate('f');
+
     Gate *nand2 = new NandGate(a, f);
     Gate *xor2 = new XorGate(nand2, c);
 
@@ -141,17 +142,18 @@ int main() {
 
     G->showOutput();
     //On affiche une copie du circuit
-    cout << "Copie du circuit : "<<endl;
+    cout << "Copie du circuit : \n\n";
     Gbis->showOutput();
 
     //Modification des valeurs du InputGate
-    a->setValue(1);
-    f->setValue(1);
+    a->setValue(true);
+    f->setValue(true);
 
-    cout << "Cicruit apres modification des valeurs de verite des InputGate : "<<endl;
+    cout << "Cicruit apres modification des valeurs de verite des InputGate : \n\n";
     G->showOutput();
-    cout << "Copie du circuit : "<<endl;
+    cout << "Copie du circuit : \n\n";
     Gbis->showOutput();
+
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }
