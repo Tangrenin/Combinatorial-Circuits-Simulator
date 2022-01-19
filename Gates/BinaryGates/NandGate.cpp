@@ -11,11 +11,7 @@ using namespace std;
 NandGate::NandGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void NandGate::afficher() const {
-    cout << "nand(";
-    g_left->afficher();
-    cout << ",";
-    g_right->afficher();
-    cout << ")";
+    cout << getText();;
 }
 
 int NandGate::calculer() const {
@@ -27,7 +23,7 @@ void NandGate::showExpression() const {
 }
 
 std::string NandGate::getText() const {
-    return "nand("+g_left->getText()+","+g_right->getText()+")";
+    return "nand(" + g_left->getText() + "," + g_right->getText() + ")";
 }
 
 ostream &operator<<(ostream &out, const NandGate *g) {

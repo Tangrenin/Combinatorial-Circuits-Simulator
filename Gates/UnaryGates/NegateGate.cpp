@@ -10,9 +10,7 @@ using namespace std;
 NegateGate::NegateGate(Gate *main) : UnaryGate(main) {}
 
 void NegateGate::afficher() const {
-    cout << "negate(";
-    g_main->afficher();
-    cout << ")";
+    cout << getText();
 }
 
 int NegateGate::calculer() const {
@@ -24,5 +22,5 @@ void NegateGate::showExpression() const {
 }
 
 std::string NegateGate::getText() const {
-    return "negate("+g_main->getText()+")";
+    return "negate(" + g_main->getText() + ")";
 }

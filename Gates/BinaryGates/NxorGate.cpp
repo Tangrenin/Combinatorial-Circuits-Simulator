@@ -11,11 +11,7 @@ using namespace std;
 NxorGate::NxorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void NxorGate::afficher() const {
-    cout << "nxor(";
-    g_left->afficher();
-    cout << ",";
-    g_right->afficher();
-    cout << ")";
+    cout << getText();;
 }
 
 int NxorGate::calculer() const {
@@ -27,7 +23,7 @@ void NxorGate::showExpression() const {
 }
 
 std::string NxorGate::getText() const {
-    return "nxor("+g_left->getText()+","+g_right->getText()+")";
+    return "nxor(" + g_left->getText() + "," + g_right->getText() + ")";
 }
 
 ostream &operator<<(ostream &out, const NxorGate *g) {

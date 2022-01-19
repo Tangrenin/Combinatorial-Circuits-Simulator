@@ -11,11 +11,7 @@ XorGate::XorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 
 void XorGate::afficher() const {
-    cout << "xor(";
-    g_left->afficher();
-    cout << ",";
-    g_right->afficher();
-    cout << ")";
+    cout << getText();
 }
 
 int XorGate::calculer() const {

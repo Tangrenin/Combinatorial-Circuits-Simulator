@@ -11,11 +11,7 @@ using namespace std;
 NorGate::NorGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void NorGate::afficher() const {
-    cout << "nor(";
-    g_left->afficher();
-    cout << ",";
-    g_right->afficher();
-    cout << ")";
+    cout << getText();;
 }
 
 int NorGate::calculer() const {
@@ -27,7 +23,7 @@ void NorGate::showExpression() const {
 }
 
 std::string NorGate::getText() const {
-    return "nor("+g_left->getText()+","+g_right->getText()+")";
+    return "nor(" + g_left->getText() + "," + g_right->getText() + ")";
 }
 
 ostream &operator<<(ostream &out, const NorGate *g) {

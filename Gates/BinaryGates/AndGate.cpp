@@ -10,11 +10,7 @@ using namespace std;
 AndGate::AndGate(Gate *left, Gate *right) : BinaryGate(left, right) {}
 
 void AndGate::afficher() const {
-    cout << "and(";
-    g_left->afficher();
-    cout << ",";
-    g_right->afficher();
-    cout << ")";
+    cout << getText();
 }
 
 int AndGate::calculer() const {
@@ -26,7 +22,7 @@ void AndGate::showExpression() const {
 }
 
 std::string AndGate::getText() const {
-    return "and("+g_left->getText()+","+g_right->getText()+")";
+    return "and(" + g_left->getText() + "," + g_right->getText() + ")";
 }
 
 ostream &operator<<(ostream &out, const AndGate *g) {
