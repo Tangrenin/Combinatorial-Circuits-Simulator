@@ -22,3 +22,7 @@ int NegateGate::calculer() const {
 void NegateGate::showExpression() const {
     cout << "NE_";
 }
+
+std::string NegateGate::getText() const {
+    return "negate("+g_main->getText()+")";
+}

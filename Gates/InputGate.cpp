@@ -62,6 +62,10 @@ void InputGate::showLigne() const {
     cout << " | ";
 }
 
+string InputGate::getText() const {
+    return string(1,name);
+}
+
 
 ostream &operator<<(ostream &out, const InputGate *g) {
     out << g->getName();

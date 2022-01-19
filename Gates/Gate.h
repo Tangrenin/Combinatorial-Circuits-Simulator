@@ -21,6 +21,7 @@ public:
 
     // Class Methods
     virtual void afficher() const = 0;
+    virtual std::string getText() const = 0;
     virtual void showLigne() const = 0;
     virtual int calculer() const = 0;
     virtual void showExpression() const = 0;

@@ -26,6 +26,10 @@ void NandGate::showExpression() const {
     cout << "NAN";
 }
 
+std::string NandGate::getText() const {
+    return "nand("+g_left->getText()+","+g_right->getText()+")";
+}
+
 ostream &operator<<(ostream &out, const NandGate *g) {
     out << "NAND";
     return out;

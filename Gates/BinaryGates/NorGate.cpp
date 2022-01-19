@@ -26,6 +26,10 @@ void NorGate::showExpression() const {
     cout << "NOR";
 }
 
+std::string NorGate::getText() const {
+    return "nor("+g_left->getText()+","+g_right->getText()+")";
+}
+
 ostream &operator<<(ostream &out, const NorGate *g) {
     out << "NOR";
     return out;

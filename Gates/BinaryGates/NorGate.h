@@ -15,6 +15,7 @@ public:
     void afficher() const override;
     int calculer() const override;
     void showExpression() const override;
+    std::string getText() const;
 };
 
 std::ostream &operator<<(std::ostream &out, const NorGate *x);

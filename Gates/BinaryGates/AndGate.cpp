@@ -25,6 +25,10 @@ void AndGate::showExpression() const {
     cout << "AND";
 }
 
+std::string AndGate::getText() const {
+    return "and("+g_left->getText()+","+g_right->getText()+")";
+}
+
 ostream &operator<<(ostream &out, const AndGate *g) {
     out << "AND";
     return out;

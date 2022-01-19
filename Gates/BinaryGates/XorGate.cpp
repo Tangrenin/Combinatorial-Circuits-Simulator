@@ -26,6 +26,10 @@ void XorGate::showExpression() const {
     cout << "XOR";
 }
 
+std::string XorGate::getText() const {
+    return "xor("+g_left->getText()+","+g_right->getText()+")";
+}
+
 ostream &operator<<(ostream &out, const XorGate *g) {
     out << "XOR";
     return out;

@@ -20,6 +20,7 @@ char OutputGate::nameTracker = 'A';
 
 OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>()), name(nameTracker++) {
     g_pile = g_main->empileGates();
+    g_main_text = string(1,name)+" = "+(g_main->getText());
 }
 
 OutputGate::OutputGate(const OutputGate &o) : g_main(o.g_main), g_pile(o.g_pile), g_main_text(o.g_main_text),name(o.name) {}
@@ -141,8 +142,7 @@ void OutputGate::showOutput() const {
 void OutputGate::outputToText() const {
     try {
         if (g_main != nullptr) {
-            cout << name << " = ";
-            g_main->afficher();
+            cout << g_main_text<<endl;
         } else
             throw runtime_error("Circuit non coherent");
     }

@@ -25,6 +25,10 @@ void OrGate::showExpression() const {
     cout << "OR_";
 }
 
+std::string OrGate::getText() const {
+    return "or("+g_left->getText()+","+g_right->getText()+")";
+}
+
 ostream &operator<<(ostream &out, const OrGate *g) {
     out << "OR";
     return out;

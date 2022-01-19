@@ -26,6 +26,10 @@ void NxorGate::showExpression() const {
     cout << "NXOR";
 }
 
+std::string NxorGate::getText() const {
+    return "nxor("+g_left->getText()+","+g_right->getText()+")";
+}
+
 ostream &operator<<(ostream &out, const NxorGate *g) {
     out << "NXOR";
     return out;
