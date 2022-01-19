@@ -9,9 +9,11 @@
 
 using namespace std;
 
-BinaryGate::BinaryGate(Gate *left, Gate *right) : g_left(left), g_right(right) {}
+BinaryGate::BinaryGate(Gate *left, Gate *right) : g_left(left), g_right(right) {
+    profondeur = std::max(g_right->getProfondeur(), g_left->getProfondeur()) + 1;
+}
 
-BinaryGate::BinaryGate(const BinaryGate &b) : g_left(b.g_left), g_right(b.g_right) {}
+BinaryGate::BinaryGate(const BinaryGate &b) : g_left(b.g_left), g_right(b.g_right), profondeur(b.profondeur){}
 
 BinaryGate::~BinaryGate() {
     delete g_left;
@@ -31,8 +33,12 @@ std::string BinaryGate::getType() const {
     return "binary";
 }
 
+void BinaryGate::setProfondeur(int prof)  {
+    profondeur = prof;
+}
+
 int BinaryGate::getProfondeur() const {
-    return std::max(g_right->getProfondeur(), g_left->getProfondeur()) + 1;
+    return profondeur;
 }
 
 std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
@@ -62,6 +68,10 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
                 g_queue.push(((BinaryGate *) (currentGate))->getGateRight());
                 sous_pile.push_back(g_queue.back());
                 g_queue.push(((BinaryGate *) (currentGate))->getGateLeft());
+                //On ajuste la profondeur des Gates qui se trouvent au même étage
+                if ((((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur())!=0){
+                    ((BinaryGate *) (currentGate))->getGateLeft()->setProfondeur(((BinaryGate *) (currentGate))->getGateRight()->getProfondeur());
+                }
                 sous_pile.push_back(g_queue.back());
             } else {
                 //sinon on fait l'inverse
@@ -69,6 +79,10 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
                 sous_pile.push_back(g_queue.back());
                 g_queue.push(((BinaryGate *) (currentGate))->getGateRight());
                 sous_pile.push_back(g_queue.back());
+                //On ajuste la profondeur des Gates qui se trouvent au même étage
+                if ((((BinaryGate *) (currentGate))->getGateRight()->getProfondeur())!=0){
+                    ((BinaryGate *) (currentGate))->getGateRight()->setProfondeur(((BinaryGate *) (currentGate))->getGateLeft()->getProfondeur());
+                }
             }
         } else {
             g_queue.push(((UnaryGate *) (currentGate))->getGate());

@@ -11,14 +11,16 @@
 class UnaryGate : public Gate {
 protected:
     Gate *g_main;
+    int profondeur;
     explicit UnaryGate(Gate *main);
     UnaryGate(const UnaryGate &u );
 public:
     ~UnaryGate() override;
-    // Getters
+    // Getters and Setters
     int getProfondeur() const override;
     Gate *getGate() const;
     std::string getType() const override;
+    void setProfondeur(int prof) ;
     // Class Methods
     void showLigne() const override;
     std::vector<std::vector<Gate *>> empileGates() override;

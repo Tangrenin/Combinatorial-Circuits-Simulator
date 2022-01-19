@@ -181,7 +181,9 @@ int main() {
     K->outputToText();
     K->showOutput();
 
+    auto *L = new OutputGate(new AndGate(new OrGate(e1,f),new OrGate(b,new AndGate(e1,new OrGate(a,b)))));
 
+    L->showOutput();
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
 }

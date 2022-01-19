@@ -12,15 +12,17 @@ class BinaryGate : public Gate {
 protected:
     Gate *g_left;
     Gate *g_right;
+    int profondeur;
     BinaryGate(Gate *left, Gate *right);
     BinaryGate(const BinaryGate &b);
 public:
     ~BinaryGate() override;
 
-    // Getters
+    // Getters and Setters
     Gate *getGateRight() const;
     Gate *getGateLeft() const;
     int getProfondeur() const override;
+    void setProfondeur(int prof);
     std::string getType() const override;
 
     // Class Methods

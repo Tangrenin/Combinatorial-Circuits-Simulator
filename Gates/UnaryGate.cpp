@@ -9,9 +9,11 @@
 using namespace std;
 
 
-UnaryGate::UnaryGate(Gate *main) : g_main(main) {}
+UnaryGate::UnaryGate(Gate *main) : g_main(main) {
+    profondeur = g_main->getProfondeur() + 1;
+}
 
-UnaryGate::UnaryGate(const UnaryGate &u) : g_main(u.g_main) {}
+UnaryGate::UnaryGate(const UnaryGate &u) : g_main(u.g_main), profondeur(u.profondeur) {}
 
 UnaryGate::~UnaryGate() {
     delete g_main;
@@ -26,7 +28,11 @@ std::string UnaryGate::getType() const {
 }
 
 int UnaryGate::getProfondeur() const {
-    return g_main->getProfondeur() + 1;
+    return profondeur;
+}
+
+void UnaryGate::setProfondeur(int prof) {
+    profondeur = prof;
 }
 
 /*
@@ -79,4 +85,5 @@ std::vector<std::vector<Gate *>> UnaryGate::empileGates() {
 void UnaryGate::showLigne() const {
     cout << " | ";
 }
+
 

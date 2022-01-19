@@ -13,7 +13,7 @@ class InputGate : public Gate {
 private:
     char const name;
     bool value = false;
-    int const profondeur = 0;
+    int profondeur = 0;
     InputGate(const InputGate &i );
 
 public:
@@ -25,6 +25,7 @@ public:
     int getProfondeur() const override;
     std::string getType() const override;
     void setValue(bool newValue);
+    void setProfondeur(int prof) override;
     std::string getText() const;
 
     // Class Methods

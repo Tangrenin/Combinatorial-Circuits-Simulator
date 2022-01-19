@@ -17,6 +17,7 @@ public:
 
     // Getters
     virtual int getProfondeur() const = 0;
+    virtual void setProfondeur(int prof) = 0;
     virtual std::string getType() const = 0;
 
     // Class Methods

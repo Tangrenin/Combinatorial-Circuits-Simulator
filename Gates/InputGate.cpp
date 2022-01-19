@@ -66,6 +66,10 @@ string InputGate::getText() const {
     return string{name};
 }
 
+void InputGate::setProfondeur(int prof) {
+    profondeur = prof;
+}
+
 
 ostream &operator<<(ostream &out, const InputGate *g) {
     out << g->getName();
