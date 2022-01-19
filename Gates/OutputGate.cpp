@@ -131,8 +131,8 @@ void OutputGate::showOutput() const {
                 }
                     //sinon
                 else {
-                    for (int k = 0; k < (int)g_pile[i].size(); k += 2) {
-                        if (k < g_pile[i].size() - 1 && g_pile[i][k] != nullptr && g_pile[i][k + 1] != nullptr) {
+                    for (int k = 0; k < (int) g_pile[i].size(); k += 2) {
+                        if (k < (int) g_pile[i].size() - 1 && g_pile[i][k] != nullptr && g_pile[i][k + 1] != nullptr) {
                             cout << string((espace_milieu / 2) + 2, '*');
                             cout << string(1, ' ');
                             cout << string((espace_milieu / 2) + 2, '*');
