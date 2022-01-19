@@ -18,6 +18,7 @@ private:
     static char nameTracker;
 public:
     explicit OutputGate(Gate *main);
+    OutputGate(const OutputGate &o );
     explicit OutputGate(std::string mainText);
     ~OutputGate();
     // Getters

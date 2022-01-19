@@ -22,6 +22,8 @@ OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>
     g_pile = g_main->empileGates();
 }
 
+OutputGate::OutputGate(const OutputGate &o) : g_main(o.g_main), g_pile(o.g_pile), g_main_text(o.g_main_text),name(o.name) {}
+
 OutputGate::OutputGate(string mainText) : g_main(nullptr), g_pile(vector<vector<Gate *>>()),
 g_main_text(move(mainText)), name(g_main_text[0]) {
     /*
@@ -245,3 +247,5 @@ void OutputGate::saveInFile() const {
         cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
     }
 }
+
+

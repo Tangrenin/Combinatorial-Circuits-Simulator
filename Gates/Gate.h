@@ -9,7 +9,6 @@
 #include <vector>
 
 class Gate {
-private:
 public:
     virtual ~Gate();
 
