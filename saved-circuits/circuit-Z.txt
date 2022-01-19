@@ -1,7 +1,7 @@
 ======== Circuit combinatoire ========
 
 Expression textuelle du circuit : 
-H = negate(or(and(a,b),c))
+Z = negate(or(and(a,b),c))
 
 
 Affichage graphique du circuit : 
@@ -19,7 +19,7 @@ a:0 b:0
              |
             NE_               
              |                
-             H
+             Z
 
 Output value :  1
 

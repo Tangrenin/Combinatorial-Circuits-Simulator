@@ -104,9 +104,13 @@ int main() {
     Fbis->outputToText();
     Fbis->showOutput();
 
-    // Test 8 : Ecriture dans un fichier
+    cout << "On remarque que la creation du circuit a bien fonctionne malgre le N majuscule de 'Nor'.\n";
+    cout << "De plus, vous pouvez essayer de modifier l'expression textuelle en quelque chose d'incoherent pour voir ce qu'il advient \n\n";
+
+         // Test 8 : Ecriture dans un fichier
     cout << "****************Test 8***************" << endl;
-    cout << "** Sauvegarde d'un circuit dans un fichier. Allez voir par vous-meme dans le dossier saved-circuits **\n\n";
+    cout
+            << "** Sauvegarde d'un circuit dans un fichier. Allez voir par vous-meme dans le dossier saved-circuits **\n\n";
     Fbis->saveInFile();
 
     // Test 9 : Lecture d'un fichier
@@ -116,18 +120,18 @@ int main() {
     Fbbis->outputToText();
     Fbbis->showOutput();
 
-    cout <<"** Creation d'une copie du circuit que l'on vient de creer **\n\n";
-    auto *Fcopy = Fbbis;
-    Fcopy->outputToText();
-    Fcopy->showOutput();
+    cout << "** Creation d'une copie du circuit que l'on vient de creer **\n\n";
+    auto *G = new OutputGate(*Fbbis);
+    G->outputToText();
+    G->showOutput();
 
     // Test 10 : Creer un circuit à partir d'une expression textuelle
     cout << "****************Test 10***************" << endl;
     cout << "** Creation d'un circuit a partir d'une expression textuelle : H = negate(or(and(a,b),c)) **\n\n";
-    auto *H = new OutputGate("H = negate(or(and(a,b),c))");
-    H->outputToText();
-    H->showOutput();
-    H->saveInFile();
+    auto *Z = new OutputGate("Z = negate(or(and(a,b),c))");
+    Z->outputToText();
+    Z->showOutput();
+    Z->saveInFile();
 
     // Test 11 : Creer un circuit assymétrique et étudier sa valeur de vérité ainsi que sa copie
     cout << "****************Test 11***************" << endl;
@@ -137,22 +141,26 @@ int main() {
     Gate *nand2 = new NandGate(a, f);
     Gate *xor2 = new XorGate(nand2, c);
 
-    auto *G = new OutputGate(xor2);
-    auto *Gbis = G;
+    auto *H = new OutputGate(xor2);
+    auto *I = new OutputGate(*H);
 
-    G->showOutput();
+    H->outputToText();
+    H->showOutput();
     //On affiche une copie du circuit
     cout << "Copie du circuit : \n\n";
-    Gbis->showOutput();
+    I->outputToText();
+    I->showOutput();
 
-    //Modification des valeurs du InputGate
+    //Modification des valeurs du InputGate de H
     a->setValue(true);
     f->setValue(true);
 
-    cout << "Cicruit apres modification des valeurs de verite des InputGate : \n\n";
-    G->showOutput();
-    cout << "Copie du circuit : \n\n";
-    Gbis->showOutput();
+    cout << "Cicruit apres modification des valeurs de verite des InputGate du circuit original: \n\n";
+    H->outputToText();
+    H->showOutput();
+    cout << "Copie du circuit : On remarque que la modification des InputGate ne l'a pas affecte \n\n";
+    I->outputToText();
+    I->showOutput();
 
     cout << "\n====== Merci de votre attention ! ======\n\n";
     return 0;
