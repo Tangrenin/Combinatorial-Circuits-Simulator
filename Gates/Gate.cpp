@@ -6,6 +6,6 @@
 
 Gate::~Gate() = default;
 
-Gate::Gate() {}
+Gate::Gate() = default;
 
-Gate::Gate(const Gate &g) {}
+Gate::Gate(const Gate &g) = default;
