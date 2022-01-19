@@ -61,7 +61,7 @@ int main() {
     D->showOutput();
     cout << "\nAffichage des elements de la pile...\n";
     for (int i = 0; i < (int)D->getPile().size(); i++) {
-        for (int j = 0; j < D->getPile()[i].size(); j++) {
+        for (int j = 0; j < (int)D->getPile()[i].size(); j++) {
             if (D->getPile()[i][j] != nullptr) {
                 (D->getPile()[i][j]->showExpression());
                 cout << ",";
