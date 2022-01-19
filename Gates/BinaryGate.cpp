@@ -88,9 +88,9 @@ std::vector<std::vector<Gate *>> BinaryGate::empileGates() {
         }
     }
 
-    //on renvers l'ordre des éléments du vecteur
-    for (int i = pile_bis.size() - 1; i >= 0; i--) {
-        g_pile.push_back(pile_bis[i]);
+    //on renverse l'ordre des éléments du vecteur
+    for (int j = pile_bis.size() - 1; j >= 0; j--) {
+        g_pile.push_back(pile_bis[j]);
     }
     return g_pile;
 }
