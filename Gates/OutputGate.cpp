@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <queue>
+#include <algorithm>
 #include "UnaryGates/NegateGate.h"
 #include "BinaryGates/AndGate.h"
 #include "BinaryGates/NandGate.h"
@@ -20,10 +21,17 @@ char OutputGate::nameTracker = 'A';
 
 OutputGate::OutputGate(Gate *main) : g_main(main), g_pile(vector<vector<Gate *>>()), name(nameTracker++) {
     g_pile = g_main->empileGates();
-    g_main_text = string(1,name)+" = "+(g_main->getText());
+    g_main_text = string{name} + " = " + (g_main->getText());
 }
 
-OutputGate::OutputGate(const OutputGate &o) : g_main(o.g_main), g_pile(o.g_pile), g_main_text(o.g_main_text),name(o.name) {}
+OutputGate::OutputGate(const OutputGate &o) : g_main(nullptr), g_pile(vector<vector<Gate *>>()),
+                                              g_main_text(o.g_main_text),
+                                              name(nameTracker++) {
+    g_main_text = string{name} + " = " + g_main_text.substr(4);
+    g_main = generateByExpr(g_main_text.substr(4));
+    if (g_main != nullptr)
+        g_pile = g_main->empileGates();
+}
 
 OutputGate::OutputGate(string mainText) : g_main(nullptr), g_pile(vector<vector<Gate *>>()),
                                           g_main_text(move(mainText)), name(g_main_text[0]) {
@@ -44,11 +52,13 @@ OutputGate::OutputGate(string mainText) : g_main(nullptr), g_pile(vector<vector<
         in.close();
     }
 
-    // Creer le circuit à partir d'une' expression textuelle
+    // Creer le circuit à partir d'une expression textuelle
     g_main = generateByExpr(g_main_text.substr(4)); // On enlève la partie "A = " de l'expression textuelle
     if (g_main != nullptr)
         g_pile = g_main->empileGates();
-
+    else
+        throw runtime_error("ERREUR : Expression textuelle ou chemin de fichier non coherent pour le circuit "
+            + string{name} + ".");
 }
 
 
@@ -100,7 +110,7 @@ void OutputGate::showOutput() const {
                 cout << string(espace_milieu, ' ');
             }
             cout << endl;
-            //Pour chaque Gate qui ne fait pas parti du dernier étage de l'arbre booléen
+            //Pour chaque Gate qui ne fait pas partie du dernier étage de l'arbre booléen
             //On formate l'expression en rajoutant des '*'
             if (i != g_pile.size() - 1) {
                 cout << string(debut_ligne + 1, ' ');
@@ -142,7 +152,7 @@ void OutputGate::showOutput() const {
 void OutputGate::outputToText() const {
     try {
         if (g_main != nullptr) {
-            cout << g_main_text<<endl;
+            cout << g_main_text << endl;
         } else
             throw runtime_error("Circuit non coherent");
     }
@@ -173,10 +183,9 @@ Gate *OutputGate::generateByExpr(string expr) {
         return new InputGate(expr[0]);
     } else { // Si l'expression est une porte logique
         string gateType = expr.substr(0, expr.find('('));
-        //rendre la méthode insensible à la casse
-        for (int i = 0; i < gateType.length(); i++) {
-            gateType[i] = tolower(gateType[i]);
-        }
+        //Rendre la méthode insensible à la casse
+        transform(gateType.begin(), gateType.end(), gateType.begin(),
+                  [](unsigned char c){ return tolower(c); });
         pair<string, string> gateArgs =
                 parseExprIntoArgs(expr.substr(expr.find('(') + 1, expr.size() - expr.find('(') - 2));
         if (gateArgs.first.empty()) { // Unary gate
@@ -239,7 +248,6 @@ void OutputGate::saveInFile() const {
     fileName += name;
     fileName += ".txt";
     ofstream out("saved-circuits/" + fileName);
-    cout << (errno) << endl;
     if (out) {
         // Redirecting cout stream to our file
         streambuf *coutbuf = cout.rdbuf(); // saving old buffer
