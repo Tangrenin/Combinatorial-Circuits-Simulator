@@ -26,7 +26,7 @@ public:
     std::string getType() const override;
     void setValue(bool newValue);
     void setProfondeur(int prof) override;
-    std::string getText() const;
+    std::string getText() const override;
 
     // Class Methods
     void afficher() const override;

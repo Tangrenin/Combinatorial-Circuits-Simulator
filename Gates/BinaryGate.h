@@ -22,7 +22,7 @@ public:
     Gate *getGateRight() const;
     Gate *getGateLeft() const;
     int getProfondeur() const override;
-    void setProfondeur(int prof);
+    void setProfondeur(int prof) override;
     std::string getType() const override;
 
     // Class Methods
